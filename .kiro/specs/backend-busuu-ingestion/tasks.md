@@ -93,19 +93,19 @@ Die Prüfpunkte 5, 9, 14 und 18 sind bewusst nicht Teil des Graphen: sie führen
     - `.prettierrc` (einfache Anführungszeichen, abschließende Kommata) und `.prettierignore` mit `fixtures/`, `apps/backend/schema.gql`, `apps/backend/prisma/migrations/`, `**/dist/`
     - _Requirements: 1.2, 10.8_
 
-  - [-] 1.4 `docker-compose.yml` mit beiden PostgreSQL-Diensten schreiben
+  - [x] 1.4 `docker-compose.yml` mit beiden PostgreSQL-Diensten schreiben
     - Dienst `postgres` auf Port 5432 und Dienst `postgres-test` auf Port 5433, je mit benanntem Volume und Healthcheck, sodass Verbindungen innerhalb von 60 Sekunden angenommen werden und der Bestand einen Neustart übersteht
     - _Requirements: 1.5_
 
-  - [~] 1.5 `.env.example` mit allen gelesenen Variablen anlegen
+  - [x] 1.5 `.env.example` mit allen gelesenen Variablen anlegen
     - Alle im Design tabellierten Variablen mit Platzhalterwerten, ohne echten Zugangsdatenwert
     - _Requirements: 1.8_
 
-  - [~] 1.6 Geteilte Vitest-Basiskonfiguration einrichten
+  - [x] 1.6 Geteilte Vitest-Basiskonfiguration einrichten
     - Ausführung als `vitest run` ohne Beobachtungsmodus, Testdateien nach dem Muster `**/__tests__/*.test.ts`, Reporter mit Ausgabe von Testdatei, Testname und Abweichung zwischen erwartetem und beobachtetem Wert, `fast-check` als Abhängigkeit
     - _Requirements: 10.1, 10.2, 10.11_
 
-  - [~] 1.7 Startkette im `README.md` dokumentieren
+  - [-] 1.7 Startkette im `README.md` dokumentieren
     - Genau fünf Einzelbefehle vom frischen Klon bis zur antwortenden GraphQL_API, wie im Design festgelegt
     - _Requirements: 1.11_
 

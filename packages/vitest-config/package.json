@@ -1,0 +1,31 @@
+{
+  "name": "@sentenza/vitest-config",
+  "version": "0.0.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "type": "module",
+  "main": "./base.ts",
+  "exports": {
+    ".": "./base.ts"
+  },
+  "files": [
+    "base.ts"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "check-types": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@sentenza/eslint-config": "workspace:*",
+    "@sentenza/typescript-config": "workspace:*",
+    "typescript": "5.7.3",
+    "vitest": "3.2.7"
+  },
+  "dependencies": {
+    "fast-check": "4.10.2"
+  },
+  "peerDependencies": {
+    "vitest": "^3.0.0"
+  }
+}
