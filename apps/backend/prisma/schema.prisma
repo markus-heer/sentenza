@@ -1,0 +1,170 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum PayloadKind {
+  CATALOG
+  PROGRESS
+}
+
+enum SubmissionSource {
+  SENTENZA_EXTENSION
+}
+
+enum ProcessingState {
+  VERARBEITET
+  TEILWEISE_VERARBEITET
+  FEHLGESCHLAGEN
+}
+
+enum CefrLevel {
+  A1
+  A2
+  B1
+  B2
+  C1
+  UNBEKANNT
+}
+
+enum TargetLanguage {
+  ES
+}
+
+model UserAccount {
+  id            String   @id @default(uuid())
+  googleSubject String   @unique
+  email         String
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  refreshTokens RefreshToken[]
+  rawPayloads   RawPayload[]
+  progress      GrammarProgress[]
+
+  @@index([email])
+}
+
+model RefreshToken {
+  id            String    @id @default(uuid())
+  userAccountId String
+  tokenHash     String    @unique // SHA-256 des opaken Tokens, hex
+  issuedAt      DateTime  @default(now())
+  expiresAt     DateTime
+  revokedAt     DateTime?
+
+  userAccount UserAccount @relation(fields: [userAccountId], references: [id], onDelete: Cascade)
+
+  @@index([userAccountId, expiresAt])
+}
+
+model RawPayload {
+  id                  String           @id @default(uuid())
+  userAccountId       String
+  payloadKind         PayloadKind
+  submissionSource    SubmissionSource
+  submittedAt         DateTime         @default(now())
+  contentBytes        Int
+  contentHash         String // SHA-256, hex; ausdrücklich NICHT eindeutig (R3.7)
+  content             String           @db.Text // zeichengenau, unveränderlich (R3.2, R3.12)
+  correlationId       String
+  processingState     ProcessingState
+  processedAt         DateTime?
+  errorMessage        String?          @db.VarChar(2000)
+  persistedEntryCount Int?
+  discardedEntryCount Int?
+
+  userAccount UserAccount       @relation(fields: [userAccountId], references: [id], onDelete: Cascade)
+  progress    GrammarProgress[]
+
+  @@index([userAccountId, submittedAt(sort: Desc)])
+  @@index([userAccountId, payloadKind, submittedAt(sort: Desc)])
+  @@index([userAccountId, processingState, submittedAt(sort: Desc)])
+  @@index([contentHash])
+}
+
+model GrammarCategory {
+  id                  String         @id @default(uuid())
+  language            TargetLanguage
+  busuuId             String // unverändert übernommen, 1–200 Zeichen
+  nameKey             String? // Übersetzungsschlüssel, für die Round-Trip-Prüfung nötig
+  nameDe              String         @default("")
+  nameEn              String         @default("")
+  nameDeResolved      Boolean        @default(true)
+  nameEnResolved      Boolean        @default(true)
+  descriptionKey      String?
+  descriptionDe       String         @default("")
+  descriptionEn       String         @default("")
+  descDeResolved      Boolean        @default(true)
+  descEnResolved      Boolean        @default(true)
+  inCatalog           Boolean        @default(true)
+  firstSeenAt         DateTime       @default(now())
+  lastSeenInCatalogAt DateTime?
+  createdAt           DateTime       @default(now())
+  updatedAt           DateTime       @updatedAt
+
+  topics GrammarTopic[]
+
+  @@unique([language, busuuId])
+  @@index([language, inCatalog])
+}
+
+model GrammarTopic {
+  id                  String         @id @default(uuid())
+  language            TargetLanguage
+  busuuId             String
+  categoryId          String? // null bei R4.17 und R5.4
+  sortPosition        Int? // aus structure, lückenlos ab 1 je Kategorie
+  cefrLevel           CefrLevel      @default(UNBEKANNT)
+  cefrLevelRaw        String? // unveränderter Originalwert bei UNBEKANNT (R4.9)
+  nameKey             String?
+  nameDe              String         @default("")
+  nameEn              String         @default("")
+  nameDeResolved      Boolean        @default(true)
+  nameEnResolved      Boolean        @default(true)
+  descriptionKey      String?
+  descriptionDe       String         @default("") @db.Text // ungekürzt (R4.10)
+  descriptionEn       String         @default("") @db.Text
+  descDeResolved      Boolean        @default(true)
+  descEnResolved      Boolean        @default(true)
+  premium             Boolean        @default(false)
+  accessTier          String         @default("")
+  incomplete          Boolean        @default(false) // nur aus structure bekannt (R4.12)
+  inCatalog           Boolean        @default(true) // R4.15, R5.4
+  firstSeenAt         DateTime       @default(now())
+  lastSeenInCatalogAt DateTime?
+  createdAt           DateTime       @default(now())
+  updatedAt           DateTime       @updatedAt
+
+  category GrammarCategory?  @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  progress GrammarProgress[]
+
+  @@unique([language, busuuId])
+  @@index([categoryId, sortPosition, busuuId])
+  @@index([language, cefrLevel])
+  @@index([language, inCatalog])
+}
+
+model GrammarProgress {
+  id             String   @id @default(uuid())
+  userAccountId  String
+  grammarTopicId String
+  strength       Int
+  percentage     Int
+  observedAt     DateTime // Zeitpunkt der Einreichung des Payloads (R5.3)
+  rawPayloadId   String?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  userAccount  UserAccount  @relation(fields: [userAccountId], references: [id], onDelete: Cascade)
+  grammarTopic GrammarTopic @relation(fields: [grammarTopicId], references: [id], onDelete: Cascade)
+  rawPayload   RawPayload?  @relation(fields: [rawPayloadId], references: [id], onDelete: SetNull)
+
+  @@unique([userAccountId, grammarTopicId])
+  @@index([userAccountId])
+  @@index([grammarTopicId])
+}

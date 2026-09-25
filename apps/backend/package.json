@@ -1,0 +1,29 @@
+{
+  "name": "@sentenza/backend",
+  "version": "0.0.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "type": "commonjs",
+  "scripts": {
+    "db:generate": "prisma generate",
+    "db:migrate:dev": "prisma migrate dev",
+    "db:migrate:deploy": "prisma migrate deploy",
+    "build": "tsc --project tsconfig.json",
+    "lint": "eslint .",
+    "check-types": "tsc --noEmit",
+    "test": "vitest run",
+    "start:dev": "echo \"start:dev wird in einer späteren Aufgabe implementiert\" && exit 1"
+  },
+  "dependencies": {
+    "@prisma/client": "6.19.3",
+    "@sentenza/domain": "workspace:*"
+  },
+  "devDependencies": {
+    "@sentenza/eslint-config": "workspace:*",
+    "@sentenza/typescript-config": "workspace:*",
+    "@sentenza/vitest-config": "workspace:*",
+    "prisma": "6.19.3",
+    "typescript": "5.7.3",
+    "vitest": "3.2.7"
+  }
+}

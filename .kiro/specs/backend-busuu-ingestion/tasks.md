@@ -76,7 +76,7 @@ Die Prüfpunkte 5, 9, 14 und 18 sind bewusst nicht Teil des Graphen: sie führen
 
 ## Tasks
 
-- [ ] 1. Monorepo-Grundgerüst und Toolchain
+- [x] 1. Monorepo-Grundgerüst und Toolchain
   - [x] 1.1 pnpm-Workspace und Turborepo-Wurzel anlegen
     - `package.json` (privat, `packageManager`, Skripte `format`, `lint`, `check-types`, `build`, `test`, `postinstall`), `pnpm-workspace.yaml` mit `apps/*` und `packages/*`
     - `turbo.json` mit dem im Design festgelegten Aufgabengraphen: `format` ohne Cache, `build` mit `dependsOn: ["^build"]` und `outputs: ["dist/**", "schema.gql"]`, `lint`, `check-types` und `test` jeweils mit `dependsOn: ["^build"]`
@@ -105,29 +105,29 @@ Die Prüfpunkte 5, 9, 14 und 18 sind bewusst nicht Teil des Graphen: sie führen
     - Ausführung als `vitest run` ohne Beobachtungsmodus, Testdateien nach dem Muster `**/__tests__/*.test.ts`, Reporter mit Ausgabe von Testdatei, Testname und Abweichung zwischen erwartetem und beobachtetem Wert, `fast-check` als Abhängigkeit
     - _Requirements: 10.1, 10.2, 10.11_
 
-  - [-] 1.7 Startkette im `README.md` dokumentieren
+  - [x] 1.7 Startkette im `README.md` dokumentieren
     - Genau fünf Einzelbefehle vom frischen Klon bis zur antwortenden GraphQL_API, wie im Design festgelegt
     - _Requirements: 1.11_
 
-- [ ] 2. Geteilte Domänentypen in `@sentenza/domain`
-  - [~] 2.1 Enumerationen und Domänentypen deklarieren
+- [x] 2. Geteilte Domänentypen in `@sentenza/domain`
+  - [x] 2.1 Enumerationen und Domänentypen deklarieren
     - `packages/domain/src/` mit `PayloadKind`, `ProcessingState`, `SubmissionSource`, `CefrLevel`, `TargetLanguage` als einzige Deklarationsstelle, dazu Barrel-Export
     - _Requirements: 1.4_
 
-  - [~] 2.2 Fehlercode-Enumeration und Fehlerklasse deklarieren
+  - [x] 2.2 Fehlercode-Enumeration und Fehlerklasse deklarieren
     - `packages/domain/src/error-code.ts` mit `SentenzaErrorCode` (`UNAUTHENTICATED`, `FORBIDDEN`, `BAD_USER_INPUT`, `UPSTREAM_UNAVAILABLE`, `INTERNAL_SERVER_ERROR`) und `SentenzaError` mit optionalem `details`
     - _Requirements: 9.1_
 
-  - [~] 2.3 Grenzfalltests für die geteilten Typen schreiben
+  - [x] 2.3 Grenzfalltests für die geteilten Typen schreiben
     - `packages/domain/src/__tests__/error-code.test.ts`: Vollständigkeit der Enumeration, `SentenzaError` mit und ohne `details`
     - _Requirements: 9.1, 10.10_
 
 - [ ] 3. Datenbankschicht und Testdatenbank
-  - [~] 3.1 `schema.prisma` vollständig schreiben
+  - [x] 3.1 `schema.prisma` vollständig schreiben
     - `apps/backend/prisma/schema.prisma` mit den Modellen `UserAccount`, `RefreshToken`, `RawPayload`, `GrammarCategory`, `GrammarTopic`, `GrammarProgress`, allen Enumerationen, den im Design festgelegten eindeutigen Schlüsseln (`[language, busuuId]`, `[userAccountId, grammarTopicId]`, `tokenHash`) und Indizes; `contentHash` ausdrücklich nicht eindeutig, `content` als `@db.Text`
     - _Requirements: 1.10, 3.7, 3.12_
 
-  - [~] 3.2 Erste Migration erzeugen und `postinstall` verdrahten
+  - [-] 3.2 Erste Migration erzeugen und `postinstall` verdrahten
     - Eingecheckte Migration unter `apps/backend/prisma/migrations/`, Skripte `db:generate`, `db:migrate:dev`, `db:migrate:deploy`; Wurzel-`postinstall` ruft `db:generate` ohne erreichbare Datenbank auf
     - _Requirements: 1.6, 1.10_
 
