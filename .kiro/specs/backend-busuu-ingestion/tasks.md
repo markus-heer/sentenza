@@ -162,7 +162,7 @@ Die Prüfpunkte 5, 9, 14 und 18 sind bewusst nicht Teil des Graphen: sie führen
     - GraphQL-Modul mit `autoSchemaFile` auf `apps/backend/schema.gql`, `registerEnumType` für alle aus `@sentenza/domain` importierten Enumerationen, Port aus `PORT`
     - _Requirements: 1.9, 1.4, 7.8_
 
-  - [-] 4.5 Apollo-Fehlerformatierer implementieren
+  - [x] 4.5 Apollo-Fehlerformatierer implementieren
     - `apps/backend/src/common/format-error.ts`: `SentenzaError` bleibt erhalten, jede unzugeordnete Ursache wird `INTERNAL_SERVER_ERROR`, Antwort trägt die Korrelationskennung und keinen Aufrufstapel, keine Datenbankmeldung, keinen Dateipfad, keinen Hostnamen; `includeStacktraceInErrorResponses` deaktiviert; Eingabeverstöße mit Feldpfad über `class-validator`
     - _Requirements: 9.1, 9.2, 9.3_
 
