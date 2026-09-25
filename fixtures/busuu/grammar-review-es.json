@@ -1,0 +1,3684 @@
+{
+  "id": "grammar_review_es",
+  "class": "grammar_review",
+  "type": null,
+  "premium": false,
+  "content": {},
+  "grammar_categories": [
+    {
+      "id": "grammar_category_es_1",
+      "class": "grammar_category",
+      "type": null,
+      "premium": false,
+      "content": {
+        "name": "str_20190913_131",
+        "description": "str_20190611_d04_1",
+        "icon_pdf": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_pronouns.pdf",
+        "icon_dark_pdf": null,
+        "icon_svg": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_pronouns.svg",
+        "icon_dark_svg": null
+      },
+      "structure": [
+        "grammar_topic_2d387661-9d92-435d-9fa6-d152cda5b210",
+        "grammar_topic_es_1_3",
+        "grammar_topic_es_2_2",
+        "grammar_topic_es_1_4",
+        "grammar_topic_es_1_6",
+        "grammar_topic_es_1_7",
+        "grammar_topic_09752fb2-8067-49e6-baff-448ad20c97e5"
+      ],
+      "grammar_topics": [
+        {
+          "id": "grammar_topic_2d387661-9d92-435d-9fa6-d152cda5b210",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_625d1f89-c5c3-4156-8a19-4cc3ad49a118",
+            "description": "str_c006dd6e-01e4-41e2-b6d5-d13febe9c31a",
+            "level": "a2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_1_3",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str__9ca5d4d12d5bdc95b6883f1f5950a45e",
+            "description": "str_20190614_d04_382",
+            "level": "a1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_2_2",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_b2da65c0-5822-4341-a7cd-8c248419af79",
+            "description": "str_20190614_d04_504",
+            "level": "a1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_1_4",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_abe995bf-1aaf-4d53-8a2f-c5727527d3eb",
+            "description": "str_20200428_369",
+            "level": "a1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_1_6",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_264ceefc-307f-45c3-9a88-497180724554",
+            "description": "str_20210726_2",
+            "level": "a2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_1_7",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20210728_1",
+            "description": "str_20210728_2",
+            "level": "a2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_09752fb2-8067-49e6-baff-448ad20c97e5",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_61470279-1af1-44e6-8d6e-baa9db8077df",
+            "description": "str_7b62b8e8-6439-4ecf-ae8d-43bdb217f3a9",
+            "level": "a1"
+          },
+          "access_tier": "standard"
+        }
+      ]
+    },
+    {
+      "id": "grammar_category_es_2",
+      "class": "grammar_category",
+      "type": null,
+      "premium": false,
+      "content": {
+        "name": "str_20191003_157",
+        "description": "str_20190612_d04_44",
+        "icon_pdf": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_adjectives.pdf",
+        "icon_dark_pdf": null,
+        "icon_svg": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_adjectives.svg",
+        "icon_dark_svg": null
+      },
+      "structure": [
+        "grammar_topic_c9e7a9cb-c129-4cd3-9f0a-21ab86a4d8cc",
+        "grammar_topic_eb8876db-8755-442a-9634-a1702baea554",
+        "grammar_topic_388e0312-6f28-4ea5-ad6e-f7e3acac4562",
+        "grammar_topic_es_2_3",
+        "grammar_topic_es_2_4"
+      ],
+      "grammar_topics": [
+        {
+          "id": "grammar_topic_c9e7a9cb-c129-4cd3-9f0a-21ab86a4d8cc",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_2d8db157-9151-48c5-9920-827d466d2828",
+            "description": "str_462a0cac-00d6-4899-9687-726a80800708",
+            "level": "a1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_eb8876db-8755-442a-9634-a1702baea554",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_450ca3db-be23-4c41-bbf5-538829563afa",
+            "description": "str_987f62cc-5755-4ab7-812f-90c40c1283c9",
+            "level": "a1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_388e0312-6f28-4ea5-ad6e-f7e3acac4562",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_2799b2bc-2b23-46a6-b6a3-9fc73c824703",
+            "description": "str_521b7acf-6da4-4509-9e53-b9e6d09b076c",
+            "level": "b1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_2_3",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_05cb5c3a-56f7-40c7-84a8-566009d55a87",
+            "description": "str_20210708_131",
+            "level": "a2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_2_4",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20210817_1",
+            "description": "str_20210817_2",
+            "level": "a2"
+          },
+          "access_tier": "standard"
+        }
+      ]
+    },
+    {
+      "id": "grammar_category_es_3",
+      "class": "grammar_category",
+      "type": null,
+      "premium": false,
+      "content": {
+        "name": "str_20190913_136",
+        "description": "str_20190612_d04_43",
+        "icon_pdf": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_verb_present.pdf",
+        "icon_dark_pdf": null,
+        "icon_svg": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_verb_present.svg",
+        "icon_dark_svg": null
+      },
+      "structure": [
+        "grammar_topic_64206c3d-067b-45c3-b03c-1c8b678423bf",
+        "grammar_topic_7f24bae2-735d-4389-8792-bd821ae975d3",
+        "grammar_topic_5381878b-ddea-4d10-afdf-5b323d98b6ae",
+        "grammar_topic_19017a80-63ce-4365-818b-ec13a8692edd",
+        "grammar_topic_01005cfe-3242-4480-b1f0-b26ba9e9f12d",
+        "grammar_topic_b22f39a2-973b-4760-815c-29e059263caa",
+        "grammar_topic_es_3_3",
+        "grammar_topic_es_3_4",
+        "grammar_topic_es_3_5",
+        "grammar_topic_es_3_6",
+        "grammar_topic_es_3_7"
+      ],
+      "grammar_topics": [
+        {
+          "id": "grammar_topic_64206c3d-067b-45c3-b03c-1c8b678423bf",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_0715f5f0-c60b-4074-be6f-b2e54ed112c3",
+            "description": "str_20190612_d04_46",
+            "level": "a1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_7f24bae2-735d-4389-8792-bd821ae975d3",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_73b1bf9d-918d-4b60-8b3c-51315b39ea9a",
+            "description": "str_90e88086-5850-47ea-af47-54fd79c791d1",
+            "level": "a1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_5381878b-ddea-4d10-afdf-5b323d98b6ae",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_5e4a925a-267b-4ec4-ad1a-5de3e4885889",
+            "description": "str_e1bce7ec-46fe-4a5e-897f-137c0d4ee43b",
+            "level": "a1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_19017a80-63ce-4365-818b-ec13a8692edd",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_54b7bbae-ed40-40fc-9e2a-59744cf2b2a9",
+            "description": "str_2b677478-56f1-4fa4-bd66-41ba87ea1fb2",
+            "level": "a1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_01005cfe-3242-4480-b1f0-b26ba9e9f12d",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_15e5fe76-7d43-4ab3-9468-559f34e0885f",
+            "description": "str_189c1d17-d630-49dd-84c3-37dd0f44fb81",
+            "level": "a1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_b22f39a2-973b-4760-815c-29e059263caa",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_8d4a71c4-3017-47ce-8db0-de3f1a7e9c8f",
+            "description": "str_e2dec284-1f35-4792-9c4c-946604aeba6a",
+            "level": "a1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_3_3",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20191024_113",
+            "description": "str_20191024_115",
+            "level": "a1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_3_4",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20191024_116",
+            "description": "str_20191024_117",
+            "level": "a1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_3_5",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20191024_118",
+            "description": "str_20191108_114",
+            "level": "a1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_3_6",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20191002_273",
+            "description": "str_20191104_228",
+            "level": "a1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_3_7",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20191205_6",
+            "description": "str_20191211_12",
+            "level": "a1"
+          },
+          "access_tier": "standard"
+        }
+      ]
+    },
+    {
+      "id": "grammar_category_es_4",
+      "class": "grammar_category",
+      "type": null,
+      "premium": false,
+      "content": {
+        "name": "str_20190612_d04_286",
+        "description": "str_20190612_d04_300",
+        "icon_pdf": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_verb_ser.pdf",
+        "icon_dark_pdf": null,
+        "icon_svg": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_verb_ser.svg",
+        "icon_dark_svg": null
+      },
+      "structure": [
+        "grammar_topic_f3dc4a8a-6116-4b4d-84a7-bba17d8644d9",
+        "grammar_topic_bd789c66-69c3-4362-a393-6770c6314e10",
+        "grammar_topic_680f2e67-2a63-41e2-86e1-fab529e36edc",
+        "grammar_topic_es_4_4",
+        "grammar_topic_es_4_5",
+        "grammar_topic_es_4_7",
+        "grammar_topic_44dd8e79-91c0-4eda-a2ed-8a7d411933bf",
+        "grammar_topic_53d9981f-68f0-4114-8bab-8863776e2cb8",
+        "grammar_topic_3d4fa7b0-ff12-44f1-9d9b-b320e67753de"
+      ],
+      "grammar_topics": [
+        {
+          "id": "grammar_topic_f3dc4a8a-6116-4b4d-84a7-bba17d8644d9",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_93ba69a5-fbfa-47bf-bc35-8f84be0e9f83",
+            "description": "str_d689aae5-8933-40d8-b1cd-fa3a284739a9",
+            "level": "a1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_bd789c66-69c3-4362-a393-6770c6314e10",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_1a3d03e9-e9a0-4f4c-8c1a-d2c067bf290b",
+            "description": "str_a81846b0-b448-467e-a397-bb20b01a7e6f",
+            "level": "a1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_680f2e67-2a63-41e2-86e1-fab529e36edc",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_d5071ecc-7748-437e-b372-f7f9543f1104",
+            "description": "str_760b91ec-93bf-4549-ae99-f8f727c73634",
+            "level": "a2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_4_4",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20190925_81",
+            "description": "str_20200428_125",
+            "level": "a1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_4_5",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20190926_26",
+            "description": "str_20200428_126",
+            "level": "a1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_4_7",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_318eae4a-4cbf-4d08-aa39-68038844f47a",
+            "description": "str_20210909_2",
+            "level": "b1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_44dd8e79-91c0-4eda-a2ed-8a7d411933bf",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_4067f2ad-f746-4bea-a40b-bbad94343d00",
+            "description": "str_3f3b1051-a110-49df-9f6e-642e9b2eb10d",
+            "level": "c1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_53d9981f-68f0-4114-8bab-8863776e2cb8",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_594af50e-a617-40ba-a201-88901dc2fb3f",
+            "description": "str_fd9006d1-b604-41b2-b5c1-0d72bece83f4",
+            "level": "b2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_3d4fa7b0-ff12-44f1-9d9b-b320e67753de",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_07fa044e-4fdf-48ef-95ca-e9e3e1041e6b",
+            "description": "str_1981f02e-ace5-4847-8966-b6356e7e6775",
+            "level": "a1"
+          },
+          "access_tier": "standard"
+        }
+      ]
+    },
+    {
+      "id": "grammar_category_es_7",
+      "class": "grammar_category",
+      "type": null,
+      "premium": false,
+      "content": {
+        "name": "str_20190614_d04_63",
+        "description": "str_20190614_d04_64",
+        "icon_pdf": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_articles.pdf",
+        "icon_dark_pdf": null,
+        "icon_svg": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_articles.svg",
+        "icon_dark_svg": null
+      },
+      "structure": ["grammar_topic_es_7_1", "grammar_topic_es_7_2"],
+      "grammar_topics": [
+        {
+          "id": "grammar_topic_es_7_1",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_45b5bb6b-d17d-40f1-afd8-236e62ca3a65",
+            "description": "str_20190614_d04_65",
+            "level": "a1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_7_2",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str__2d3a8283",
+            "description": "str_20190614_d04_170",
+            "level": "a1"
+          },
+          "access_tier": "standard"
+        }
+      ]
+    },
+    {
+      "id": "grammar_category_es_8_c",
+      "class": "grammar_category",
+      "type": null,
+      "premium": false,
+      "content": {
+        "name": "str_20190910_164",
+        "description": "str_20190910_165",
+        "icon_pdf": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_verb_functional.pdf",
+        "icon_dark_pdf": null,
+        "icon_svg": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_verb_functional.svg",
+        "icon_dark_svg": null
+      },
+      "structure": [
+        "grammar_topic_0ddfbf07-0727-4f96-9f45-3003db06a52a",
+        "grammar_topic_806a90d5-332b-4e25-8fc2-b24d06b31bca",
+        "grammar_topic_es_8_c_1",
+        "grammar_topic_es_8_c_3",
+        "grammar_topic_es_8_c_4",
+        "grammar_topic_4b8afe75-fe9e-4c17-99c5-3b7c5865ab87",
+        "grammar_topic_e17c3bcd-d753-40ad-b21a-381d74233393",
+        "grammar_topic_5818f525-7e1e-4327-88bc-43bc2693b383",
+        "grammar_topic_74c823f5-e961-476f-8739-a7588e423db7",
+        "grammar_topic_2daee975-d081-4f4e-8a76-249b7b18e4ed",
+        "grammar_topic_25f493d6-a8f4-49f7-a9b8-ec907022f90c",
+        "grammar_topic_a9973f27-1feb-491c-b21b-0aa724440175"
+      ],
+      "grammar_topics": [
+        {
+          "id": "grammar_topic_0ddfbf07-0727-4f96-9f45-3003db06a52a",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_d8862885-3eda-4ff2-8d8b-2f950a23a7b8",
+            "description": "str_b7979e30-4901-401d-b365-c52f52cf7446",
+            "level": "a1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_806a90d5-332b-4e25-8fc2-b24d06b31bca",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_53f44778-07f6-4ca1-9e40-eb73c7f3781f",
+            "description": "str_03ffe0ce-a9e2-476b-bef2-7ec161b55275",
+            "level": "a2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_8_c_1",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20190910_167",
+            "description": "str_20190910_168",
+            "level": "a1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_8_c_3",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20210727_9",
+            "description": "str_20210727_10",
+            "level": "a2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_8_c_4",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20210806_51",
+            "description": "str_20210806_52",
+            "level": "a2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_4b8afe75-fe9e-4c17-99c5-3b7c5865ab87",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_69b922a1-243c-4e41-8746-e2d7bdf3348d",
+            "description": "str_1592931c-1465-4e9a-9d79-3986bce140a4",
+            "level": "b1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_e17c3bcd-d753-40ad-b21a-381d74233393",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_80943805-33d8-47aa-a090-c05ee0d2536c",
+            "description": "str_b9c94d81-3cb3-4764-a3bf-6d828e59c29d",
+            "level": "b2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_5818f525-7e1e-4327-88bc-43bc2693b383",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_d72d27d9-8f13-439f-b6c2-657e95196b2f",
+            "description": "str_65becb7b-6053-4d56-9407-f95b9b0dc54e",
+            "level": "b2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_74c823f5-e961-476f-8739-a7588e423db7",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_a459740d-4dca-4404-a8eb-e54a98a8cd2f",
+            "description": "str_06533453-9e41-4ea9-91a1-f50253f34fe0",
+            "level": "b2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_2daee975-d081-4f4e-8a76-249b7b18e4ed",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_b6e9e194-1052-4873-ac55-cee220584b0a",
+            "description": "str_9bcfe5ca-0b74-49d0-ad7e-9944475566b2",
+            "level": "b2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_25f493d6-a8f4-49f7-a9b8-ec907022f90c",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_9e4b89e3-a3e2-4d0e-aee0-0c8f83c78f0c",
+            "description": "str_8bc3afbd-d543-4c4b-a37c-07a6f565cc14",
+            "level": "a1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_a9973f27-1feb-491c-b21b-0aa724440175",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_1885c66b-bda3-4699-b095-3e46b1248697",
+            "description": "str_5b198c70-94cd-473d-a6e5-a9cce5065685",
+            "level": "a1"
+          },
+          "access_tier": "standard"
+        }
+      ]
+    },
+    {
+      "id": "grammar_category_es_9",
+      "class": "grammar_category",
+      "type": null,
+      "premium": false,
+      "content": {
+        "name": "str_20190913_16",
+        "description": "str_20190913_17",
+        "icon_pdf": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_prepositions.pdf",
+        "icon_dark_pdf": null,
+        "icon_svg": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_prepositions.svg",
+        "icon_dark_svg": null
+      },
+      "structure": [
+        "grammar_topic_es_9_1",
+        "grammar_topic_es_9_2",
+        "grammar_topic_3596518b-3685-4822-abeb-1d9314de15aa",
+        "grammar_topic_7cf7d7f3-1e4f-48de-ab7f-cf1d38b1a9f8",
+        "grammar_topic_21768b41-181c-4620-939a-9b743adfb43e"
+      ],
+      "grammar_topics": [
+        {
+          "id": "grammar_topic_es_9_1",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20190913_18",
+            "description": "str_20190913_20",
+            "level": "a1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_9_2",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20210804_137",
+            "description": "str_20210804_138",
+            "level": "a2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_3596518b-3685-4822-abeb-1d9314de15aa",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_2175067f-cd32-4612-9cde-8d7c4cc30dba",
+            "description": "str_57e95f2b-6c10-4df7-bbea-28e073d13060",
+            "level": "c1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_7cf7d7f3-1e4f-48de-ab7f-cf1d38b1a9f8",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_b0b84201-fff0-4ce1-80a3-aa6b70f1f8a9",
+            "description": "str_c218f342-c50e-4cdb-8a82-0fb63682542f",
+            "level": "b1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_21768b41-181c-4620-939a-9b743adfb43e",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_0bee5005-d023-4cc9-826a-3d29d8ac18c4",
+            "description": "str_a371e8a6-4a66-4c20-8872-d16031277e96",
+            "level": "a2"
+          },
+          "access_tier": "standard"
+        }
+      ]
+    },
+    {
+      "id": "grammar_category_es_10",
+      "class": "grammar_category",
+      "type": null,
+      "premium": false,
+      "content": {
+        "name": "str_20190904_63",
+        "description": "str_20191021_29",
+        "icon_pdf": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_numbers.pdf",
+        "icon_dark_pdf": null,
+        "icon_svg": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_numbers.svg",
+        "icon_dark_svg": null
+      },
+      "structure": [
+        "grammar_topic_es_10_1",
+        "grammar_topic_es_10_2",
+        "grammar_topic_es_10_3",
+        "grammar_topic_es_10_4"
+      ],
+      "grammar_topics": [
+        {
+          "id": "grammar_topic_es_10_1",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20191021_30",
+            "description": "str_20191021_32",
+            "level": "a1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_10_2",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20191022_84",
+            "description": "str_20191022_85",
+            "level": "a1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_10_3",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20191023_23",
+            "description": "str_20191023_25",
+            "level": "a1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_10_4",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20210816_2",
+            "description": "str_20210816_3",
+            "level": "a2"
+          },
+          "access_tier": "standard"
+        }
+      ]
+    },
+    {
+      "id": "grammar_category_es_11",
+      "class": "grammar_category",
+      "type": null,
+      "premium": false,
+      "content": {
+        "name": "str_20191004_78",
+        "description": "str_20191022_199",
+        "icon_pdf": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_adverbs.pdf",
+        "icon_dark_pdf": null,
+        "icon_svg": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_adverbs.svg",
+        "icon_dark_svg": null
+      },
+      "structure": [
+        "grammar_topic_es_11_1",
+        "grammar_topic_8e131511-dd83-430e-86a9-2e955961ae34",
+        "grammar_topic_12b6581f-0dde-403b-96b8-28f4f6a9039b",
+        "grammar_topic_ee8ad339-a284-4d8a-b53a-4ba9ff0f2719"
+      ],
+      "grammar_topics": [
+        {
+          "id": "grammar_topic_es_11_1",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_5a366181-a15d-4220-a8bc-0558a5a18c30",
+            "description": "str_20191022_203",
+            "level": "a1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_8e131511-dd83-430e-86a9-2e955961ae34",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_6cc3e6dc-2ec8-4447-860b-98ddda378962",
+            "description": "str_2f3e6389-be94-400b-ac14-8c8f5616f538",
+            "level": "c1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_12b6581f-0dde-403b-96b8-28f4f6a9039b",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_af38778e-b9de-44b8-9cd2-67b1ed7be7a7",
+            "description": "str_52ff1668-fb51-4616-92fa-b2d7ef1a02ee",
+            "level": "b2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_ee8ad339-a284-4d8a-b53a-4ba9ff0f2719",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_2a9a7980-c977-40a9-8d25-c42dffa4df9a",
+            "description": "str_b5126ce2-684b-4147-b291-253fd81f2064",
+            "level": "a2"
+          },
+          "access_tier": "standard"
+        }
+      ]
+    },
+    {
+      "id": "grammar_category_es_12",
+      "class": "grammar_category",
+      "type": null,
+      "premium": false,
+      "content": {
+        "name": "str_20191001_44",
+        "description": "str_20191010_277",
+        "icon_pdf": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_sentence.pdf",
+        "icon_dark_pdf": null,
+        "icon_svg": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_sentence.svg",
+        "icon_dark_svg": null
+      },
+      "structure": [
+        "grammar_topic_es_12_1",
+        "grammar_topic_es_12_2",
+        "grammar_topic_4d050dd7-3f41-4285-9c8d-1f9b79eb3428",
+        "grammar_topic_es_12_3",
+        "grammar_topic_c9cffae9-c7ab-4ba3-9058-250773d1a9ec",
+        "grammar_topic_4c55f9fc-961d-40ba-bfc5-dbc9c18228ae",
+        "grammar_topic_1dfe3c09-ba97-4b0e-b2d0-4a8cc5b4ea65",
+        "grammar_topic_b0a9d0a2-4af6-43d4-b5c4-beb0d464e196",
+        "grammar_topic_14d0a8ba-72f3-4648-a138-e194e9fbc956",
+        "grammar_topic_6f05bf05-10f0-4f71-a036-fedf12a1c861",
+        "grammar_topic_09201779-a076-4eb3-a0d6-4ec59bc5dcc4",
+        "grammar_topic_beeed699-7cc1-410b-8dfd-80c76231ee86",
+        "grammar_topic_7cc07aeb-67d7-4ad7-86f8-29b3ec8c32ec",
+        "grammar_topic_0efa0c71-5798-4ac1-a058-2f0f3e29e6d8",
+        "grammar_topic_cec7683c-85e9-46d6-9208-8339906253a6",
+        "grammar_topic_b3443f44-c9ec-4897-9b00-79a4fadd349f",
+        "grammar_topic_1f56da42-76c6-4354-a926-ddac04447f9b",
+        "grammar_topic_b83208dd-1b9a-4f9d-8e51-4323f90a0f85",
+        "grammar_topic_33c1587a-2a8a-47d1-bc83-49a909bb13fa",
+        "grammar_topic_3041ca86-7c2a-4129-8f16-91d17ccce097",
+        "grammar_topic_988203da-4882-42d5-9f43-444fb3c14985",
+        "grammar_topic_8f3e791c-11fc-4f86-9596-d60e79d190b6",
+        "grammar_topic_b09bbf1e-37ee-468a-8f88-9f034c67eac9",
+        "grammar_topic_f0bf4ca6-1993-4559-a0fa-4302f3dcf3bf"
+      ],
+      "grammar_topics": [
+        {
+          "id": "grammar_topic_es_12_1",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20191115_83",
+            "description": "str_20191210_10",
+            "level": "a1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_12_2",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20210813_1",
+            "description": "str_20210813_2",
+            "level": "a2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_4d050dd7-3f41-4285-9c8d-1f9b79eb3428",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_29ca7b51-f955-4bae-ac77-761aa5399d6e",
+            "description": "str_7096e3dc-6fda-45d0-afc4-290621120c3b",
+            "level": "b1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_12_3",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20210913_78",
+            "description": "str_20210913_79",
+            "level": "b1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_c9cffae9-c7ab-4ba3-9058-250773d1a9ec",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_42b8c5cf-2680-4844-a420-559870b63933",
+            "description": "str_699f6543-5fae-48c0-8f19-169d9a72c04b",
+            "level": "c1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_4c55f9fc-961d-40ba-bfc5-dbc9c18228ae",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_504da715-38fa-4ea7-8079-68bd8b39da79",
+            "description": "str_19889231-45c2-4316-912b-d972a55a1724",
+            "level": "c1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_1dfe3c09-ba97-4b0e-b2d0-4a8cc5b4ea65",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_50c80a24-2484-42ea-9acb-0fb569254f3c",
+            "description": "str_43cff90b-645f-4751-939d-4b247dcd523e",
+            "level": "c1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_b0a9d0a2-4af6-43d4-b5c4-beb0d464e196",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_313b33ee-f87e-46af-b479-58e2545fd51e",
+            "description": "str_ab5059cd-a291-4ad7-b0a1-a9d480eb5c02",
+            "level": "c1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_14d0a8ba-72f3-4648-a138-e194e9fbc956",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_751ba530-db21-49ef-af1d-8ff7796ef6a3",
+            "description": "str_ac1ed3e2-9acd-4bfb-aaa0-6aa006948b7d",
+            "level": "c1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_6f05bf05-10f0-4f71-a036-fedf12a1c861",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_2bb11e21-c048-4ff9-a3b9-90ff9df4d491",
+            "description": "str_223d8cc0-7e87-4ae3-a850-abfbae355b28",
+            "level": "c1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_09201779-a076-4eb3-a0d6-4ec59bc5dcc4",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_24ea157d-9750-4846-8368-fe5052f0cd67",
+            "description": "str_7d888d1f-77a1-4fe1-bc45-3530a9d7f33f",
+            "level": "c1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_beeed699-7cc1-410b-8dfd-80c76231ee86",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_91397543-c5b5-4041-bca9-42014e441253",
+            "description": "str_36258206-a804-4eb0-96b3-a96d4add07db",
+            "level": "c1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_7cc07aeb-67d7-4ad7-86f8-29b3ec8c32ec",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_3ac05f9d-3495-4c67-a70a-cb02ff97b258",
+            "description": "str_330b3a16-105c-4ee7-953d-dab02d95ce6d",
+            "level": "c1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_0efa0c71-5798-4ac1-a058-2f0f3e29e6d8",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_b0a22455-1603-4d50-adf9-ed457ba89b66",
+            "description": "str_eebd45b0-d011-4a3e-9248-f2944102106a",
+            "level": "b2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_cec7683c-85e9-46d6-9208-8339906253a6",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_a38cffb8-cbc4-4124-8951-a248fff8c170",
+            "description": "str_7df92bb6-4ecf-42a7-92df-79ff94b68d17",
+            "level": "b2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_b3443f44-c9ec-4897-9b00-79a4fadd349f",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_50fbbe6e-0663-4793-8614-6ff974faf2f3",
+            "description": "str_7f0b7c51-b7a7-467f-8df6-fd6713edbf13",
+            "level": "b2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_1f56da42-76c6-4354-a926-ddac04447f9b",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_d035c6ed-d9e2-4256-9175-f3be38dbc686",
+            "description": "str_8a79ffe2-5c86-4d52-b736-9ec7f6397e5c",
+            "level": "b2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_b83208dd-1b9a-4f9d-8e51-4323f90a0f85",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_66fc237b-949c-4422-a1a2-2a53e3de9e63",
+            "description": "str_0ae7239a-336c-4db7-aa16-3027e626e601",
+            "level": "b2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_33c1587a-2a8a-47d1-bc83-49a909bb13fa",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_12258223-b29c-4e81-a4ab-194a46b1bedd",
+            "description": "str_f500fb97-8f80-41da-8051-fe2f2c337284",
+            "level": "b2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_3041ca86-7c2a-4129-8f16-91d17ccce097",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_28bc2bc5-d39d-439b-b719-4598f78b27d3",
+            "description": "str_f04e6803-9b02-4959-a9af-027064336784",
+            "level": "b2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_988203da-4882-42d5-9f43-444fb3c14985",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_b68a7a1a-9d9f-46ca-865e-d5613c59a307",
+            "description": "str_c29a4513-0166-403a-b804-38333268d160",
+            "level": "b2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_8f3e791c-11fc-4f86-9596-d60e79d190b6",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_83da739a-f6a2-4c06-87a0-b57fcc77d794",
+            "description": "str_09c650de-61d5-4387-8d47-67d64cf1a5a6",
+            "level": "b2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_b09bbf1e-37ee-468a-8f88-9f034c67eac9",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_356a97c3-d653-4655-9e71-251a7e3a9425",
+            "description": "str_30619a18-24d0-4440-b47f-13a3fa15f5fb",
+            "level": "b2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_f0bf4ca6-1993-4559-a0fa-4302f3dcf3bf",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_743c2045-3b32-4899-afbc-b3cc558f8ef2",
+            "description": "str_2b18897a-5b52-4180-9841-cfa3405bf5e8",
+            "level": "b2"
+          },
+          "access_tier": "standard"
+        }
+      ]
+    },
+    {
+      "id": "grammar_category_es_13",
+      "class": "grammar_category",
+      "type": null,
+      "premium": false,
+      "content": {
+        "name": "str_20191002_40",
+        "description": "str_20200506_448",
+        "icon_pdf": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_verb_past.pdf",
+        "icon_dark_pdf": null,
+        "icon_svg": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_verb_past.svg",
+        "icon_dark_svg": null
+      },
+      "structure": [
+        "grammar_topic_a08e03b9-6a75-4930-91f7-3abc8792265e",
+        "grammar_topic_38f1dc2e-bfcf-448d-8cdc-7048fec25ad8",
+        "grammar_topic_es_13_1",
+        "grammar_topic_es_13_2",
+        "grammar_topic_es_13_5",
+        "grammar_topic_es_13_6_a",
+        "grammar_topic_es_13_7",
+        "grammar_topic_es_13_8",
+        "grammar_topic_es_13_9",
+        "grammar_topic_es_13_10",
+        "grammar_topic_es_13_11",
+        "grammar_topic_es_13_12",
+        "grammar_topic_ef9428fe-fa5a-4d8c-92be-0fa26b7f359b",
+        "grammar_topic_f4eba33b-3490-432d-a1c1-67c23720a7cd",
+        "grammar_topic_aeb26d1b-d57f-4ddd-9a7a-3a183ab9844b",
+        "grammar_topic_195b7eec-81b1-4147-9cb0-4f7370e9826e",
+        "grammar_topic_90059470-5b3c-4bef-a20e-c331dd07681e"
+      ],
+      "grammar_topics": [
+        {
+          "id": "grammar_topic_a08e03b9-6a75-4930-91f7-3abc8792265e",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_e2b8b8b4-bec0-4497-92f2-3b70312b8625",
+            "description": "str_20200616_131",
+            "level": "a2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_38f1dc2e-bfcf-448d-8cdc-7048fec25ad8",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_b6ef28fd-ff67-4762-9402-01350ad014ce",
+            "description": "str_20200706_182",
+            "level": "a2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_13_1",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20200506_457",
+            "description": "str_d559710b-5018-474d-abc2-03ea3e0ab28b",
+            "level": "a2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_13_2",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_4564ef43-85b8-4b6c-9e16-cf76567bd5ed",
+            "description": "str_20200511_10",
+            "level": "a2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_13_5",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20201101_1",
+            "description": "str_20201101_2",
+            "level": "a2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_13_6_a",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20210726_118",
+            "description": "str_20210712_295",
+            "level": "a2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_13_7",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20210714_53",
+            "description": "str_20210714_54",
+            "level": "a2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_13_8",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20210803_55",
+            "description": "str_20210719_58",
+            "level": "a2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_13_9",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20210825_35",
+            "description": "str_20210729_176",
+            "level": "a2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_13_10",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20210824_107",
+            "description": "str_20210824_105",
+            "level": "a2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_13_11",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20211125_74",
+            "description": "str_20210803_2",
+            "level": "a2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_13_12",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20210812_3",
+            "description": "str_20210812_2",
+            "level": "a2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_ef9428fe-fa5a-4d8c-92be-0fa26b7f359b",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20210830_82",
+            "description": "str_20210830_83",
+            "level": "b1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_f4eba33b-3490-432d-a1c1-67c23720a7cd",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_1ef60f15-1754-4d6f-93c3-990e5866e683",
+            "description": "str_e99191f0-8d6b-4b12-9417-e576257476e3",
+            "level": "b1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_aeb26d1b-d57f-4ddd-9a7a-3a183ab9844b",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_70cea540-e2f3-46c4-b04c-a85fad2f2c7f",
+            "description": "str_73def9d0-c83f-4919-9f3c-bd047d9c46ed",
+            "level": "b2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_195b7eec-81b1-4147-9cb0-4f7370e9826e",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_100d231f-cbb5-4f14-9332-38b21f950575",
+            "description": "str_b49ebf4e-c7a3-4dde-a3cd-ea260277c719",
+            "level": "b2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_90059470-5b3c-4bef-a20e-c331dd07681e",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_bab2a11a-5d9c-4df2-ab11-6f41cdab1189",
+            "description": "str_78f88703-33b0-4faa-800d-da2cb6a61a34",
+            "level": "a2"
+          },
+          "access_tier": "standard"
+        }
+      ]
+    },
+    {
+      "id": "grammar_category_es_14",
+      "class": "grammar_category",
+      "type": null,
+      "premium": false,
+      "content": {
+        "name": "str_20200623_1",
+        "description": "str_20200623_2",
+        "icon_pdf": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_verb_future.pdf",
+        "icon_dark_pdf": null,
+        "icon_svg": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_verb_future.svg",
+        "icon_dark_svg": null
+      },
+      "structure": [
+        "grammar_topic_es_14_1",
+        "grammar_topic_es_14_2",
+        "grammar_topic_es_14_3",
+        "grammar_topic_0a4c3958-d94e-479d-a9fa-11abfee581d8",
+        "grammar_topic_3985a744-8e92-4ab5-b6ad-7226c886dde4"
+      ],
+      "grammar_topics": [
+        {
+          "id": "grammar_topic_es_14_1",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20200623_3",
+            "description": "str_20201112_82",
+            "level": "a2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_14_2",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20210702_1",
+            "description": "str_20210705_65",
+            "level": "a2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_14_3",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20210723_80",
+            "description": "str_20210706_67",
+            "level": "a2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_0a4c3958-d94e-479d-a9fa-11abfee581d8",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_74f71d3c-b7f5-47f1-86f8-c7669f955c22",
+            "description": "str_8c63e0d3-0ac8-4926-9eb5-11188083b635",
+            "level": "b2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_3985a744-8e92-4ab5-b6ad-7226c886dde4",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_cb2b472a-3fa6-4195-8186-a6429d218425",
+            "description": "str_01c005d7-c365-4edc-82f7-ba3a44151231",
+            "level": "a2"
+          },
+          "access_tier": "standard"
+        }
+      ]
+    },
+    {
+      "id": "grammar_category_es_15",
+      "class": "grammar_category",
+      "type": null,
+      "premium": false,
+      "content": {
+        "name": "str_20210713_93",
+        "description": "str_20210726_186",
+        "icon_pdf": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_verb_imperativo.pdf",
+        "icon_dark_pdf": null,
+        "icon_svg": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_verb_imperativo.svg",
+        "icon_dark_svg": null
+      },
+      "structure": [
+        "grammar_topic_es_15_1",
+        "grammar_topic_es_15_2",
+        "grammar_topic_706f660e-4132-43a4-a0fc-251a87324e7a",
+        "grammar_topic_7b78d407-2f0f-49b0-b67a-aa1624446565"
+      ],
+      "grammar_topics": [
+        {
+          "id": "grammar_topic_es_15_1",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20210810_1",
+            "description": "str_20210713_96",
+            "level": "a2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_15_2",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20210809_38",
+            "description": "str_20210809_39",
+            "level": "a2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_706f660e-4132-43a4-a0fc-251a87324e7a",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_d37e5f44-6ec9-4b2f-842f-9761053190c6",
+            "description": "str_61efb3ca-91e1-46af-999e-7299cbfb9e00",
+            "level": "b2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_7b78d407-2f0f-49b0-b67a-aa1624446565",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_5fbca67c-c522-4d0b-b7db-12f22a9551ac",
+            "description": "str_ad27c4b7-b167-4623-bcbc-484c18e5ec46",
+            "level": "b2"
+          },
+          "access_tier": "standard"
+        }
+      ]
+    },
+    {
+      "id": "grammar_category_es_16",
+      "class": "grammar_category",
+      "type": null,
+      "premium": false,
+      "content": {
+        "name": "str_20210726_124",
+        "description": "str_20210726_171",
+        "icon_pdf": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_connectors.pdf",
+        "icon_dark_pdf": null,
+        "icon_svg": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_connectors.svg",
+        "icon_dark_svg": null
+      },
+      "structure": [
+        "grammar_topic_b5dd9329-0031-471a-b814-080000528636",
+        "grammar_topic_69fac6dd-cdbd-4feb-ae94-f778eb06ede7",
+        "grammar_topic_a546680c-a137-4359-9735-6b17310230bf"
+      ],
+      "grammar_topics": [
+        {
+          "id": "grammar_topic_b5dd9329-0031-471a-b814-080000528636",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_94bc495d-e36c-4f81-b1e2-0b119cce263b",
+            "description": "str_9037b13e-c31f-4adb-8909-b8bc1260748a",
+            "level": "b1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_69fac6dd-cdbd-4feb-ae94-f778eb06ede7",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_76c65aca-d490-4277-bb61-493b8f3dbddc",
+            "description": "str_500b4475-021d-46db-a6f5-bda60fdd614e",
+            "level": "c1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_a546680c-a137-4359-9735-6b17310230bf",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_42d6c080-216c-447b-84e5-e00518916465",
+            "description": "str_e171058a-b253-42ac-9cd2-62d5de597dcb",
+            "level": "b2"
+          },
+          "access_tier": "standard"
+        }
+      ]
+    },
+    {
+      "id": "grammar_category_es_17",
+      "class": "grammar_category",
+      "type": null,
+      "premium": false,
+      "content": {
+        "name": "str_20210728_88",
+        "description": "str_45198261-46d3-47fd-9834-45da399ccecc",
+        "icon_pdf": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_verb_conditional.pdf",
+        "icon_dark_pdf": null,
+        "icon_svg": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_verb_conditional.svg",
+        "icon_dark_svg": null
+      },
+      "structure": [
+        "grammar_topic_e6705e48-7f2c-4805-a32a-b58eab38e2c0",
+        "grammar_topic_c9581a01-18e1-4cca-8362-d0c51eaf9703",
+        "grammar_topic_79ce81aa-eaec-4f39-8dbd-068be07668f8",
+        "grammar_topic_98c531a3-43f8-4215-a0d5-c33789a1835f",
+        "grammar_topic_b1d5240a-14c9-49cf-9627-7d0288ada75a"
+      ],
+      "grammar_topics": [
+        {
+          "id": "grammar_topic_e6705e48-7f2c-4805-a32a-b58eab38e2c0",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_12ff0c4c-2779-4197-8798-ee310076b87e",
+            "description": "str_8f5500bb-d91d-4cc4-ba28-44fb1475ff39",
+            "level": "b1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_c9581a01-18e1-4cca-8362-d0c51eaf9703",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_ae846293-886d-41d3-a556-899939fb637b",
+            "description": "str_7917f26d-bf71-46a1-9c9a-792142ba1060",
+            "level": "b1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_79ce81aa-eaec-4f39-8dbd-068be07668f8",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_87ad5ba6-4456-4af0-8150-3c102db5acfd",
+            "description": "str_106d11c4-cec2-4c4a-9c69-c240983256e4",
+            "level": "b1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_98c531a3-43f8-4215-a0d5-c33789a1835f",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_dd2481b3-35f3-45d8-b89e-d93d2b1dc0c6",
+            "description": "str_ed020d47-75a3-4bdd-aa9d-7fdf5a9baa50",
+            "level": "c1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_b1d5240a-14c9-49cf-9627-7d0288ada75a",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_c8fd1763-3381-4ca4-8c45-cffaec57bfbe",
+            "description": "str_3ce96ab8-41a8-4761-8df2-5538fa681f88",
+            "level": "c1"
+          },
+          "access_tier": "standard"
+        }
+      ]
+    },
+    {
+      "id": "grammar_category_es_18",
+      "class": "grammar_category",
+      "type": null,
+      "premium": false,
+      "content": {
+        "name": "str_20210920_2",
+        "description": "str_20210726_181",
+        "icon_pdf": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_verb_subjunctive.pdf",
+        "icon_dark_pdf": null,
+        "icon_svg": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_verb_subjunctive.svg",
+        "icon_dark_svg": null
+      },
+      "structure": [
+        "grammar_topic_es_18_1",
+        "grammar_topic_es_18_2",
+        "grammar_topic_c0b44ab7-cef5-48fb-84d1-18b079c184bb",
+        "grammar_topic_b4e70e77-5ef3-42d6-b591-e9e962eb0a38",
+        "grammar_topic_783173df-1a23-4f3a-8b27-ba1a36390671",
+        "grammar_topic_3a89616c-3930-4365-b839-758dc4a1598f",
+        "grammar_topic_e8af8cbb-1d48-4f39-9f9e-38bfac5fffe6",
+        "grammar_topic_c10dfc28-f908-4229-8233-ce5d40d2137e",
+        "grammar_topic_64cb4e56-0731-4c83-ade0-9ac8978dc032"
+      ],
+      "grammar_topics": [
+        {
+          "id": "grammar_topic_es_18_1",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_20210831_26",
+            "description": "str_20210831_27",
+            "level": "b1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_es_18_2",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_c327ccb5-de9a-4973-9388-1f48ba6f68c9",
+            "description": "str_20210907_104",
+            "level": "b1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_c0b44ab7-cef5-48fb-84d1-18b079c184bb",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_c67bd1a4-3557-466f-9aca-bdd4eb5afae0",
+            "description": "str_381d9c9e-f339-42e7-80dc-9b29ed3f1f18",
+            "level": "b2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_b4e70e77-5ef3-42d6-b591-e9e962eb0a38",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_28783eaa-5122-494b-a110-d6d1d4288fc3",
+            "description": "str_63d938a3-6ff6-42b1-8078-8e593c869bdb",
+            "level": "c1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_783173df-1a23-4f3a-8b27-ba1a36390671",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_b7080f53-483b-4d30-8c71-8e26d80eb3f9",
+            "description": "str_afc85008-4655-4786-9786-fe81a07fafbd",
+            "level": "b2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_3a89616c-3930-4365-b839-758dc4a1598f",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_3d210547-81ea-4f95-82f0-18a090518eca",
+            "description": "str_0d5ee63c-84de-473e-b03f-db13c9f4ca1d",
+            "level": "b2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_e8af8cbb-1d48-4f39-9f9e-38bfac5fffe6",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_510b858d-0d5f-4e3f-a4a0-85db42046969",
+            "description": "str_27337c99-76aa-4575-8ba7-bbdc8c2cf219",
+            "level": "b2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_c10dfc28-f908-4229-8233-ce5d40d2137e",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_02ce7667-3f20-409b-85a0-f9cd343c325a",
+            "description": "str_9eeb11ac-cee9-4bdf-9c6c-db1d0750fbfa",
+            "level": "b1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_64cb4e56-0731-4c83-ade0-9ac8978dc032",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_0cbb03ba-d666-4f8b-a0e1-e6bc4cee79f4",
+            "description": "str_1f5dde8b-c9d3-40a5-bee4-ab1b0bafd275",
+            "level": "b2"
+          },
+          "access_tier": "standard"
+        }
+      ]
+    },
+    {
+      "id": "grammar_category_d2e53328-edb1-4211-a251-5b56490ed08e",
+      "class": "grammar_category",
+      "type": null,
+      "premium": false,
+      "content": {
+        "name": "str_20210818_47",
+        "description": "str_a7623b7f-dfc4-4f43-bd69-9607c3b9f116",
+        "icon_pdf": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_verb_continuous.pdf",
+        "icon_dark_pdf": null,
+        "icon_svg": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_verb_continuous.svg",
+        "icon_dark_svg": null
+      },
+      "structure": [
+        "grammar_topic_b63e5607-f44c-473b-935c-53e23863462b",
+        "grammar_topic_677def09-8b8d-4193-941b-3adfbd977496"
+      ],
+      "grammar_topics": [
+        {
+          "id": "grammar_topic_b63e5607-f44c-473b-935c-53e23863462b",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_5000ed21-ffce-4dc9-9c92-7fd961b01446",
+            "description": "str_f1b4f99b-a9cc-4150-bb31-939e4e1bab14",
+            "level": "c1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_677def09-8b8d-4193-941b-3adfbd977496",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_57230cd8-5f42-431d-8b5c-ab1cff4fdd89",
+            "description": "str_52f4a05a-6630-4dbf-958f-83ac32e88b95",
+            "level": "b2"
+          },
+          "access_tier": "standard"
+        }
+      ]
+    },
+    {
+      "id": "grammar_category_7feed778-260c-4a2c-add6-fe08259a1ae2",
+      "class": "grammar_category",
+      "type": null,
+      "premium": false,
+      "content": {
+        "name": "str_20210726_125",
+        "description": "str_db397eb8-3a10-4503-91c8-d43743cae786",
+        "icon_pdf": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_referencing.pdf",
+        "icon_dark_pdf": null,
+        "icon_svg": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_referencing.svg",
+        "icon_dark_svg": null
+      },
+      "structure": [
+        "grammar_topic_8a96a612-451d-4f77-a02d-a5ffd1de33bf",
+        "grammar_topic_3a7bfef4-2e16-4bf5-8853-482c272be75b",
+        "grammar_topic_c3aa863d-c81f-4f68-991f-d05feb17159a"
+      ],
+      "grammar_topics": [
+        {
+          "id": "grammar_topic_8a96a612-451d-4f77-a02d-a5ffd1de33bf",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_e4a6ed57-462a-4b8c-9d77-72d7ca10ff9e",
+            "description": "str_e6495425-b0af-42cd-8228-268f01154a9f",
+            "level": "c1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_3a7bfef4-2e16-4bf5-8853-482c272be75b",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_26f9154c-04fd-47ac-b6d2-b72cd7d0c5b7",
+            "description": "str_1d581d73-37dd-46d7-af8a-6e50f515a19d",
+            "level": "b2"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_c3aa863d-c81f-4f68-991f-d05feb17159a",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_d968802f-052e-49f8-8dc8-1dc380fe420b",
+            "description": "str_a7d3dba2-8c62-4192-8f82-7c121fe98e49",
+            "level": "c1"
+          },
+          "access_tier": "standard"
+        }
+      ]
+    },
+    {
+      "id": "grammar_category_dd244df4-ff48-41da-94a6-2c249459e913",
+      "class": "grammar_category",
+      "type": null,
+      "premium": false,
+      "content": {
+        "name": "str_20191010_184",
+        "description": "str_c02f8178-e97b-4073-afba-2dc33744cac4",
+        "icon_pdf": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_verb_patterns.pdf",
+        "icon_dark_pdf": null,
+        "icon_svg": "https:\/\/cdn.busuu.com\/files\/icons\/grammar\/ic_verb_patterns.svg",
+        "icon_dark_svg": null
+      },
+      "structure": [
+        "grammar_topic_d0cfe612-94fa-4215-89d0-44bbd15c58dc",
+        "grammar_topic_e0bf3374-8b9b-45c8-ae5b-51631c722c4c",
+        "grammar_topic_39efd909-0a54-42fc-aaf3-79797fd19268"
+      ],
+      "grammar_topics": [
+        {
+          "id": "grammar_topic_d0cfe612-94fa-4215-89d0-44bbd15c58dc",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_50779f85-1dfe-4fc0-a197-ebe3f89bde8b",
+            "description": "str_9c95aca5-cb7e-4c65-9568-de6231bf1b36",
+            "level": "c1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_e0bf3374-8b9b-45c8-ae5b-51631c722c4c",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_4fafe6a1-45e0-49a0-ba6f-09c9a905d6fe",
+            "description": "str_c24c65cf-07a1-4cd5-a00c-e2acfb10b29c",
+            "level": "c1"
+          },
+          "access_tier": "standard"
+        },
+        {
+          "id": "grammar_topic_39efd909-0a54-42fc-aaf3-79797fd19268",
+          "class": "grammar_topic",
+          "type": null,
+          "premium": true,
+          "content": {
+            "name": "str_30d44517-e785-4324-8e91-fd3570b891a8",
+            "description": "str_beaa9a5d-a1c1-4b0a-aa42-917633bb8823",
+            "level": "a2"
+          },
+          "access_tier": "standard"
+        }
+      ]
+    }
+  ],
+  "translation_map": {
+    "str_20190913_131": {
+      "de": { "value": "Pronomen" },
+      "en": { "value": "Pronouns" }
+    },
+    "str_20190611_d04_1": {
+      "de": {
+        "value": "W\u00f6rter wie yo, t\u00fa, usted, lo, le, m\u00edo, tuyo usw."
+      },
+      "en": {
+        "value": "Words like yo, t\u00fa, usted, lo, le, m\u00edo, tuyo, etc."
+      }
+    },
+    "str_625d1f89-c5c3-4156-8a19-4cc3ad49a118": {
+      "de": { "value": "Pronomen mit \u201eestar\u201c und der Verlaufsform" },
+      "en": { "value": "Pronouns with \u0022estar\u0022 + gerund" }
+    },
+    "str_c006dd6e-01e4-41e2-b6d5-d13febe9c31a": {
+      "de": { "value": "lo estoy buscando, se est\u00e1 duchando..." },
+      "en": { "value": "lo estoy buscando, se est\u00e1 duchando..." }
+    },
+    "str__9ca5d4d12d5bdc95b6883f1f5950a45e": {
+      "de": { "value": "Possessivpronomen" },
+      "en": { "value": "Possessive pronouns" }
+    },
+    "str_20190614_d04_382": {
+      "de": { "value": "el m\u00edo, la tuya, el nuestro..." },
+      "en": { "value": "el m\u00edo, la tuya, el nuestro..." }
+    },
+    "str_b2da65c0-5822-4341-a7cd-8c248419af79": {
+      "de": { "value": "Demonstrativbegleiter" },
+      "en": { "value": "Demonstrative adjectives" }
+    },
+    "str_20190614_d04_504": {
+      "de": { "value": "este, ese, aquel..." },
+      "en": { "value": "este, ese, aquel..." }
+    },
+    "str_abe995bf-1aaf-4d53-8a2f-c5727527d3eb": {
+      "de": {
+        "value": "Zwischen \u201et\u00fa\u201c und \u201eusted\u201c unterscheiden"
+      },
+      "en": {
+        "value": "Choosing between \u0022t\u00fa\u0022 and \u0022usted\u0022"
+      }
+    },
+    "str_20200428_369": {
+      "de": { "value": "Anreden in verschiedenen Situationen" },
+      "en": { "value": "How to address people in different contexts" }
+    },
+    "str_264ceefc-307f-45c3-9a88-497180724554": {
+      "de": { "value": "Direkte Objektpronomen" },
+      "en": { "value": "Direct object pronouns" }
+    },
+    "str_20210726_2": {
+      "de": { "value": "la, lo, los, las..." },
+      "en": { "value": "la, lo, los, las..." }
+    },
+    "str_20210728_1": {
+      "de": { "value": "Indirekte Objektpronomen" },
+      "en": { "value": "Indirect object pronouns" }
+    },
+    "str_20210728_2": {
+      "de": { "value": "me, te, le, se..." },
+      "en": { "value": "me, te, le, se..." }
+    },
+    "str_61470279-1af1-44e6-8d6e-baa9db8077df": {
+      "de": { "value": "Auf weit entfernte Dinge verweisen" },
+      "en": { "value": "Referring to things far away" }
+    },
+    "str_7b62b8e8-6439-4ecf-ae8d-43bdb217f3a9": {
+      "de": {
+        "value": "esa chica, esos bolsos, aquellas gafas...",
+        "alternative_values": []
+      },
+      "en": { "value": "esa chica, esos bolsos, aquellas gafas..." }
+    },
+    "str_20191003_157": {
+      "de": { "value": "Adjektive" },
+      "en": { "value": "Adjectives" }
+    },
+    "str_20190612_d04_44": {
+      "de": {
+        "value": "Beschreibende W\u00f6rter, darunter maskuline und feminine Adjektive, Komparativformen usw."
+      },
+      "en": {
+        "value": "Descriptive words including masculine and feminine adjectives, comparatives, etc."
+      }
+    },
+    "str_2d8db157-9151-48c5-9920-827d466d2828": {
+      "de": { "value": "\u201eMi\u201c, \u201etu\u201c und \u201esu\u201c" },
+      "en": { "value": "\u0022Mi\u0022, \u0022tu\u0022 and \u0022su\u0022" }
+    },
+    "str_462a0cac-00d6-4899-9687-726a80800708": {
+      "de": { "value": "mi casa, tu coche, su m\u00f3vil..." },
+      "en": { "value": "mi casa, tu coche, su m\u00f3vil..." }
+    },
+    "str_450ca3db-be23-4c41-bbf5-538829563afa": {
+      "de": { "value": "\u201eMis\u201c, \u201etus\u201c und \u201esus\u201c" },
+      "en": { "value": "\u0022Mis\u0022, \u0022tus\u0022 and \u0022sus\u0022" }
+    },
+    "str_987f62cc-5755-4ab7-812f-90c40c1283c9": {
+      "de": { "value": "mis padres, tus abuelos, sus hijos..." },
+      "en": { "value": "mis padres, tus abuelos, sus hijos..." }
+    },
+    "str_2799b2bc-2b23-46a6-b6a3-9fc73c824703": {
+      "de": { "value": "Substantivierung von Adjektiven" },
+      "en": { "value": "Nominalisation of adjectives" }
+    },
+    "str_521b7acf-6da4-4509-9e53-b9e6d09b076c": {
+      "de": { "value": "lo bueno, lo f\u00e1cil..." },
+      "en": { "value": "lo bueno, lo f\u00e1cil..." }
+    },
+    "str_05cb5c3a-56f7-40c7-84a8-566009d55a87": {
+      "de": { "value": "Vergleichsformen" },
+      "en": { "value": "Comparatives" }
+    },
+    "str_20210708_131": {
+      "de": { "value": "m\u00e1s alto que, menos interesante, mejor, peor..." },
+      "en": { "value": "m\u00e1s alto que, menos interesante, mejor, peor..." }
+    },
+    "str_20210817_1": {
+      "de": { "value": "der Superlativ" },
+      "en": { "value": "The superlative" }
+    },
+    "str_20210817_2": {
+      "de": {
+        "value": "La m\u00e1s alta, el m\u00e1s r\u00e1pido, las m\u00e1s listas..."
+      },
+      "en": {
+        "value": "La m\u00e1s alta, el m\u00e1s r\u00e1pido, las m\u00e1s listas..."
+      }
+    },
+    "str_20190913_136": {
+      "de": { "value": "Verben: Pr\u00e4sens" },
+      "en": { "value": "Verbs: Present" }
+    },
+    "str_20190612_d04_43": {
+      "de": {
+        "value": "Verwendung und Bildung des Pr\u00e4sens sowie einige n\u00fctzliche Verben im Pr\u00e4sens"
+      },
+      "en": {
+        "value": "Use and form of the present tense and some useful verbs in the present"
+      }
+    },
+    "str_0715f5f0-c60b-4074-be6f-b2e54ed112c3": {
+      "de": { "value": "Das Verb \u201etener\u201c (Singular)" },
+      "en": { "value": "The verb \u0022tener\u0022 (singular)" }
+    },
+    "str_20190612_d04_46": {
+      "de": { "value": "yo tengo, t\u00fa tienes, ella tiene..." },
+      "en": { "value": "yo tengo, t\u00fa tienes, ella tiene..." }
+    },
+    "str_73b1bf9d-918d-4b60-8b3c-51315b39ea9a": {
+      "de": { "value": "Die Pluralformen von \u201etener\u201c kennenlernen" },
+      "en": { "value": "Discovering \u0022tener\u0022 in the plural" }
+    },
+    "str_90e88086-5850-47ea-af47-54fd79c791d1": {
+      "de": {
+        "value": "nosotros tenemos, vosotras ten\u00e9is, ellos tienen..."
+      },
+      "en": {
+        "value": "nosotros tenemos, vosotras ten\u00e9is, ellos tienen..."
+      }
+    },
+    "str_5e4a925a-267b-4ec4-ad1a-5de3e4885889": {
+      "de": { "value": "Das Pr\u00e4sens von \u201e-ar\u201c-Verben" },
+      "en": { "value": "The present tense of -ar verbs" }
+    },
+    "str_e1bce7ec-46fe-4a5e-897f-137c0d4ee43b": {
+      "de": { "value": "yo trabajo, t\u00fa viajas, ella baila" },
+      "en": { "value": "yo trabajo, t\u00fa viajas, ella baila" }
+    },
+    "str_54b7bbae-ed40-40fc-9e2a-59744cf2b2a9": {
+      "de": { "value": "Die Gegenwartsform in der Mehrzahl" },
+      "en": { "value": "The present tense in the plural" }
+    },
+    "str_2b677478-56f1-4fa4-bd66-41ba87ea1fb2": {
+      "de": {
+        "value": "nosotros cantamos, ellas trabajan, vosotros viaj\u00e1is"
+      },
+      "en": {
+        "value": "nosotros cantamos, ellas trabajan, vosotros viaj\u00e1is"
+      }
+    },
+    "str_15e5fe76-7d43-4ab3-9468-559f34e0885f": {
+      "de": {
+        "value": "Das Pr\u00e4sens von \u201e-er\u201c- und \u201e-ir\u201c-Verben"
+      },
+      "en": { "value": "The present tense of -er and -ir verbs" }
+    },
+    "str_189c1d17-d630-49dd-84c3-37dd0f44fb81": {
+      "de": { "value": "yo como, t\u00fa escribes, \u00e9l vive" },
+      "en": { "value": "yo como, t\u00fa escribes, \u00e9l vive" }
+    },
+    "str_8d4a71c4-3017-47ce-8db0-de3f1a7e9c8f": {
+      "de": {
+        "value": "Der Plural von Verben auf \u201e-er\u201c und \u201e-ir\u201c"
+      },
+      "en": { "value": "The plural of -er and -ir verbs" }
+    },
+    "str_e2dec284-1f35-4792-9c4c-946604aeba6a": {
+      "de": {
+        "value": "nosotras comemos, ellos escriben, vosotros le\u00e9is"
+      },
+      "en": { "value": "nosotras comemos, ellos escriben, vosotros le\u00e9is" }
+    },
+    "str_20191024_113": {
+      "de": {
+        "value": "\u0022Presente simple\u0022 \u2014 Unregelm\u00e4\u00dfige Verben"
+      },
+      "en": { "value": "\u0022Presente simple\u0022 \u2014 irregular verbs" }
+    },
+    "str_20191024_115": {
+      "de": { "value": "Verben wie \u201epreferir, querer, volver...\u201c" },
+      "en": { "value": "Verbs such as \u201cpreferir, querer, volver...\u0022" }
+    },
+    "str_20191024_116": {
+      "de": {
+        "value": "\u0022Presente simple\u0022 \u2014 \u0022traer, poner, hacer\u0022"
+      },
+      "en": {
+        "value": "\u0022Presente simple\u0022 \u2014 \u0022traer, poner, hacer\u0022"
+      }
+    },
+    "str_20191024_117": {
+      "de": {
+        "value": "Unregelm\u00e4\u00dfige Verben: \u0022traer, poner, hacer\u0022..."
+      },
+      "en": { "value": "Irregular verbs: \u0022traer, poner, hacer\u0022..." }
+    },
+    "str_20191024_118": {
+      "de": {
+        "value": "\u0022Presente simple\u0022 \u2014 regelm\u00e4\u00dfige Verben"
+      },
+      "en": {
+        "value": "\u0022Presente simple\u0022 regular verbs \u2014 consolidation"
+      }
+    },
+    "str_20191108_114": {
+      "de": { "value": "Wiederholung des Pr\u00e4sens" },
+      "en": { "value": "Review of the present tense of regular verbs" }
+    },
+    "str_20191002_273": {
+      "de": { "value": "Reflexive Verben" },
+      "en": { "value": "Reflexive verbs" }
+    },
+    "str_20191104_228": {
+      "de": { "value": "despertarse, ducharse, aburrirse..." },
+      "en": { "value": "despertarse, ducharse, aburrirse..." }
+    },
+    "str_20191205_6": {
+      "de": { "value": "Saber y conocer (wissen, k\u00f6nnen, kennen)" },
+      "en": { "value": "Saber y conocer (to know)" }
+    },
+    "str_20191211_12": {
+      "de": { "value": "Zwischen \u201esaber\u201c und \u201econocer\u201c" },
+      "en": {
+        "value": "Distinguishing between \u0022saber\u0022 and \u0022conocer\u0022"
+      }
+    },
+    "str_20190612_d04_286": {
+      "de": { "value": "Verben: Ser \/ Estar" },
+      "en": { "value": "Verbs: Ser \/ Estar" }
+    },
+    "str_20190612_d04_300": {
+      "de": {
+        "value": "Verwendung und Unterscheidung von \u201eser\u201c und \u201eestar\u201c"
+      },
+      "en": {
+        "value": "When to use \u201cser\u201d and when to use \u201cestar\u201d"
+      }
+    },
+    "str_93ba69a5-fbfa-47bf-bc35-8f84be0e9f83": {
+      "de": { "value": "Das Verb \u201eser\u201c (Singular)" },
+      "en": { "value": "The verb \u0022ser\u0022 (singular)" }
+    },
+    "str_d689aae5-8933-40d8-b1cd-fa3a284739a9": {
+      "de": { "value": "yo soy, t\u00fa eres, ella es..." },
+      "en": { "value": "yo soy, t\u00fa eres, ella es..." }
+    },
+    "str_1a3d03e9-e9a0-4f4c-8c1a-d2c067bf290b": {
+      "de": { "value": "Die Pluralformen von \u201eser\u201c kennenlernen" },
+      "en": { "value": "Discovering \u0022ser\u0022 in the plural" }
+    },
+    "str_a81846b0-b448-467e-a397-bb20b01a7e6f": {
+      "de": { "value": "nosotros somos, vosotras sois, ellas son..." },
+      "en": { "value": "nosotros somos, vosotras sois, ellas son..." }
+    },
+    "str_d5071ecc-7748-437e-b372-f7f9543f1104": {
+      "de": { "value": "\u201eSer\u201c und \u201eestar\u201c" },
+      "en": { "value": "\u0022Ser\u0022 and \u0022estar\u0022" }
+    },
+    "str_760b91ec-93bf-4549-ae99-f8f727c73634": {
+      "de": { "value": "es rico, est\u00e1 rico" },
+      "en": { "value": "es rico, est\u00e1 rico" }
+    },
+    "str_20190925_81": {
+      "de": { "value": "Das Verb \u201eestar\u201d (Singular)" },
+      "en": { "value": "The verb \u0022estar\u0022 (singular)" }
+    },
+    "str_20200428_125": {
+      "de": {
+        "value": "yo estoy, t\u00fa est\u00e1s, \u00e9l \/ ella est\u00e1"
+      },
+      "en": {
+        "value": "yo estoy, t\u00fa est\u00e1s, \u00e9l \/ ella est\u00e1"
+      }
+    },
+    "str_20190926_26": {
+      "de": { "value": "Das Verb \u201eestar\u201d (Plural)" },
+      "en": { "value": "The verb \u0022estar\u0022 (plural)" }
+    },
+    "str_20200428_126": {
+      "de": {
+        "value": "nosotros estamos, vosotras est\u00e1is, ellos est\u00e1n..."
+      },
+      "en": {
+        "value": "nosotros estamos, vosotras est\u00e1is, ellos est\u00e1n..."
+      }
+    },
+    "str_318eae4a-4cbf-4d08-aa39-68038844f47a": {
+      "de": { "value": "\u201eSer\u201c und \u201eestar\u201c" },
+      "en": { "value": "\u0022Ser\u0022 and \u0022estar\u0022" }
+    },
+    "str_20210909_2": {
+      "de": { "value": "ser\/estar rico, ser\/estar lista..." },
+      "en": { "value": "ser\/estar rico, ser\/estar lista..." }
+    },
+    "str_4067f2ad-f746-4bea-a40b-bbad94343d00": {
+      "de": { "value": "Die Verben \u201eser\u201c und \u201eestar\u201c" },
+      "en": { "value": "The \u0022ser\u0022 and \u0022estar\u0022 verbs" }
+    },
+    "str_3f3b1051-a110-49df-9f6e-642e9b2eb10d": {
+      "de": {
+        "value": "Erfahre etwas \u00fcber die unterschiedliche Verwendung von \u201eser\u201c und \u201eestar\u201c"
+      },
+      "en": {
+        "value": "Learn the different uses of the verbs \u0022ser\u0022 and \u0022estar\u0022"
+      }
+    },
+    "str_594af50e-a617-40ba-a201-88901dc2fb3f": {
+      "de": {
+        "value": "Weitere Adjektive mit \u201eser\u201c und \u201eestar\u201c"
+      },
+      "en": {
+        "value": "More adjectives with \u0022ser\u0022 and \u0022estar\u0022 "
+      }
+    },
+    "str_fd9006d1-b604-41b2-b5c1-0d72bece83f4": {
+      "de": {
+        "value": "ser aburrido, estar nervioso, ser rico...",
+        "alternative_values": []
+      },
+      "en": {
+        "value": "ser aburrido, estar nervioso, ser rico...",
+        "alternative_values": []
+      }
+    },
+    "str_07fa044e-4fdf-48ef-95ca-e9e3e1041e6b": {
+      "de": { "value": "Beschreiben, woher man kommt " },
+      "en": { "value": "Describing where you are from " }
+    },
+    "str_1981f02e-ace5-4847-8966-b6356e7e6775": {
+      "de": { "value": "Lerne zu sagen, aus welchem Land du kommst" },
+      "en": { "value": "Learn to say which country you are from" }
+    },
+    "str_20190614_d04_63": {
+      "de": { "value": "Artikel" },
+      "en": { "value": "Articles" }
+    },
+    "str_20190614_d04_64": {
+      "de": { "value": "W\u00f6rter wie el, la, los, un, una usw." },
+      "en": { "value": "Words like el, la, los, un, una, etc." }
+    },
+    "str_45b5bb6b-d17d-40f1-afd8-236e62ca3a65": {
+      "de": { "value": "Bestimmte Artikel" },
+      "en": { "value": "Definite articles" }
+    },
+    "str_20190614_d04_65": {
+      "de": { "value": "el, la, los, las." },
+      "en": { "value": "el, la, los, las." }
+    },
+    "str__2d3a8283": {
+      "de": { "value": "Unbestimmte Artikel" },
+      "en": { "value": "Indefinite articles" }
+    },
+    "str_20190614_d04_170": {
+      "de": { "value": "un, una, unos, unas." },
+      "en": { "value": "un, una, unos, unas." }
+    },
+    "str_20190910_164": {
+      "de": { "value": "Verben: Funktionale Rolle" },
+      "en": { "value": "Verbs: Functional " }
+    },
+    "str_20190910_165": {
+      "de": {
+        "value": "Verwendung von Zeitformen, um h\u00f6fliche Bitten auszusprechen, Hypothesen zu formulieren usw."
+      },
+      "en": {
+        "value": "Use tenses to do things like make polite requests, form hypotheses, etc."
+      }
+    },
+    "str_d8862885-3eda-4ff2-8d8b-2f950a23a7b8": {
+      "de": { "value": "Vorlieben zum Ausdruck bringen" },
+      "en": { "value": "Expressing likes" }
+    },
+    "str_b7979e30-4901-401d-b365-c52f52cf7446": {
+      "de": { "value": "me gusta, te gusta, le gustan..." },
+      "en": { "value": "me gusta, te gusta, le gustan..." }
+    },
+    "str_53f44778-07f6-4ca1-9e40-eb73c7f3781f": {
+      "de": { "value": "\u201eEstar\u201c mit Verlaufsform" },
+      "en": { "value": "\u0022Estar\u0022 + gerund" }
+    },
+    "str_03ffe0ce-a9e2-476b-bef2-7ec161b55275": {
+      "de": { "value": "estoy trabajando, est\u00e1n comiendo..." },
+      "en": { "value": "estoy trabajando, est\u00e1n comiendo..." }
+    },
+    "str_20190910_167": {
+      "de": { "value": "Hay: Es gibt" },
+      "en": { "value": "Hay: There is \/ there are" }
+    },
+    "str_20190910_168": {
+      "de": { "value": "hay un restaurante, hay dos museos..." },
+      "en": { "value": "hay un restaurante, hay dos museos..." }
+    },
+    "str_20210727_9": {
+      "de": { "value": "Erlaubnis und Verpflichtung" },
+      "en": { "value": "Permission and obligation" }
+    },
+    "str_20210727_10": {
+      "de": {
+        "value": "\u00bfTe importa si...?, \u00bfpuedo...?, tenemos que..."
+      },
+      "en": {
+        "value": "\u00bfTe importa si...?, \u00bfpuedo...?, tenemos que..."
+      }
+    },
+    "str_20210806_51": {
+      "de": { "value": "Verben zum \u00c4u\u00dfern von Meinungen" },
+      "en": { "value": "Verbs to give opinions" }
+    },
+    "str_20210806_52": {
+      "de": { "value": "Me cay\u00f3 mal, nos parecieron geniales..." },
+      "en": { "value": "Me cay\u00f3 mal, nos parecieron geniales..." }
+    },
+    "str_69b922a1-243c-4e41-8746-e2d7bdf3348d": {
+      "de": { "value": "Das Verb \u201esoler\u201c" },
+      "en": { "value": "The verb \u0022soler\u0022" }
+    },
+    "str_1592931c-1465-4e9a-9d79-3986bce140a4": {
+      "de": {
+        "value": "Wiederhole das Reden \u00fcber Gewohnheiten mit dem Verb \u201esoler\u201c"
+      },
+      "en": {
+        "value": "Revise how to talk about habits with the verb \u0022soler\u0022"
+      }
+    },
+    "str_80943805-33d8-47aa-a090-c05ee0d2536c": {
+      "de": {
+        "value": "Der \u201eInfinitivo\u201c und das \u201eGerundio\u201c"
+      },
+      "en": {
+        "value": "The \u0022infinitivo\u0022 and the \u0022gerundio\u0022"
+      }
+    },
+    "str_b9c94d81-3cb3-4764-a3bf-6d828e59c29d": {
+      "de": {
+        "value": "habituarse a + infinitivo, parar de + infinitivo, ir + gerundio..."
+      },
+      "en": {
+        "value": "habituarse a + infinitivo, parar de + infinitivo, ir + gerundio..."
+      }
+    },
+    "str_d72d27d9-8f13-439f-b6c2-657e95196b2f": {
+      "de": { "value": "Vergangene Entscheidungen bereuen" },
+      "en": { "value": "Regretting decisions from the past" }
+    },
+    "str_65becb7b-6053-4d56-9407-f95b9b0dc54e": {
+      "de": {
+        "value": "Nutze eine Konstruktion, um \u00fcber vergangene Dinge zu sprechen, die du bereust"
+      },
+      "en": { "value": "Learn the structure for talking about past regrets" }
+    },
+    "str_a459740d-4dca-4404-a8eb-e54a98a8cd2f": {
+      "de": { "value": "Erkl\u00e4ren, was du tun kannst" },
+      "en": { "value": "Explaining what you can do" }
+    },
+    "str_06533453-9e41-4ea9-91a1-f50253f34fe0": {
+      "de": { "value": "se te da bien, soy una negada, nos cuestan..." },
+      "en": { "value": "se te da bien, soy una negada, nos cuestan..." }
+    },
+    "str_b6e9e194-1052-4873-ac55-cee220584b0a": {
+      "de": { "value": "Vorschl\u00e4ge und Anregungen" },
+      "en": { "value": "Proposals and suggestions" }
+    },
+    "str_9bcfe5ca-0b74-49d0-ad7e-9944475566b2": {
+      "de": { "value": "habr\u00eda que..., yo propondr\u00eda..." },
+      "en": { "value": "habr\u00eda que..., yo propondr\u00eda..." }
+    },
+    "str_9e4b89e3-a3e2-4d0e-aee0-0c8f83c78f0c": {
+      "de": {
+        "value": "\u201eHay\u201c und \u201eest\u00e1\u201c kennenlernen"
+      },
+      "en": { "value": "Discovering \u0022hay\u0022 and \u0022est\u00e1\u0022" }
+    },
+    "str_8bc3afbd-d543-4c4b-a37c-07a6f565cc14": {
+      "de": {
+        "value": "hay un restaurante, hay muchas tiendas, est\u00e1n cerca..."
+      },
+      "en": {
+        "value": "hay un restaurante, hay muchas tiendas, est\u00e1n cerca..."
+      }
+    },
+    "str_1885c66b-bda3-4699-b095-3e46b1248697": {
+      "de": { "value": "Vorlieben und Abneigungen" },
+      "en": { "value": "Likes and dislikes" }
+    },
+    "str_5b198c70-94cd-473d-a6e5-a9cce5065685": {
+      "de": {
+        "value": "Verwende Verben wie \u201egustar\u201c im Pr\u00e4sens"
+      },
+      "en": {
+        "value": "Use verbs like \u0022gustar\u0022 in the present tense"
+      }
+    },
+    "str_20190913_16": {
+      "de": { "value": "Pr\u00e4positionen" },
+      "en": { "value": "Prepositions" }
+    },
+    "str_20190913_17": {
+      "de": { "value": "W\u00f6rter wie por, para, en, dentro, entre usw." },
+      "en": { "value": "Words like por, para, en, dentro, entre, etc." }
+    },
+    "str_20190913_18": {
+      "de": { "value": "Pr\u00e4positionen des Ortes" },
+      "en": { "value": "Prepositions of place" }
+    },
+    "str_20190913_20": {
+      "de": { "value": "en, a, cerca de..." },
+      "en": { "value": "en, a, cerca de..." }
+    },
+    "str_20210804_137": {
+      "de": { "value": "Pr\u00e4positionen der Zeit" },
+      "en": { "value": "Prepositions of time" }
+    },
+    "str_20210804_138": {
+      "de": { "value": "desde, hace, hasta..." },
+      "en": { "value": "desde, hace, hasta..." }
+    },
+    "str_2175067f-cd32-4612-9cde-8d7c4cc30dba": {
+      "de": {
+        "value": "Die Pr\u00e4positionen \u201epor\u201c und \u201epara\u201c"
+      },
+      "en": { "value": "The prepositions \u0022por\u0022 and \u0022para\u0022" }
+    },
+    "str_57e95f2b-6c10-4df7-bbea-28e073d13060": {
+      "de": {
+        "value": "Erkenne die unterschiedliche Verwendung dieser Pr\u00e4positionen"
+      },
+      "en": { "value": "Learn the different uses of these prepositions" }
+    },
+    "str_b0b84201-fff0-4ce1-80a3-aa6b70f1f8a9": {
+      "de": { "value": "Zeitangaben" },
+      "en": { "value": "Expressions of time" }
+    },
+    "str_c218f342-c50e-4cdb-8a82-0fb63682542f": {
+      "de": {
+        "value": "Desde hace dos a\u00f1os, desde que estudio, desde 2020...",
+        "alternative_values": []
+      },
+      "en": {
+        "value": "Desde hace dos a\u00f1os, desde que estudio, desde 2020...",
+        "alternative_values": []
+      }
+    },
+    "str_0bee5005-d023-4cc9-826a-3d29d8ac18c4": {
+      "de": { "value": "Lokale Pr\u00e4positionen" },
+      "en": { "value": "Prepositions of direction and place" }
+    },
+    "str_a371e8a6-4a66-4c20-8872-d16031277e96": {
+      "de": { "value": "Lokale Pr\u00e4positionen" },
+      "en": { "value": "Prepositions of direction and place" }
+    },
+    "str_20190904_63": {
+      "de": { "value": "Zahlen und Z\u00e4hlweisen" },
+      "en": { "value": "Numbers and ways of counting" }
+    },
+    "str_20191021_29": {
+      "de": {
+        "value": "Kardinal- und Ordinalzahlen, z\u00e4hlbare und unz\u00e4hlbare Substantive und Z\u00e4hlweisen"
+      },
+      "en": {
+        "value": "Numbers to count or order, countable and uncountable nouns and ways of counting"
+      }
+    },
+    "str_20191021_30": {
+      "de": { "value": "Z\u00e4hlbare und unz\u00e4hlbare Substantive" },
+      "en": { "value": "Countable and uncountable nouns" }
+    },
+    "str_20191021_32": {
+      "de": {
+        "value": "Dinge, die man nicht z\u00e4hlen kann, z. B. \u201eleche\u201c (Milch)"
+      },
+      "en": {
+        "value": "Things that we can\u0027t count, like \u0022leche\u0022 (milk)."
+      }
+    },
+    "str_20191022_84": {
+      "de": { "value": "Mengenbezeichnungen" },
+      "en": { "value": "Quantifiers" }
+    },
+    "str_20191022_85": {
+      "de": { "value": "Mucho, poco, demasiado..." },
+      "en": { "value": "Mucho, poco, demasiado..." }
+    },
+    "str_20191023_23": {
+      "de": { "value": "Ordnungszahlen" },
+      "en": { "value": "Ordinal numbers" }
+    },
+    "str_20191023_25": {
+      "de": { "value": "W\u00f6rter wie primero, segundo, tercero usw." },
+      "en": { "value": "Words like primero, segundo, tercero, etc." }
+    },
+    "str_20210816_2": {
+      "de": { "value": "Indefinidos" },
+      "en": { "value": "Indefinidos" }
+    },
+    "str_20210816_3": {
+      "de": { "value": "algo, nada, ninguno, nadie..." },
+      "en": { "value": "algo, nada, ninguno, nadie..." }
+    },
+    "str_20191004_78": {
+      "de": { "value": "Adverbien" },
+      "en": { "value": "Adverbs" }
+    },
+    "str_20191022_199": {
+      "de": { "value": "W\u00f6rter, die anzeigen, wie oft man etwas tut" },
+      "en": { "value": "Words we use to indicate how often we do something" }
+    },
+    "str_5a366181-a15d-4220-a8bc-0558a5a18c30": {
+      "de": { "value": "Adverbien der H\u00e4ufigkeit" },
+      "en": { "value": "Adverbs of frequency" }
+    },
+    "str_20191022_203": {
+      "de": { "value": "Normalmente, siempre, nunca..." },
+      "en": { "value": "Normalmente, siempre, nunca..." }
+    },
+    "str_6cc3e6dc-2ec8-4447-860b-98ddda378962": {
+      "de": { "value": "Adverbiale Bestimmungen: Zeit, Art und Weise" },
+      "en": { "value": "Adverbial locutions: time, manner" }
+    },
+    "str_2f3e6389-be94-400b-ac14-8c8f5616f538": {
+      "de": {
+        "value": "\u00dcbe feststehende Ausdr\u00fccke, um Angaben zu Zeit und Art und Weise zu machen"
+      },
+      "en": { "value": "Practise set phrases to express time and manner" }
+    },
+    "str_af38778e-b9de-44b8-9cd2-67b1ed7be7a7": {
+      "de": { "value": "\u201eAntes de\u201c und \u201edespu\u00e9s de\u201c" },
+      "en": { "value": "\u0022Antes de\u0022 and \u0022despu\u00e9s de\u0022" }
+    },
+    "str_52ff1668-fb51-4616-92fa-b2d7ef1a02ee": {
+      "de": {
+        "value": "\u00dcbe diese Konstruktionen mit dem Indikativ und dem \u201eSubjuntivo\u201c"
+      },
+      "en": {
+        "value": "Practise these structures with the indicative and subjunctive"
+      }
+    },
+    "str_2a9a7980-c977-40a9-8d25-c42dffa4df9a": {
+      "de": { "value": "\u201eMuy\u201c und \u201emucho\u201c" },
+      "en": { "value": "\u0022Muy\u0022 and \u0022mucho\u0022" }
+    },
+    "str_b5126ce2-684b-4147-b291-253fd81f2064": {
+      "de": { "value": "muy cansado, muchas tiendas, muy interesantes..." },
+      "en": { "value": "muy cansado, muchas tiendas, muy interesantes..." }
+    },
+    "str_20191001_44": {
+      "de": { "value": "Diskurs-, Satz- und Ausdrucksarten" },
+      "en": { "value": "Discourse, sentence and phrase types" }
+    },
+    "str_20191010_277": {
+      "de": {
+        "value": "Wortreihenfolge, Ausdr\u00fccke und andere mehrwortige Arten, Bedeutung zu bilden"
+      },
+      "en": {
+        "value": "Word order, phrases, and other multi-word ways of forming meaning."
+      }
+    },
+    "str_20191115_83": {
+      "de": { "value": "Fragew\u00f6rter" },
+      "en": { "value": "Question words" }
+    },
+    "str_20191210_10": {
+      "de": {
+        "value": "W\u00f6rter wie qu\u00e9, d\u00f3nde, qui\u00e9n, cu\u00e1l, cu\u00e1ndo usw."
+      },
+      "en": {
+        "value": "Words like qu\u00e9, d\u00f3nde, qui\u00e9n, cu\u00e1l, cu\u00e1ndo, etc."
+      }
+    },
+    "str_20210813_1": {
+      "de": { "value": "Bindew\u00f6rter f\u00fcr zeitliche Abfolgen" },
+      "en": { "value": "Sequence words" }
+    },
+    "str_20210813_2": {
+      "de": { "value": "En primer lugar, luego, por \u00faltimo..." },
+      "en": { "value": "En primer lugar, luego, por \u00faltimo..." }
+    },
+    "str_29ca7b51-f955-4bae-ac77-761aa5399d6e": {
+      "de": { "value": "Vergleichss\u00e4tze" },
+      "en": { "value": "Comparative sentences" }
+    },
+    "str_7096e3dc-6fda-45d0-afc4-290621120c3b": {
+      "de": {
+        "value": "Stelle Vergleiche mit \u201em\u00e1s ... que\u201c und \u201eigual de ... que\u201c an"
+      },
+      "en": {
+        "value": "Make comparisons with \u0022m\u00e1s ... que\u0022 and \u0022igual de ... que\u0022"
+      }
+    },
+    "str_20210913_78": {
+      "de": { "value": "Temporals\u00e4tze mit \u201ecuando\u201c" },
+      "en": { "value": "Time sentences with \u0022cuando\u0022" }
+    },
+    "str_20210913_79": {
+      "de": { "value": "Cuando sea mayor, cuando tenga tiempo..." },
+      "en": { "value": "Cuando sea mayor, cuando tenga tiempo..." }
+    },
+    "str_42b8c5cf-2680-4844-a420-559870b63933": {
+      "de": { "value": "Informationen abschw\u00e4chen oder betonen" },
+      "en": { "value": "Mitigating and reinforcing" }
+    },
+    "str_699f6543-5fae-48c0-8f19-169d9a72c04b": {
+      "de": {
+        "value": "\u00dcbe Ausdr\u00fccke zur Abschw\u00e4chung oder Betonung von Informationen"
+      },
+      "en": {
+        "value": "Practise expressions to mitigate or reinforce information"
+      }
+    },
+    "str_504da715-38fa-4ea7-8079-68bd8b39da79": {
+      "de": { "value": "Sinn und Zweck zum Ausdruck bringen" },
+      "en": { "value": "Expressing purpose" }
+    },
+    "str_19889231-45c2-4316-912b-d972a55a1724": {
+      "de": { "value": "Beschreibe die Gr\u00fcnde, aus denen du etwas tust" },
+      "en": { "value": "Describe the reasons for doing something" }
+    },
+    "str_50c80a24-2484-42ea-9acb-0fb569254f3c": {
+      "de": { "value": "Kausalzusammenh\u00e4nge" },
+      "en": { "value": "Expressing cause" }
+    },
+    "str_43cff90b-645f-4751-939d-4b247dcd523e": {
+      "de": {
+        "value": "Entdecke weitere kausale Bindew\u00f6rter f\u00fcr Fortgeschrittene"
+      },
+      "en": { "value": "Learn more advanced causal connectors" }
+    },
+    "str_313b33ee-f87e-46af-b479-58e2545fd51e": {
+      "de": { "value": "Einf\u00fchrung in Konzessivs\u00e4tze" },
+      "en": { "value": "Introduction to concessive phrases" }
+    },
+    "str_ab5059cd-a291-4ad7-b0a1-a9d480eb5c02": {
+      "de": {
+        "value": "Wiederhole konzessive Bindew\u00f6rter wie \u201eaunque\u201c und \u201epese a que\u201c"
+      },
+      "en": {
+        "value": "Revise concessive phrases like \u0022aunque\u0022 and \u0022pese a que\u0022"
+      }
+    },
+    "str_751ba530-db21-49ef-af1d-8ff7796ef6a3": {
+      "de": { "value": "Konzessivs\u00e4tze" },
+      "en": { "value": "Concessive phrases" }
+    },
+    "str_ac1ed3e2-9acd-4bfb-aaa0-6aa006948b7d": {
+      "de": {
+        "value": "Wiederhole konzessive Bindew\u00f6rter wie \u201eaun as\u00ed\u201c und \u201esi bien\u201c"
+      },
+      "en": {
+        "value": "Revise concessive phrases like \u0022aun as\u00ed\u0022 and \u0022si bien\u0022"
+      }
+    },
+    "str_2bb11e21-c048-4ff9-a3b9-90ff9df4d491": {
+      "de": { "value": "Konsekutivs\u00e4tze" },
+      "en": { "value": "Consecutive sentences" }
+    },
+    "str_223d8cc0-7e87-4ae3-a850-abfbae355b28": {
+      "de": {
+        "value": "Neue Konjunktionen lernen, um Folgen zum Ausdruck zu bringen"
+      },
+      "en": { "value": "Learn new connectors to express consequences" }
+    },
+    "str_24ea157d-9750-4846-8368-fe5052f0cd67": {
+      "de": { "value": "Modale Ausdr\u00fccke" },
+      "en": { "value": "Modal phrases" }
+    },
+    "str_7d888d1f-77a1-4fe1-bc45-3530a9d7f33f": {
+      "de": {
+        "value": "Wiederhole modale Ausdr\u00fccke mit \u201ecomo si\u201c und \u201esin que\u201c"
+      },
+      "en": {
+        "value": "Review modal phrases with \u0022como si\u0022 and \u0022sin que\u0022"
+      }
+    },
+    "str_91397543-c5b5-4041-bca9-42014e441253": {
+      "de": { "value": "Modalausdr\u00fccke" },
+      "en": { "value": "Modal expressions" }
+    },
+    "str_36258206-a804-4eb0-96b3-a96d4add07db": {
+      "de": {
+        "value": "Ausdr\u00fccke lernen, die die Art und Weise beschreiben, wie etwas gemacht wird"
+      },
+      "en": {
+        "value": "Learn expressions to describe the way something is done"
+      }
+    },
+    "str_3ac05f9d-3495-4c67-a70a-cb02ff97b258": {
+      "de": { "value": "Einen Exkurs machen" },
+      "en": { "value": "Making digressions" }
+    },
+    "str_330b3a16-105c-4ee7-953d-dab02d95ce6d": {
+      "de": {
+        "value": "W\u00f6rter lernen, mit denen man bei einer Unterhaltung etwas anmerken kann"
+      },
+      "en": {
+        "value": "Learn words used to add side comments in a conversation"
+      }
+    },
+    "str_b0a22455-1603-4d50-adf9-ed457ba89b66": {
+      "de": { "value": "Empfehlungen aussprechen" },
+      "en": { "value": "Making recommendations" }
+    },
+    "str_eebd45b0-d011-4a3e-9248-f2944102106a": {
+      "de": {
+        "value": "te aconsejo que compres..., intenta ir, si estuviera en tu lugar..."
+      },
+      "en": {
+        "value": "te aconsejo que compres..., intenta ir, si estuviera en tu lugar..."
+      }
+    },
+    "str_a38cffb8-cbc4-4124-8951-a248fff8c170": {
+      "de": { "value": "Unwahrscheinliche Bedingungen \u00e4u\u00dfern" },
+      "en": { "value": "Expressing unlikely conditions" }
+    },
+    "str_7df92bb6-4ecf-42a7-92df-79ff94b68d17": {
+      "de": {
+        "value": "Si tuviera tiempo, ir\u00eda... \/ Si pudiera, te ayudar\u00eda...",
+        "alternative_values": []
+      },
+      "en": {
+        "value": "Si tuviera tiempo, ir\u00eda... \/ Si pudiera, te ayudar\u00eda...",
+        "alternative_values": []
+      }
+    },
+    "str_50fbbe6e-0663-4793-8614-6ff974faf2f3": {
+      "de": { "value": "Bedingungen zum Ausdruck bringen" },
+      "en": { "value": "Expressing conditions " }
+    },
+    "str_7f0b7c51-b7a7-467f-8df6-fd6713edbf13": {
+      "de": { "value": "solo si, en caso de que, a condici\u00f3n de que..." },
+      "en": { "value": "solo si, en caso de que, a condici\u00f3n de que..." }
+    },
+    "str_d035c6ed-d9e2-4256-9175-f3be38dbc686": {
+      "de": { "value": "Sinn und Zweck zum Ausdruck bringen" },
+      "en": { "value": "Expressing purpose" }
+    },
+    "str_8a79ffe2-5c86-4d52-b736-9ec7f6397e5c": {
+      "de": {
+        "value": "para que puedas, para hacer, para que pudi\u00e9ramos..."
+      },
+      "en": {
+        "value": "para que puedas, para hacer, para que pudi\u00e9ramos..."
+      }
+    },
+    "str_66fc237b-949c-4422-a1a2-2a53e3de9e63": {
+      "de": { "value": "Konsekutivs\u00e4tze" },
+      "en": { "value": "Consecutive Sentences" }
+    },
+    "str_0ae7239a-336c-4db7-aa16-3027e626e601": {
+      "de": {
+        "value": "Bilde Konsekutivausdr\u00fccke mit \u201etan\u201c und \u201etanto\u201c"
+      },
+      "en": {
+        "value": "Make consecutive phrases with \u0022tan\u0022 and \u0022tanto\u0022"
+      }
+    },
+    "str_12258223-b29c-4e81-a4ab-194a46b1bedd": {
+      "de": { "value": "Konzessivs\u00e4tze" },
+      "en": { "value": "Concessive phrases" }
+    },
+    "str_f500fb97-8f80-41da-8051-fe2f2c337284": {
+      "de": {
+        "value": "Sprich \u00fcber Hindernisse beim Erreichen von Zielen"
+      },
+      "en": { "value": "Express obstacles in the fulfillment of objectives" }
+    },
+    "str_28bc2bc5-d39d-439b-b719-4598f78b27d3": {
+      "de": { "value": "Bilden von Hypothesen und Anstellen von Vermutungen" },
+      "en": { "value": "Forming hypotheses and assumptions" }
+    },
+    "str_f04e6803-9b02-4959-a9af-027064336784": {
+      "de": {
+        "value": "estar\u00e1..., habr\u00e1 salido..., tendr\u00e1s..."
+      },
+      "en": { "value": "estar\u00e1..., habr\u00e1 salido..., tendr\u00e1s..." }
+    },
+    "str_b68a7a1a-9d9f-46ca-865e-d5613c59a307": {
+      "de": {
+        "value": "W\u00fcnsche, deren Erf\u00fcllung unwahrscheinlich ist"
+      },
+      "en": { "value": "Expressing unlikely wishes" }
+    },
+    "str_c29a4513-0166-403a-b804-38333268d160": {
+      "de": {
+        "value": "ser\u00eda genial que..., ojal\u00e1..., me encantar\u00eda que..."
+      },
+      "en": {
+        "value": "ser\u00eda genial que..., ojal\u00e1..., me encantar\u00eda que..."
+      }
+    },
+    "str_83da739a-f6a2-4c06-87a0-b57fcc77d794": {
+      "de": { "value": "Anweisungen und indirekte Rede" },
+      "en": { "value": "Commands and reported speech" }
+    },
+    "str_09c650de-61d5-4387-8d47-67d64cf1a5a6": {
+      "de": {
+        "value": "Dice que haga..., me pidi\u00f3 que fuera..., nos dijo que hici\u00e9ramos..."
+      },
+      "en": {
+        "value": "Dice que haga..., me pidi\u00f3 que fuera..., nos dijo que hici\u00e9ramos..."
+      }
+    },
+    "str_356a97c3-d653-4655-9e71-251a7e3a9425": {
+      "de": { "value": "Gewissheit und Ungewissheit bekunden" },
+      "en": { "value": "Expressing certainty or uncertainty" }
+    },
+    "str_30619a18-24d0-4440-b47f-13a3fa15f5fb": {
+      "de": {
+        "value": "no parece que..., est\u00e1 claro que..., dudo que..."
+      },
+      "en": { "value": "no parece que..., est\u00e1 claro que..., dudo que..." }
+    },
+    "str_743c2045-3b32-4899-afbc-b3cc558f8ef2": {
+      "de": { "value": "Hypothetische Situationen in der Vergangenheit" },
+      "en": { "value": "Hypothetical situations in the past" }
+    },
+    "str_2b18897a-5b52-4180-9841-cfa3405bf5e8": {
+      "de": {
+        "value": "me habr\u00eda gustado, habr\u00edamos hecho, habr\u00edan..."
+      },
+      "en": {
+        "value": "me habr\u00eda gustado, habr\u00edamos hecho, habr\u00edan..."
+      }
+    },
+    "str_20191002_40": {
+      "de": { "value": "Verben: Vergangenheit" },
+      "en": { "value": "Verbs: Past" }
+    },
+    "str_20200506_448": {
+      "de": {
+        "value": "Verwendung und Bildung der \u201ePret\u00e9ritos\u201c- und Perfekt-Zeitformen sowie einige n\u00fctzliche Verben in der Vergangenheit"
+      },
+      "en": {
+        "value": "Use and form of the \u201cpret\u00e9ritos\u0022 and perfect tenses, some useful verbs in the past"
+      }
+    },
+    "str_e2b8b8b4-bec0-4497-92f2-3b70312b8625": {
+      "de": { "value": "Pret\u00e9rito imperfecto" },
+      "en": { "value": "Pret\u00e9rito imperfecto" }
+    },
+    "str_20200616_131": {
+      "de": {
+        "value": "yo trabajaba, t\u00fa ten\u00edas, ella viv\u00eda..."
+      },
+      "en": { "value": "yo trabajaba, t\u00fa ten\u00edas, ella viv\u00eda..." }
+    },
+    "str_b6ef28fd-ff67-4762-9402-01350ad014ce": {
+      "de": {
+        "value": "Pret\u00e9rito imperfecto: Unregelm\u00e4\u00dfige Verben"
+      },
+      "en": { "value": "Pret\u00e9rito imperfecto: irregular verbs" }
+    },
+    "str_20200706_182": {
+      "de": { "value": "yo era, t\u00fa ibas, \u00e9l ve\u00eda..." },
+      "en": { "value": "yo era, t\u00fa ibas, \u00e9l ve\u00eda..." }
+    },
+    "str_20200506_457": {
+      "de": { "value": "Einf\u00fchrung in die Vergangenheitsformen" },
+      "en": { "value": "Introduction to the past " }
+    },
+    "str_d559710b-5018-474d-abc2-03ea3e0ab28b": {
+      "de": { "value": "Pret\u00e9rito indefinido" },
+      "en": { "value": "Pret\u00e9rito indefinido" }
+    },
+    "str_4564ef43-85b8-4b6c-9e16-cf76567bd5ed": {
+      "de": { "value": "Die Zeitform Pret\u00e9rito indefinido" },
+      "en": { "value": "The \u0022pret\u00e9rito indefinido\u0022 tense" }
+    },
+    "str_20200511_10": {
+      "de": { "value": "yo trabaj\u00e9, t\u00fa comiste, ella vivi\u00f3..." },
+      "en": { "value": "yo trabaj\u00e9, t\u00fa comiste, ella vivi\u00f3..." }
+    },
+    "str_20201101_1": {
+      "de": { "value": "Pret\u00e9rito perfecto (Form)" },
+      "en": { "value": "Pret\u00e9rito perfecto (form)" }
+    },
+    "str_20201101_2": {
+      "de": { "value": "yo he trabajado, t\u00fa has ido, ella ha comido..." },
+      "en": { "value": "yo he trabajado, t\u00fa has ido, ella ha comido..." }
+    },
+    "str_20210726_118": {
+      "de": { "value": "Pret\u00e9rito perfecto (Verwendung)" },
+      "en": { "value": "Pret\u00e9rito perfecto (use)" }
+    },
+    "str_20210712_295": {
+      "de": {
+        "value": "Situationen, in denen wir das \u201ePret\u00e9rito perfecto\u201c benutzen"
+      },
+      "en": {
+        "value": "Situations in which we use the \u0022pret\u00e9rito perfecto\u0022."
+      }
+    },
+    "str_20210714_53": {
+      "de": { "value": "Pret\u00e9rito indefinido: estar, ser, ir, hacer" },
+      "en": { "value": "Pret\u00e9rito indefinido: estar, ser, ir, hacer" }
+    },
+    "str_20210714_54": {
+      "de": { "value": "estuve, fuiste, hizo..." },
+      "en": { "value": "estuve, fuiste, hizo..." }
+    },
+    "str_20210803_55": {
+      "de": { "value": "Pret\u00e9rito indefinido: venir, tener, poder" },
+      "en": { "value": "Pret\u00e9rito indefinido: venir, tener, poder" }
+    },
+    "str_20210719_58": {
+      "de": { "value": "Yo vine, t\u00fa tuviste, ella pudo..." },
+      "en": { "value": "Yo vine, t\u00fa tuviste, ella pudo..." }
+    },
+    "str_20210825_35": {
+      "de": { "value": "Indefinido und Imperfecto im Vergleich I" },
+      "en": { "value": "Pret\u00e9rito indefinido vs imperfecto I" }
+    },
+    "str_20210729_176": {
+      "de": {
+        "value": "yo iba\/fui, t\u00fa com\u00edas\/comiste, \u00e9l ley\u00f3\/le\u00eda..."
+      },
+      "en": {
+        "value": "yo iba\/fui, t\u00fa com\u00edas\/comiste, \u00e9l ley\u00f3\/le\u00eda..."
+      }
+    },
+    "str_20210824_107": {
+      "de": { "value": "Indefinido und Imperfecto im Vergleich II" },
+      "en": { "value": "Pret\u00e9rito indefinido vs imperfecto II" }
+    },
+    "str_20210824_105": {
+      "de": { "value": "Cuando estaba en la ducha, me llamaron..." },
+      "en": { "value": "Cuando estaba en la ducha, me llamaron..." }
+    },
+    "str_20211125_74": {
+      "de": { "value": "Wiederholung der Vergangenheitsformen" },
+      "en": { "value": "Past tenses review" }
+    },
+    "str_20210803_2": {
+      "de": { "value": "Era una noche tranquila, pero de repente..." },
+      "en": { "value": "Era una noche tranquila, pero de repente..." }
+    },
+    "str_20210812_3": {
+      "de": { "value": "Pret\u00e9rito imperfecto (Verwendung)" },
+      "en": { "value": "Pret\u00e9rito imperfecto (use)" }
+    },
+    "str_20210812_2": {
+      "de": { "value": "\u00cdbamos a la playa, era muy alto..." },
+      "en": { "value": "\u00cdbamos a la playa, era muy alto..." }
+    },
+    "str_20210830_82": {
+      "de": { "value": "Pret\u00e9rito pluscuamperfecto" },
+      "en": { "value": "Pret\u00e9rito pluscuamperfecto" }
+    },
+    "str_20210830_83": {
+      "de": {
+        "value": "Yo hab\u00eda salido, t\u00fa hab\u00edas comprado..."
+      },
+      "en": { "value": "Yo hab\u00eda salido, t\u00fa hab\u00edas comprado..." }
+    },
+    "str_1ef60f15-1754-4d6f-93c3-990e5866e683": {
+      "de": {
+        "value": "\u201ePluscuamperfecto\u201c: unregelm\u00e4\u00dfige Verben"
+      },
+      "en": { "value": "Pluscuamperfecto: irregular verbs" }
+    },
+    "str_e99191f0-8d6b-4b12-9417-e576257476e3": {
+      "de": { "value": "hab\u00edas dicho, hab\u00edamos vuelto..." },
+      "en": { "value": "hab\u00edas dicho, hab\u00edamos vuelto..." }
+    },
+    "str_70cea540-e2f3-46c4-b04c-a85fad2f2c7f": {
+      "de": { "value": "Die Vergangenheitsformen wiederholen" },
+      "en": { "value": "Reviewing past tenses" }
+    },
+    "str_73def9d0-c83f-4919-9f3c-bd047d9c46ed": {
+      "de": {
+        "value": "Wiederhole die Zeitformen \u201eIndefinido\u201c, \u201eImperfecto\u201c und \u201ePerfecto\u201c"
+      },
+      "en": {
+        "value": "Review the \u0022indefinido\u0022, \u0022imperfecto\u0022 and \u0022perfecto\u0022 tenses"
+      }
+    },
+    "str_100d231f-cbb5-4f14-9332-38b21f950575": {
+      "de": { "value": "Pret\u00e9rito imperfecto" },
+      "en": { "value": "Pret\u00e9rito imperfecto" }
+    },
+    "str_b49ebf4e-c7a3-4dde-a3cd-ea260277c719": {
+      "de": {
+        "value": "Mit dem \u201ePret\u00e9rito imperfecto\u201c Anekdoten erz\u00e4hlen"
+      },
+      "en": {
+        "value": "Using the \u0022pret\u00e9rito imperfecto\u0022 to tell anecdotes."
+      }
+    },
+    "str_bab2a11a-5d9c-4df2-ab11-6f41cdab1189": {
+      "de": { "value": "Pret\u00e9rito perfecto (verbos irregulares)" },
+      "en": { "value": "Pret\u00e9rito perfecto (verbos irregulares)" }
+    },
+    "str_78f88703-33b0-4faa-800d-da2cb6a61a34": {
+      "de": { "value": "he visto, has dicho, ha hecho, hemos puesto..." },
+      "en": { "value": "he visto, has dicho, ha hecho, hemos puesto..." }
+    },
+    "str_20200623_1": {
+      "de": { "value": "Verben: Futur" },
+      "en": { "value": "Verbs: Future" }
+    },
+    "str_20200623_2": {
+      "de": {
+        "value": "Verwendung und Bildung des \u201eFuturo\u201c und weitere Zeitformen, mit denen man \u00fcber die Zukunft spricht"
+      },
+      "en": {
+        "value": "Use and form of \u0022futuro\u0022, and tenses we use to talk about the future"
+      }
+    },
+    "str_20200623_3": {
+      "de": { "value": "Futur: ir a" },
+      "en": { "value": "Future tense: ir a" }
+    },
+    "str_20201112_82": {
+      "de": { "value": "Grammatik: Pl\u00e4ne f\u00fcr die Zukunft " },
+      "en": { "value": "Grammar: Future plans " }
+    },
+    "str_20210702_1": {
+      "de": { "value": "Futuro imperfecto" },
+      "en": { "value": "Futuro imperfecto" }
+    },
+    "str_20210705_65": {
+      "de": {
+        "value": "yo ir\u00e9, t\u00fa comer\u00e1s, ella hablar\u00e1..."
+      },
+      "en": {
+        "value": "yo ir\u00e9, t\u00fa comer\u00e1s, ella hablar\u00e1..."
+      }
+    },
+    "str_20210723_80": {
+      "de": { "value": "Futuro imperfecto: Unregelm\u00e4\u00dfige Verben" },
+      "en": { "value": "Futuro imperfecto: irregular verbs" }
+    },
+    "str_20210706_67": {
+      "de": {
+        "value": "yo saldr\u00e9, t\u00fa pondr\u00e1s, usted vendr\u00e1..."
+      },
+      "en": {
+        "value": "yo saldr\u00e9, t\u00fa pondr\u00e1s, usted vendr\u00e1..."
+      }
+    },
+    "str_74f71d3c-b7f5-47f1-86f8-c7669f955c22": {
+      "de": { "value": "Die Zeitform des \u201eFuturo perfecto\u201c" },
+      "en": { "value": "The \u0022futuro perfecto\u0022 tense" }
+    },
+    "str_8c63e0d3-0ac8-4926-9eb5-11188083b635": {
+      "de": {
+        "value": "yo habr\u00e9 salido, t\u00fa habr\u00e1s comido, ellos habr\u00e1n hecho..."
+      },
+      "en": {
+        "value": "yo habr\u00e9 salido, t\u00fa habr\u00e1s comido, ellos habr\u00e1n hecho..."
+      }
+    },
+    "str_cb2b472a-3fa6-4195-8186-a6429d218425": {
+      "de": { "value": "Absichten und Vorhaben beschreiben" },
+      "en": { "value": "Describing plans and intentions" }
+    },
+    "str_01c005d7-c365-4edc-82f7-ba3a44151231": {
+      "de": {
+        "value": "voy a cenar, vamos a salir de fiesta, van a almorzar..."
+      },
+      "en": {
+        "value": "voy a cenar, vamos a salir de fiesta, van a almorzar..."
+      }
+    },
+    "str_20210713_93": {
+      "de": { "value": "Verben: der Imperativ" },
+      "en": { "value": "Verbs: Imperative" }
+    },
+    "str_20210726_186": {
+      "de": {
+        "value": "Verwendung des \u201eImperativo\u201c f\u00fcr Befehle, Anweisungen und Ratschl\u00e4ge"
+      },
+      "en": {
+        "value": "Use of the \u201cimperativo\u201d to give orders, instructions and advice"
+      }
+    },
+    "str_20210810_1": {
+      "de": { "value": "Imperativ" },
+      "en": { "value": "Imperative" }
+    },
+    "str_20210713_96": {
+      "de": { "value": "Ven, escuche, escribid, hagan..." },
+      "en": { "value": "Ven, escuche, escribid, hagan..." }
+    },
+    "str_20210809_38": {
+      "de": { "value": "Imperativo negativo" },
+      "en": { "value": "Imperativo negativo" }
+    },
+    "str_20210809_39": {
+      "de": { "value": "No salgas, no venga, no pasen..." },
+      "en": { "value": "No salgas, no venga, no pasen..." }
+    },
+    "str_d37e5f44-6ec9-4b2f-842f-9761053190c6": {
+      "de": { "value": "\u201eImperativo afirmativo\u201c\u00a0+ Pronomen" },
+      "en": { "value": "\u0022Imperativo afirmativo\u0022 + pronouns" }
+    },
+    "str_61efb3ca-91e1-46af-999e-7299cbfb9e00": {
+      "de": {
+        "value": "Ll\u00e1mame, c\u00f3mpralo, hazlas, esc\u00fachala..."
+      },
+      "en": {
+        "value": "Ll\u00e1mame, c\u00f3mpralo, hazlas, esc\u00fachala..."
+      }
+    },
+    "str_5fbca67c-c522-4d0b-b7db-12f22a9551ac": {
+      "de": { "value": "\u201eImperativo negativo\u201c\u00a0+ Pronomen" },
+      "en": { "value": "\u0022Imperativo negativo\u0022 + pronouns " }
+    },
+    "str_ad27c4b7-b167-4623-bcbc-484c18e5ec46": {
+      "de": { "value": "No me digas, no se lo des, no te la compres..." },
+      "en": { "value": "No me digas, no se lo des, no te la compres..." }
+    },
+    "str_20210726_124": {
+      "de": { "value": "Bindew\u00f6rter" },
+      "en": { "value": "Connectors" }
+    },
+    "str_20210726_171": {
+      "de": {
+        "value": "Bindew\u00f6rter wie \u201ey, o, aunque, porque, ya que\u00a0\u2026\u201c"
+      },
+      "en": {
+        "value": "Linking words such as \u0022y, o, aunque, porque, ya que\u2026\u0022"
+      }
+    },
+    "str_94bc495d-e36c-4f81-b1e2-0b119cce263b": {
+      "de": { "value": "Begr\u00fcndende Bindew\u00f6rter" },
+      "en": { "value": "Causal connectors" }
+    },
+    "str_9037b13e-c31f-4adb-8909-b8bc1260748a": {
+      "de": {
+        "value": "\u201e\u00bfPor qu\u00e9?\u201c, \u201eporque\u201c, \u201epor\u201c und \u201eya que\u201c und \u201ecomo\u201c"
+      },
+      "en": {
+        "value": "\u0022\u00bfPor qu\u00e9?\u0022, \u0022porque\u0022, \u0022por\u0022, \u0022ya que\u0022 and \u0022como\u0022"
+      }
+    },
+    "str_76c65aca-d490-4277-bb61-493b8f3dbddc": {
+      "de": { "value": "Temporale Konjunktionen" },
+      "en": { "value": "Time connectors" }
+    },
+    "str_500b4475-021d-46db-a6f5-bda60fdd614e": {
+      "de": {
+        "value": "\u00dcbe diese temporalen Bindew\u00f6rter f\u00fcr Fortgeschrittene"
+      },
+      "en": { "value": "Practise these more advanced time connectors " }
+    },
+    "str_42d6c080-216c-447b-84e5-e00518916465": {
+      "de": { "value": "Bindew\u00f6rter: Ursache und Wirkung" },
+      "en": { "value": "Connectors: cause and effect" }
+    },
+    "str_e171058a-b253-42ac-9cd2-62d5de597dcb": {
+      "de": {
+        "value": "Entdecke neue Bindew\u00f6rter zum Thema Ursache und Wirkung"
+      },
+      "en": { "value": "Learn new connectors of cause and effect" }
+    },
+    "str_20210728_88": {
+      "de": { "value": "Verben: Konditional" },
+      "en": { "value": "Verbs: Conditional" }
+    },
+    "str_45198261-46d3-47fd-9834-45da399ccecc": {
+      "de": {
+        "value": "Die Konditionalform in verschiedenen Arten von S\u00e4tzen verwenden"
+      },
+      "en": {
+        "value": "Use the conditional tense in different types of sentences"
+      }
+    },
+    "str_12ff0c4c-2779-4197-8798-ee310076b87e": {
+      "de": { "value": "Konditionalformen f\u00fcr Ratschl\u00e4ge" },
+      "en": { "value": "The conditional for advice" }
+    },
+    "str_8f5500bb-d91d-4cc4-ba28-44fb1475ff39": {
+      "de": {
+        "value": "Gib Ratschl\u00e4ge mit Ausdr\u00fccken wie \u201eYo que t\u00fa\u201c und einer Konditionalform"
+      },
+      "en": {
+        "value": "Give advice with phrases like \u0022Yo que t\u00fa\u0022 + conditional"
+      }
+    },
+    "str_ae846293-886d-41d3-a556-899939fb637b": {
+      "de": { "value": "Konditionalformen regelm\u00e4\u00dfiger Verben" },
+      "en": { "value": "Regular verbs in the conditional" }
+    },
+    "str_7917f26d-bf71-46a1-9c9a-792142ba1060": {
+      "de": { "value": "hablar\u00eda, comer\u00edamos, vivir\u00edan..." },
+      "en": { "value": "hablar\u00eda, comer\u00edamos, vivir\u00edan..." }
+    },
+    "str_87ad5ba6-4456-4af0-8150-3c102db5acfd": {
+      "de": {
+        "value": "Unregelm\u00e4\u00dfige Verben in der Konditionalform"
+      },
+      "en": { "value": "Irregular verbs in the conditional" }
+    },
+    "str_106d11c4-cec2-4c4a-9c69-c240983256e4": {
+      "de": { "value": "Saldr\u00eda, har\u00edamos, podr\u00edais..." },
+      "en": { "value": "Saldr\u00eda, har\u00edamos, podr\u00edais..." }
+    },
+    "str_dd2481b3-35f3-45d8-b89e-d93d2b1dc0c6": {
+      "de": { "value": "Konditionals\u00e4tze" },
+      "en": { "value": "Conditional sentences" }
+    },
+    "str_ed020d47-75a3-4bdd-aa9d-7fdf5a9baa50": {
+      "de": {
+        "value": "Wiederhole die Konditionalform in verschiedenen Arten von S\u00e4tzen"
+      },
+      "en": {
+        "value": "Review the conditional tense in different types of sentences"
+      }
+    },
+    "str_c8fd1763-3381-4ca4-8c45-cffaec57bfbe": {
+      "de": { "value": "Konditionals\u00e4tze" },
+      "en": { "value": "Conditional sentences" }
+    },
+    "str_3ce96ab8-41a8-4761-8df2-5538fa681f88": {
+      "de": {
+        "value": "Die Konditionalform in verschiedenen Arten von S\u00e4tzen verwenden"
+      },
+      "en": {
+        "value": "Use the conditional tense in different types of sentences"
+      }
+    },
+    "str_20210920_2": {
+      "de": { "value": "Verben: Subjuntivo" },
+      "en": { "value": "Verbs: Subjuntivo" }
+    },
+    "str_20210726_181": {
+      "de": {
+        "value": "Bildung und Verwendung der Verbform, die benutzt wird, um verschiedene Gef\u00fchle und Dinge, \u00fcber die du dir nicht sicher ist, zum Ausdruck zu bringen"
+      },
+      "en": {
+        "value": "Use and form of the verb mood we use to express different emotions and things we are not sure about"
+      }
+    },
+    "str_20210831_26": {
+      "de": { "value": "Einf\u00fchrung in den \u201esubjuntivo\u201c" },
+      "en": { "value": "Introduction to the \u0022subjuntivo\u0022" }
+    },
+    "str_20210831_27": {
+      "de": { "value": "yo compre, t\u00fa comas, ella escriba..." },
+      "en": { "value": "yo compre, t\u00fa comas, ella escriba..." }
+    },
+    "str_c327ccb5-de9a-4973-9388-1f48ba6f68c9": {
+      "de": {
+        "value": "Der \u201eSubjuntivo\u201c unregelm\u00e4\u00dfiger Verben"
+      },
+      "en": { "value": "\u0022Subjuntivo\u0022: irregular verbs" }
+    },
+    "str_20210907_104": {
+      "de": { "value": "vaya, empieces, quiera, tengamos..." },
+      "en": { "value": "vaya, empieces, quiera, tengamos..." }
+    },
+    "str_c67bd1a4-3557-466f-9aca-bdd4eb5afae0": {
+      "de": {
+        "value": "Der \u201eIndicativo\u201c und \u201eSubjuntivo\u201c"
+      },
+      "en": { "value": "The \u0022indicativo\u0022 and \u0022subjuntivo\u0022" }
+    },
+    "str_381d9c9e-f339-42e7-80dc-9b29ed3f1f18": {
+      "de": {
+        "value": "Bekunde deine Meinung im \u201eIndicativo\u201c und \u201eSubjuntivo\u201c"
+      },
+      "en": {
+        "value": "Share an opinion using the \u0022indicativo\u0022 and \u0022subjuntivo\u0022"
+      }
+    },
+    "str_28783eaa-5122-494b-a110-d6d1d4288fc3": {
+      "de": {
+        "value": "Meinungen in \u201eindicativo\u201c und \u201esubjuntivo\u201c \u00e4u\u00dfern"
+      },
+      "en": {
+        "value": "Giving opinions in the \u0022indicativo\u0022 and \u0022subjuntivo\u0022"
+      }
+    },
+    "str_63d938a3-6ff6-42b1-8078-8e593c869bdb": {
+      "de": {
+        "value": "Bekunde Meinungen im \u201eIndicativo\u201c und \u201eSubjuntivo\u201c"
+      },
+      "en": {
+        "value": "Give opinions in the \u0022indicativo\u0022 and \u0022subjuntivo\u0022"
+      }
+    },
+    "str_b7080f53-483b-4d30-8c71-8e26d80eb3f9": {
+      "de": { "value": "Bewertungen mit dem \u201eSubjuntivo\u201c" },
+      "en": { "value": "Evaluations with the \u0022subjuntivo\u0022" }
+    },
+    "str_afc85008-4655-4786-9786-fe81a07fafbd": {
+      "de": {
+        "value": "Me parece bien que hagas..., est\u00e1 mal que seas..."
+      },
+      "en": {
+        "value": "Me parece bien que hagas..., est\u00e1 mal que seas..."
+      }
+    },
+    "str_3d210547-81ea-4f95-82f0-18a090518eca": {
+      "de": { "value": "\u201eImperfecto de subjuntivo\u201c" },
+      "en": { "value": "Imperfecto de subjuntivo" }
+    },
+    "str_0d5ee63c-84de-473e-b03f-db13c9f4ca1d": {
+      "de": {
+        "value": "\u201eImperfecto de subjuntivo\u201c bilden und verwenden"
+      },
+      "en": {
+        "value": "Learn how to build and use the \u0022imperfecto de subjuntivo\u0022"
+      }
+    },
+    "str_510b858d-0d5f-4e3f-a4a0-85db42046969": {
+      "de": {
+        "value": "Die Zeitform \u201ePluscuamperfecto de subjuntivo\u201c"
+      },
+      "en": { "value": "The \u0022pluscuamperfecto de subjuntivo\u0022 tense" }
+    },
+    "str_27337c99-76aa-4575-8ba7-bbdc8c2cf219": {
+      "de": {
+        "value": "Stell dir vergangene Situationen vor, die anders h\u00e4tten verlaufen k\u00f6nnen"
+      },
+      "en": {
+        "value": "Imagine past situations that could\u0027ve happened differently"
+      }
+    },
+    "str_02ce7667-3f20-409b-85a0-f9cd343c325a": {
+      "de": {
+        "value": "Konjunktiv Pr\u00e4sens - Unregelm\u00e4\u00dfige Verben"
+      },
+      "en": { "value": "Present subjunctive - Irregular verbs" }
+    },
+    "str_9eeb11ac-cee9-4bdf-9c6c-db1d0750fbfa": {
+      "de": { "value": "vosotros durm\u00e1is, yo llegue, t\u00fa tengas..." },
+      "en": { "value": "vosotros durm\u00e1is, yo llegue, t\u00fa tengas..." }
+    },
+    "str_0cbb03ba-d666-4f8b-a0e1-e6bc4cee79f4": {
+      "de": { "value": "Vertiefung des \u201eSubjuntivo\u201c" },
+      "en": { "value": "Expanding on the subjunctive" }
+    },
+    "str_1f5dde8b-c9d3-40a5-bee4-ab1b0bafd275": {
+      "de": {
+        "value": "me encanta que..., no me gusta que..., le apasiona que..."
+      },
+      "en": {
+        "value": "me encanta que..., no me gusta que..., le apasiona que..."
+      }
+    },
+    "str_20210818_47": {
+      "de": { "value": "Verben: das Passiv" },
+      "en": { "value": "Verbs: Passive" }
+    },
+    "str_a7623b7f-dfc4-4f43-bd69-9607c3b9f116": {
+      "de": { "value": "Bilde und verwende S\u00e4tze im Passiv" },
+      "en": { "value": "Form and use passive sentences" }
+    },
+    "str_5000ed21-ffce-4dc9-9c92-7fd961b01446": {
+      "de": { "value": "Reflexive S\u00e4tze im Passiv" },
+      "en": { "value": "Reflexive passive sentences" }
+    },
+    "str_f1b4f99b-a9cc-4150-bb31-939e4e1bab14": {
+      "de": {
+        "value": "Die grammatikalische Struktur bei reflexiven Verben im Passiv"
+      },
+      "en": {
+        "value": "Discover the grammatical structure of the reflexive passive"
+      }
+    },
+    "str_57230cd8-5f42-431d-8b5c-ab1cff4fdd89": {
+      "de": { "value": "Das Passiv" },
+      "en": { "value": "The passive voice" }
+    },
+    "str_52f4a05a-6630-4dbf-958f-83ac32e88b95": {
+      "de": {
+        "value": "fue creada, est\u00e1n siendo construidos, ser\u00e1n publicadas..."
+      },
+      "en": {
+        "value": "fue creada, est\u00e1n siendo construidos, ser\u00e1n publicadas..."
+      }
+    },
+    "str_20210726_125": {
+      "de": { "value": "Verweise" },
+      "en": { "value": "Referencing" }
+    },
+    "str_db397eb8-3a10-4503-91c8-d43743cae786": {
+      "de": {
+        "value": "\u00dcbe die Verwendung von \u201eque\u201c, \u201ecual\u201c und \u201equien\u201c"
+      },
+      "en": {
+        "value": "Practise the use of \u0022que\u0022, \u0022cual\u0022 and \u0022quien\u0022"
+      }
+    },
+    "str_e4a6ed57-462a-4b8c-9d77-72d7ca10ff9e": {
+      "de": { "value": "Relativpartikeln" },
+      "en": { "value": "Relative particles" }
+    },
+    "str_e6495425-b0af-42cd-8228-268f01154a9f": {
+      "de": {
+        "value": "\u00dcbe die Verwendung von \u201eque\u201c, \u201ecual\u201c und \u201equien\u201c"
+      },
+      "en": {
+        "value": "Practise the use of \u0022que\u0022, \u0022cual\u0022 and \u0022quien\u0022"
+      }
+    },
+    "str_26f9154c-04fd-47ac-b6d2-b72cd7d0c5b7": {
+      "de": { "value": "Relativs\u00e4tze verwenden" },
+      "en": { "value": "Relative clauses" }
+    },
+    "str_1d581d73-37dd-46d7-af8a-6e50f515a19d": {
+      "de": {
+        "value": "Bilde Relativs\u00e4tze mit dem \u201eIndicativo\u201c und \u201eSubjuntivo\u201c"
+      },
+      "en": {
+        "value": "Make relative clauses with the \u0022indicativo\u0022 and \u0022subjuntivo\u0022"
+      }
+    },
+    "str_d968802f-052e-49f8-8dc8-1dc380fe420b": {
+      "de": { "value": "Die Relativpartikel \u201ecuyo\u201c" },
+      "en": { "value": "The relative particle \u0022cuyo\u0022" }
+    },
+    "str_a7d3dba2-8c62-4192-8f82-7c121fe98e49": {
+      "de": {
+        "value": "Wiederhole die verschiedenen Verwendungsm\u00f6glichkeiten der Relativpartikel \u201ecuyo\u201c"
+      },
+      "en": {
+        "value": "Revise the different uses of the relative particle \u0022cuyo\u0022"
+      }
+    },
+    "str_20191010_184": {
+      "de": { "value": "Verbmuster" },
+      "en": { "value": "Verb patterns" }
+    },
+    "str_c02f8178-e97b-4073-afba-2dc33744cac4": {
+      "de": { "value": "Verwendungsmuster bestimmter Verben" },
+      "en": { "value": "Patterns of use that certain verbs follow" }
+    },
+    "str_50779f85-1dfe-4fc0-a197-ebe3f89bde8b": {
+      "de": { "value": "Verben und Pr\u00e4positionen" },
+      "en": { "value": "Verbs and prepositions" }
+    },
+    "str_9c95aca5-cb7e-4c65-9568-de6231bf1b36": {
+      "de": {
+        "value": "Lerne die Pr\u00e4positionen kennen, die auf bestimmte Verben folgen"
+      },
+      "en": { "value": "Learn which prepositions follow certain verbs" }
+    },
+    "str_4fafe6a1-45e0-49a0-ba6f-09c9a905d6fe": {
+      "de": { "value": "Verben, auf die der Infinitiv folgt" },
+      "en": { "value": "Verbs followed by infinitives" }
+    },
+    "str_c24c65cf-07a1-4cd5-a00c-e2acfb10b29c": {
+      "de": { "value": "\u00dcber die Entwicklung von Handlungen sprechen" },
+      "en": { "value": "Learn to talk about the development of actions" }
+    },
+    "str_30d44517-e785-4324-8e91-fd3570b891a8": {
+      "de": { "value": "Llevar, seguir, continuar" },
+      "en": { "value": "Llevar, seguir, continuar" }
+    },
+    "str_beaa9a5d-a1c1-4b0a-aa42-917633bb8823": {
+      "de": {
+        "value": "llevo viviendo, sigues saliendo, continuamos trabajando..."
+      },
+      "en": {
+        "value": "llevo viviendo, sigues saliendo, continuamos trabajando..."
+      }
+    }
+  },
+  "entity_map": {}
+}

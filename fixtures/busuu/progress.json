@@ -1,0 +1,33 @@
+{
+  "status": "ok",
+  "data": [
+    {
+      "topic_id": "grammar_topic_3d4fa7b0-ff12-44f1-9d9b-b320e67753de",
+      "strength": 3,
+      "percentage": 76
+    },
+    {
+      "topic_id": "grammar_topic_64206c3d-067b-45c3-b03c-1c8b678423bf",
+      "strength": 3,
+      "percentage": 71
+    },
+    {
+      "topic_id": "grammar_topic_bd789c66-69c3-4362-a393-6770c6314e10",
+      "strength": 3,
+      "percentage": 71
+    },
+    {
+      "topic_id": "grammar_topic_c9e7a9cb-c129-4cd3-9f0a-21ab86a4d8cc",
+      "strength": 2,
+      "percentage": 67
+    },
+    { "topic_id": "grammar_topic_es_1_3", "strength": 3, "percentage": 90 },
+    { "topic_id": "grammar_topic_es_1_4", "strength": 3, "percentage": 78 },
+    { "topic_id": "grammar_topic_es_2_2", "strength": 3, "percentage": 77 },
+    {
+      "topic_id": "grammar_topic_f3dc4a8a-6116-4b4d-84a7-bba17d8644d9",
+      "strength": 3,
+      "percentage": 80
+    }
+  ]
+}

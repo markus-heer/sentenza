@@ -1,0 +1,18 @@
+# Fixtures must remain byte-identical to the real Busuu payload format.
+# Never let Prettier touch these files - see design.md "Schutz der Fixtures vor Formatierung".
+fixtures/
+
+# Generated artifacts - never hand-edited, never reformatted.
+apps/backend/schema.gql
+apps/backend/prisma/migrations/
+
+# Build output and dependency/cache directories.
+**/dist/
+node_modules/
+.turbo/
+
+# Lockfile has its own formatting managed by pnpm.
+pnpm-lock.yaml
+
+# Spec and steering documents are authored/managed by Kiro tooling directly.
+.kiro/
