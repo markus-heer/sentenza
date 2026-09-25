@@ -149,12 +149,12 @@ Die Prüfpunkte 5, 9, 14 und 18 sind bewusst nicht Teil des Graphen: sie führen
     - `apps/backend/src/config/configuration.ts` mit `SentenzaConfig` und `loadConfig`, einschließlich Bereichsprüfung für `ACCESS_TOKEN_TTL_MINUTES` (5–60, Vorgabe 15) und Vorgabewerten für `INGESTION_MAX_PAYLOAD_BYTES`, `REFRESH_TOKEN_TTL_DAYS`, `DB_STARTUP_TIMEOUT_MS`, `DEFAULT_TARGET_LANGUAGE`
     - _Requirements: 1.8, 1.12, 2.6_
 
-  - [-] 4.2 Property 40 als eigenschaftsbasierten Test umsetzen
+  - [x] 4.2 Property 40 als eigenschaftsbasierten Test umsetzen
     - **Property 40: Eine unvollständige Konfiguration verhindert den Start** — für jede nicht-leere Teilmenge der benötigten Variablen bricht die Prüfung ab und benennt jeden fehlenden Namen
     - **Validates: Requirements 1.12**
     - _Requirements: 1.12_
 
-  - [~] 4.3 `main.ts` mit Startprüfungen implementieren
+  - [-] 4.3 `main.ts` mit Startprüfungen implementieren
     - `loadConfig` vor jedem Portöffnen, `waitForDatabase` mit Frist aus `DB_STARTUP_TIMEOUT_MS`, Abbruch mit Nennung der fehlenden Variablen beziehungsweise der fehlgeschlagenen Datenbankverbindung und `process.exit(1)`
     - _Requirements: 1.12_
 
