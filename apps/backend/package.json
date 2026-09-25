@@ -6,22 +6,27 @@
   "type": "commonjs",
   "scripts": {
     "db:generate": "prisma generate",
-    "db:migrate:dev": "prisma migrate dev",
-    "db:migrate:deploy": "prisma migrate deploy",
+    "db:migrate:dev": "dotenv -e ../../.env -- prisma migrate dev",
+    "db:migrate:deploy": "dotenv -e ../../.env -- prisma migrate deploy",
     "build": "tsc --project tsconfig.json",
     "lint": "eslint .",
     "check-types": "tsc --noEmit",
-    "test": "vitest run",
+    "test": "dotenv -e ../../.env -- vitest run",
     "start:dev": "echo \"start:dev wird in einer späteren Aufgabe implementiert\" && exit 1"
   },
   "dependencies": {
+    "@nestjs/common": "12.1.0",
+    "@nestjs/core": "12.1.0",
     "@prisma/client": "6.19.3",
-    "@sentenza/domain": "workspace:*"
+    "@sentenza/domain": "workspace:*",
+    "reflect-metadata": "0.2.2",
+    "rxjs": "7.8.2"
   },
   "devDependencies": {
     "@sentenza/eslint-config": "workspace:*",
     "@sentenza/typescript-config": "workspace:*",
     "@sentenza/vitest-config": "workspace:*",
+    "dotenv-cli": "10.0.0",
     "prisma": "6.19.3",
     "typescript": "5.7.3",
     "vitest": "3.2.7"

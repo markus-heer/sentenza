@@ -122,25 +122,25 @@ Die Prüfpunkte 5, 9, 14 und 18 sind bewusst nicht Teil des Graphen: sie führen
     - `packages/domain/src/__tests__/error-code.test.ts`: Vollständigkeit der Enumeration, `SentenzaError` mit und ohne `details`
     - _Requirements: 9.1, 10.10_
 
-- [ ] 3. Datenbankschicht und Testdatenbank
+- [x] 3. Datenbankschicht und Testdatenbank
   - [x] 3.1 `schema.prisma` vollständig schreiben
     - `apps/backend/prisma/schema.prisma` mit den Modellen `UserAccount`, `RefreshToken`, `RawPayload`, `GrammarCategory`, `GrammarTopic`, `GrammarProgress`, allen Enumerationen, den im Design festgelegten eindeutigen Schlüsseln (`[language, busuuId]`, `[userAccountId, grammarTopicId]`, `tokenHash`) und Indizes; `contentHash` ausdrücklich nicht eindeutig, `content` als `@db.Text`
     - _Requirements: 1.10, 3.7, 3.12_
 
-  - [-] 3.2 Erste Migration erzeugen und `postinstall` verdrahten
+  - [x] 3.2 Erste Migration erzeugen und `postinstall` verdrahten
     - Eingecheckte Migration unter `apps/backend/prisma/migrations/`, Skripte `db:generate`, `db:migrate:dev`, `db:migrate:deploy`; Wurzel-`postinstall` ruft `db:generate` ohne erreichbare Datenbank auf
     - _Requirements: 1.6, 1.10_
 
-  - [~] 3.3 `PrismaService` und Re-Export der generierten Typen
+  - [x] 3.3 `PrismaService` und Re-Export der generierten Typen
     - `apps/backend/src/prisma/prisma.service.ts` und `prisma.types.ts`; kein Konsument importiert aus dem generierten Pfad
     - _Requirements: 1.10_
 
-  - [~] 3.4 Testdatenbank-Infrastruktur aufbauen
+  - [x] 3.4 Testdatenbank-Infrastruktur aufbauen
     - `apps/backend/test/global-setup.ts`: Abbruch, wenn die verwendete Verbindungszeichenkette nicht `TEST_DATABASE_URL` oder gleich `DATABASE_URL` ist, danach `prisma migrate deploy`
     - Reset-Helfer mit `TRUNCATE … RESTART IDENTITY CASCADE` über die aus der Prisma-DMMF abgeleiteten Tabellen; eigene Vitest-Projektkonfiguration mit `pool: 'forks'` und `singleFork: true`
     - _Requirements: 10.7_
 
-  - [~] 3.5 Migrationstreue prüfen
+  - [x] 3.5 Migrationstreue prüfen
     - `apps/backend/prisma/__tests__/migrations.test.ts`: `migrate deploy` auf leerer Datenbank, danach muss `migrate diff` gegen `schema.prisma` leer sein
     - _Requirements: 1.10_
 

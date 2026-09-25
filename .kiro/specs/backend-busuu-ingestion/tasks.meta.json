@@ -233,6 +233,11 @@
         "executionId": "12f4313a-a2d5-4856-bf92-a416a55fd585",
         "chatSessionId": "sess_366c4077-2428-41f9-a065-655dd8b1f298",
         "timestamp": 1790341787905
+      },
+      {
+        "executionId": "12f4313a-a2d5-4856-bf92-a416a55fd585",
+        "chatSessionId": "sess_366c4077-2428-41f9-a065-655dd8b1f298",
+        "timestamp": 1790345689979
       }
     ],
     "3.3 `PrismaService` und Re-Export der generierten Typen": [
@@ -245,6 +250,16 @@
         "executionId": "12f4313a-a2d5-4856-bf92-a416a55fd585",
         "chatSessionId": "sess_366c4077-2428-41f9-a065-655dd8b1f298",
         "timestamp": 1790340204517
+      },
+      {
+        "executionId": "12f4313a-a2d5-4856-bf92-a416a55fd585",
+        "chatSessionId": "sess_366c4077-2428-41f9-a065-655dd8b1f298",
+        "timestamp": 1790345694966
+      },
+      {
+        "executionId": "12f4313a-a2d5-4856-bf92-a416a55fd585",
+        "chatSessionId": "sess_366c4077-2428-41f9-a065-655dd8b1f298",
+        "timestamp": 1790345920647
       }
     ],
     "3.4 Testdatenbank-Infrastruktur aufbauen": [
@@ -257,6 +272,16 @@
         "executionId": "12f4313a-a2d5-4856-bf92-a416a55fd585",
         "chatSessionId": "sess_366c4077-2428-41f9-a065-655dd8b1f298",
         "timestamp": 1790340204569
+      },
+      {
+        "executionId": "12f4313a-a2d5-4856-bf92-a416a55fd585",
+        "chatSessionId": "sess_366c4077-2428-41f9-a065-655dd8b1f298",
+        "timestamp": 1790345929949
+      },
+      {
+        "executionId": "12f4313a-a2d5-4856-bf92-a416a55fd585",
+        "chatSessionId": "sess_366c4077-2428-41f9-a065-655dd8b1f298",
+        "timestamp": 1790346640962
       }
     ],
     "3.5 Migrationstreue prüfen": [
@@ -269,6 +294,16 @@
         "executionId": "12f4313a-a2d5-4856-bf92-a416a55fd585",
         "chatSessionId": "sess_366c4077-2428-41f9-a065-655dd8b1f298",
         "timestamp": 1790340204623
+      },
+      {
+        "executionId": "12f4313a-a2d5-4856-bf92-a416a55fd585",
+        "chatSessionId": "sess_366c4077-2428-41f9-a065-655dd8b1f298",
+        "timestamp": 1790346645895
+      },
+      {
+        "executionId": "12f4313a-a2d5-4856-bf92-a416a55fd585",
+        "chatSessionId": "sess_366c4077-2428-41f9-a065-655dd8b1f298",
+        "timestamp": 1790346961388
       }
     ],
     "4.1 Zod-validierte Konfiguration implementieren": [
@@ -1579,6 +1614,13 @@
         "executionId": "12f4313a-a2d5-4856-bf92-a416a55fd585",
         "chatSessionId": "sess_366c4077-2428-41f9-a065-655dd8b1f298",
         "timestamp": 1790340861731
+      }
+    ],
+    "3. Datenbankschicht und Testdatenbank": [
+      {
+        "executionId": "12f4313a-a2d5-4856-bf92-a416a55fd585",
+        "chatSessionId": "sess_366c4077-2428-41f9-a065-655dd8b1f298",
+        "timestamp": 1790346961445
       }
     ]
   }
