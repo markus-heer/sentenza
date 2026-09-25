@@ -5,5 +5,8 @@ allowBuilds:
   '@apollo/protobufjs': false
   '@prisma/client': true
   '@prisma/engines': true
+  # Das Postinstall-Skript prüft nur, ob ein passendes natives Paket vorliegt.
+  # Die Bindung selbst kommt aus @swc/core-<plattform>, daher nicht nötig.
+  '@swc/core': false
   esbuild: true
   prisma: true

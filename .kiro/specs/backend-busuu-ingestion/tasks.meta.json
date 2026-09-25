@@ -1,5 +1,18 @@
 {
-  "pbtResults": {},
+  "pbtResults": {
+    "4.6 Property 35 als eigenschaftsbasierten Test umsetzen": {
+      "status": "passed",
+      "lastRunTimestamp": 1790354686222
+    },
+    "4.8 Property 38 als eigenschaftsbasierten Test umsetzen": {
+      "status": "passed",
+      "lastRunTimestamp": 1790354691254
+    },
+    "4.2 Property 40 als eigenschaftsbasierten Test umsetzen": {
+      "status": "passed",
+      "lastRunTimestamp": 1790354680249
+    }
+  },
   "executionHistory": {
     "1.1 pnpm-Workspace und Turborepo-Wurzel anlegen": [
       {
@@ -436,6 +449,11 @@
         "executionId": "c9e6b6f6-b82e-4e58-81c8-74f184c0fd18",
         "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
         "timestamp": 1790351740522
+      },
+      {
+        "executionId": "c9e6b6f6-b82e-4e58-81c8-74f184c0fd18",
+        "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
+        "timestamp": 1790352420969
       }
     ],
     "4.7 Strukturierte Protokollierung mit Redaction implementieren": [
@@ -453,6 +471,16 @@
         "executionId": "c9e6b6f6-b82e-4e58-81c8-74f184c0fd18",
         "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
         "timestamp": 1790351726897
+      },
+      {
+        "executionId": "c9e6b6f6-b82e-4e58-81c8-74f184c0fd18",
+        "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
+        "timestamp": 1790352428880
+      },
+      {
+        "executionId": "c9e6b6f6-b82e-4e58-81c8-74f184c0fd18",
+        "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
+        "timestamp": 1790352927159
       }
     ],
     "4.8 Property 38 als eigenschaftsbasierten Test umsetzen": [
@@ -470,6 +498,16 @@
         "executionId": "c9e6b6f6-b82e-4e58-81c8-74f184c0fd18",
         "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
         "timestamp": 1790351726965
+      },
+      {
+        "executionId": "c9e6b6f6-b82e-4e58-81c8-74f184c0fd18",
+        "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
+        "timestamp": 1790352931469
+      },
+      {
+        "executionId": "c9e6b6f6-b82e-4e58-81c8-74f184c0fd18",
+        "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
+        "timestamp": 1790353298975
       }
     ],
     "4.9 Health-Endpunkt mit Terminus implementieren": [
@@ -487,6 +525,16 @@
         "executionId": "c9e6b6f6-b82e-4e58-81c8-74f184c0fd18",
         "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
         "timestamp": 1790351727017
+      },
+      {
+        "executionId": "c9e6b6f6-b82e-4e58-81c8-74f184c0fd18",
+        "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
+        "timestamp": 1790353303208
+      },
+      {
+        "executionId": "c9e6b6f6-b82e-4e58-81c8-74f184c0fd18",
+        "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
+        "timestamp": 1790353966675
       }
     ],
     "4.10 Kantenfalltest für nicht erreichbare Datenbank schreiben": [
@@ -504,6 +552,16 @@
         "executionId": "c9e6b6f6-b82e-4e58-81c8-74f184c0fd18",
         "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
         "timestamp": 1790351727064
+      },
+      {
+        "executionId": "c9e6b6f6-b82e-4e58-81c8-74f184c0fd18",
+        "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
+        "timestamp": 1790353970531
+      },
+      {
+        "executionId": "c9e6b6f6-b82e-4e58-81c8-74f184c0fd18",
+        "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
+        "timestamp": 1790354451446
       }
     ],
     "5. Prüfpunkt — Fundament steht": [
@@ -521,6 +579,16 @@
         "executionId": "c9e6b6f6-b82e-4e58-81c8-74f184c0fd18",
         "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
         "timestamp": 1790351727115
+      },
+      {
+        "executionId": "c9e6b6f6-b82e-4e58-81c8-74f184c0fd18",
+        "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
+        "timestamp": 1790354457071
+      },
+      {
+        "executionId": "5f66aec2-cd34-4fef-8e5e-85d3e99435f6",
+        "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
+        "timestamp": 1790359866118
       }
     ],
     "6.1 `GoogleTokenVerifier` implementieren": [
@@ -538,6 +606,11 @@
         "executionId": "c9e6b6f6-b82e-4e58-81c8-74f184c0fd18",
         "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
         "timestamp": 1790351727164
+      },
+      {
+        "executionId": "5f66aec2-cd34-4fef-8e5e-85d3e99435f6",
+        "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
+        "timestamp": 1790359876550
       }
     ],
     "6.2 Property 24 als eigenschaftsbasierten Test umsetzen": [
@@ -2191,6 +2264,13 @@
         "executionId": "12f4313a-a2d5-4856-bf92-a416a55fd585",
         "chatSessionId": "sess_366c4077-2428-41f9-a065-655dd8b1f298",
         "timestamp": 1790346961445
+      }
+    ],
+    "4. Bootstrap, Konfiguration, Fehlerbehandlung, Protokollierung, Health": [
+      {
+        "executionId": "c9e6b6f6-b82e-4e58-81c8-74f184c0fd18",
+        "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
+        "timestamp": 1790354451514
       }
     ]
   }

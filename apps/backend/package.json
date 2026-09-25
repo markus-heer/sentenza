@@ -12,7 +12,7 @@
     "lint": "eslint .",
     "check-types": "tsc --noEmit",
     "test": "dotenv -e ../../.env -- vitest run",
-    "start:dev": "dotenv -e ../../.env -- tsx watch src/main.ts"
+    "start:dev": "dotenv -e ../../.env -- node --watch --require @swc-node/register src/main.ts"
   },
   "dependencies": {
     "@apollo/server": "5.5.1",
@@ -22,6 +22,7 @@
     "@nestjs/core": "12.1.0",
     "@nestjs/graphql": "14.0.2",
     "@nestjs/platform-express": "12.1.0",
+    "@nestjs/terminus": "12.1.0",
     "@prisma/client": "6.19.3",
     "@sentenza/domain": "workspace:*",
     "class-transformer": "0.5.1",
@@ -35,11 +36,12 @@
     "@sentenza/eslint-config": "workspace:*",
     "@sentenza/typescript-config": "workspace:*",
     "@sentenza/vitest-config": "workspace:*",
+    "@swc-node/register": "1.12.1",
+    "@swc/core": "1.16.2",
     "@types/node": "22.20.4",
     "dotenv-cli": "10.0.0",
     "fast-check": "4.10.2",
     "prisma": "6.19.3",
-    "tsx": "4.20.5",
     "typescript": "5.7.3",
     "vitest": "3.2.7"
   }

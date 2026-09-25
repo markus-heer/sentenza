@@ -23,8 +23,13 @@ const VALID_BASE_ENV: Record<string, string> = {
 
 const REQUIRED_VARS = Object.keys(VALID_BASE_ENV);
 
-describe('loadConfig', () => {
-  // Feature: backend-busuu-ingestion, Property 40: Eine unvollständige Konfiguration verhindert den Start
+/**
+ * Feature: backend-busuu-ingestion, Property 40: Eine unvollständige
+ * Konfiguration verhindert den Start.
+ *
+ * **Validates: Requirements 1.12**
+ */
+describe('loadConfig (Property 40)', () => {
   it('bricht für jede nicht-leere Teilmenge fehlender benötigter Variablen ab und benennt jeden fehlenden Namen', () => {
     fc.assert(
       fc.property(fc.subarray(REQUIRED_VARS, { minLength: 1 }), (removedNames) => {

@@ -8,6 +8,7 @@ import { GraphQLModule } from '@nestjs/graphql';
 
 import { AppResolver } from './app.resolver.js';
 import { formatError } from './common/format-error.js';
+import { HealthModule } from './health/health.module.js';
 import { PrismaModule } from './prisma/prisma.module.js';
 
 /**
@@ -36,12 +37,14 @@ import { PrismaModule } from './prisma/prisma.module.js';
  * Apollos eigenes `stacktrace`-Extension-Feld auch in der
  * Entwicklungsumgebung.
  *
- * Die strukturierte Protokollierung und der Health-Endpunkt kommen in den
- * Aufgaben 4.7–4.9 hinzu.
+ * Aufgabe 4.9 bindet `HealthModule` ein: `GET /health` prüft die Datenbank
+ * über Terminus mit `SELECT 1` und einem Zeitlimit von 5 Sekunden
+ * (Requirement 9.7, 9.8, 9.9).
  */
 @Module({
   imports: [
     PrismaModule,
+    HealthModule,
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
       autoSchemaFile: join(process.cwd(), 'schema.gql'),
