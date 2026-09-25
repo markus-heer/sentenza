@@ -145,11 +145,11 @@ Die Prüfpunkte 5, 9, 14 und 18 sind bewusst nicht Teil des Graphen: sie führen
     - _Requirements: 1.10_
 
 - [ ] 4. Bootstrap, Konfiguration, Fehlerbehandlung, Protokollierung, Health
-  - [~] 4.1 Zod-validierte Konfiguration implementieren
+  - [x] 4.1 Zod-validierte Konfiguration implementieren
     - `apps/backend/src/config/configuration.ts` mit `SentenzaConfig` und `loadConfig`, einschließlich Bereichsprüfung für `ACCESS_TOKEN_TTL_MINUTES` (5–60, Vorgabe 15) und Vorgabewerten für `INGESTION_MAX_PAYLOAD_BYTES`, `REFRESH_TOKEN_TTL_DAYS`, `DB_STARTUP_TIMEOUT_MS`, `DEFAULT_TARGET_LANGUAGE`
     - _Requirements: 1.8, 1.12, 2.6_
 
-  - [~] 4.2 Property 40 als eigenschaftsbasierten Test umsetzen
+  - [-] 4.2 Property 40 als eigenschaftsbasierten Test umsetzen
     - **Property 40: Eine unvollständige Konfiguration verhindert den Start** — für jede nicht-leere Teilmenge der benötigten Variablen bricht die Prüfung ab und benennt jeden fehlenden Namen
     - **Validates: Requirements 1.12**
     - _Requirements: 1.12_
