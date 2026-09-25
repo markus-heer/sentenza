@@ -1,0 +1,57 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+"""Das Niveau eines Grammatik_Thema nach dem europäischen Referenzrahmen."""
+enum CefrLevel {
+  A1
+  A2
+  B1
+  B2
+  C1
+  UNBEKANNT
+}
+
+"""
+Platzhalter-Typ, hält die Domänen-Enumerationen im generierten Schema sichtbar.
+"""
+type DomainEnumProbe {
+  cefrLevel: CefrLevel!
+  payloadKind: PayloadKind!
+  processingState: ProcessingState!
+  submissionSource: SubmissionSource!
+  targetLanguage: TargetLanguage!
+}
+
+"""Die Kennzeichnung der Struktur eines eingereichten Payloads."""
+enum PayloadKind {
+  CATALOG
+  PROGRESS
+}
+
+"""Der Stand der Normalisierung eines Eintrags im Raw_Payload_Store."""
+enum ProcessingState {
+  FEHLGESCHLAGEN
+  TEILWEISE_VERARBEITET
+  VERARBEITET
+}
+
+type Query {
+  """
+  Platzhalter-Query, hält die Domänen-Enumerationen im generierten Schema sichtbar.
+  """
+  domainEnumProbe: DomainEnumProbe!
+
+  """Platzhalter-Query, bis reale Resolver existieren."""
+  ping: String!
+}
+
+"""Die Angabe, welcher Client einen Payload eingereicht hat."""
+enum SubmissionSource {
+  SENTENZA_EXTENSION
+}
+
+"""Die von Sentenza unterstützte Lernsprache."""
+enum TargetLanguage {
+  ES
+}

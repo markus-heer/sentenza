@@ -365,6 +365,11 @@
         "executionId": "12f4313a-a2d5-4856-bf92-a416a55fd585",
         "chatSessionId": "sess_366c4077-2428-41f9-a065-655dd8b1f298",
         "timestamp": 1790348050877
+      },
+      {
+        "executionId": "12f4313a-a2d5-4856-bf92-a416a55fd585",
+        "chatSessionId": "sess_366c4077-2428-41f9-a065-655dd8b1f298",
+        "timestamp": 1790348591618
       }
     ],
     "4.4 `AppModule` mit Apollo code-first aufsetzen": [
@@ -377,6 +382,16 @@
         "executionId": "12f4313a-a2d5-4856-bf92-a416a55fd585",
         "chatSessionId": "sess_366c4077-2428-41f9-a065-655dd8b1f298",
         "timestamp": 1790340204801
+      },
+      {
+        "executionId": "12f4313a-a2d5-4856-bf92-a416a55fd585",
+        "chatSessionId": "sess_366c4077-2428-41f9-a065-655dd8b1f298",
+        "timestamp": 1790348596709
+      },
+      {
+        "executionId": "12f4313a-a2d5-4856-bf92-a416a55fd585",
+        "chatSessionId": "sess_366c4077-2428-41f9-a065-655dd8b1f298",
+        "timestamp": 1790349552848
       }
     ],
     "4.5 Apollo-Fehlerformatierer implementieren": [
@@ -389,6 +404,11 @@
         "executionId": "12f4313a-a2d5-4856-bf92-a416a55fd585",
         "chatSessionId": "sess_366c4077-2428-41f9-a065-655dd8b1f298",
         "timestamp": 1790340204858
+      },
+      {
+        "executionId": "12f4313a-a2d5-4856-bf92-a416a55fd585",
+        "chatSessionId": "sess_366c4077-2428-41f9-a065-655dd8b1f298",
+        "timestamp": 1790349564486
       }
     ],
     "4.6 Property 35 als eigenschaftsbasierten Test umsetzen": [

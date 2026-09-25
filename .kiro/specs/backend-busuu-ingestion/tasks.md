@@ -154,15 +154,15 @@ Die Prüfpunkte 5, 9, 14 und 18 sind bewusst nicht Teil des Graphen: sie führen
     - **Validates: Requirements 1.12**
     - _Requirements: 1.12_
 
-  - [-] 4.3 `main.ts` mit Startprüfungen implementieren
+  - [x] 4.3 `main.ts` mit Startprüfungen implementieren
     - `loadConfig` vor jedem Portöffnen, `waitForDatabase` mit Frist aus `DB_STARTUP_TIMEOUT_MS`, Abbruch mit Nennung der fehlenden Variablen beziehungsweise der fehlgeschlagenen Datenbankverbindung und `process.exit(1)`
     - _Requirements: 1.12_
 
-  - [~] 4.4 `AppModule` mit Apollo code-first aufsetzen
+  - [x] 4.4 `AppModule` mit Apollo code-first aufsetzen
     - GraphQL-Modul mit `autoSchemaFile` auf `apps/backend/schema.gql`, `registerEnumType` für alle aus `@sentenza/domain` importierten Enumerationen, Port aus `PORT`
     - _Requirements: 1.9, 1.4, 7.8_
 
-  - [~] 4.5 Apollo-Fehlerformatierer implementieren
+  - [-] 4.5 Apollo-Fehlerformatierer implementieren
     - `apps/backend/src/common/format-error.ts`: `SentenzaError` bleibt erhalten, jede unzugeordnete Ursache wird `INTERNAL_SERVER_ERROR`, Antwort trägt die Korrelationskennung und keinen Aufrufstapel, keine Datenbankmeldung, keinen Dateipfad, keinen Hostnamen; `includeStacktraceInErrorResponses` deaktiviert; Eingabeverstöße mit Feldpfad über `class-validator`
     - _Requirements: 9.1, 9.2, 9.3_
 
