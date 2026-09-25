@@ -1,0 +1,15 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Check wave parallelization on new tasks.md",
+      "trigger": "PostFileCreate",
+      "action": {
+        "type": "agent",
+        "prompt": "A new tasks.md was just created in a spec directory (.kiro/specs/<id>-<name>/). Read this file along with the corresponding design.md and requirements.md in the same spec directory.\n\nReview only the \"## Task Dependency Graph\" section (the JSON block with \"waves\") for optimal parallelization of subtasks. Specifically:\n\n1. Real dependencies: For each wave, check whether the listed tasks actually depend on tasks from earlier waves (shared files, shared modules, data schema, interfaces that one task needs from another). Use the task descriptions and referenced requirements/files in tasks.md and design.md for this.\n2. Missing parallelism: Identify tasks placed in different waves despite having no real dependency on each other (different files/directories, no shared interface) — these could run in the same wave.\n3. Hidden dependencies: Identify tasks placed in the same wave even though one depends on the other (e.g. a shared file, or one task creating an interface the other needs) — this would be an error that leads to conflicts.\n4. Granularity: Check whether a task is coarse enough that it could be split into several independent subtasks and parallelized, without fragmenting it artificially.\n5. Rationale consistency: Check whether each wave's \"rationale\" actually matches the wave's composition and is justified by the task contents, not just asserted."
+      },
+      "matcher": "\\.kiro/specs/.*/tasks\\.md$",
+      "enabled": true
+    }
+  ]
+}
