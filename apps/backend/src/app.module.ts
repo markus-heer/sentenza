@@ -7,7 +7,9 @@ import { Module } from '@nestjs/common';
 import { GraphQLModule } from '@nestjs/graphql';
 
 import { AppResolver } from './app.resolver.js';
+import { AuthModule } from './auth/auth.module.js';
 import { formatError } from './common/format-error.js';
+import { ConfigModule } from './config/config.module.js';
 import { HealthModule } from './health/health.module.js';
 import { PrismaModule } from './prisma/prisma.module.js';
 
@@ -40,11 +42,22 @@ import { PrismaModule } from './prisma/prisma.module.js';
  * Aufgabe 4.9 bindet `HealthModule` ein: `GET /health` prüft die Datenbank
  * über Terminus mit `SELECT 1` und einem Zeitlimit von 5 Sekunden
  * (Requirement 9.7, 9.8, 9.9).
+ *
+ * Aufgabe 6.10 ergänzt `ConfigModule` und `AuthModule`. `ConfigModule` stellt
+ * die validierte `SentenzaConfig` global bereit, weil die Factories des
+ * Auth-Moduls sie brauchen. `AuthModule` registriert `GqlAuthGuard` über
+ * `APP_GUARD` global: Jede Query und jede Mutation ist damit geschützt, solange
+ * sie nicht ausdrücklich `@Public()` trägt (Requirement 2.10, 2.11). Das gilt
+ * auch für die Platzhalterfelder von `AppResolver` — Property 29
+ * (Aufgabe 6.11) zählt die Felder des erzeugten Schemas auf und duldet keine
+ * Ausnahme, die nicht Anmeldung oder Erneuerung ist.
  */
 @Module({
   imports: [
+    ConfigModule,
     PrismaModule,
     HealthModule,
+    AuthModule,
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
       autoSchemaFile: join(process.cwd(), 'schema.gql'),

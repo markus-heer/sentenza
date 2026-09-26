@@ -2,6 +2,34 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
+"""Das erneuerte Access-Token mit seinem Ablaufzeitpunkt."""
+type AccessTokenPayload {
+  """Das neu ausgestellte Sentenza_Access_Token."""
+  accessToken: String!
+
+  """Zeitpunkt, zu dem das Access-Token seine Gültigkeit verliert."""
+  accessTokenExpiresAt: DateTime!
+}
+
+"""
+Access- und Refresh-Token einer erfolgreichen Anmeldung, jeweils mit Ablaufzeitpunkt.
+"""
+type AuthPayload {
+  """Das Sentenza_Access_Token für geschützte Operationen."""
+  accessToken: String!
+
+  """Zeitpunkt, zu dem das Access-Token seine Gültigkeit verliert."""
+  accessTokenExpiresAt: DateTime!
+
+  """
+  Das Sentenza_Refresh_Token für die Erneuerung ohne neue Google-Anmeldung.
+  """
+  refreshToken: String!
+
+  """Zeitpunkt, zu dem das Refresh-Token seine Gültigkeit verliert."""
+  refreshTokenExpiresAt: DateTime!
+}
+
 """Das Niveau eines Grammatik_Thema nach dem europäischen Referenzrahmen."""
 enum CefrLevel {
   A1
@@ -13,6 +41,11 @@ enum CefrLevel {
 }
 
 """
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+"""
 Platzhalter-Typ, hält die Domänen-Enumerationen im generierten Schema sichtbar.
 """
 type DomainEnumProbe {
@@ -21,6 +54,18 @@ type DomainEnumProbe {
   processingState: ProcessingState!
   submissionSource: SubmissionSource!
   targetLanguage: TargetLanguage!
+}
+
+type Mutation {
+  """
+  Stellt ohne erneute Google-Anmeldung ein neues Access-Token aus; das Refresh-Token bleibt unverändert gültig.
+  """
+  refreshAccessToken(input: RefreshAccessTokenInput!): AccessTokenPayload!
+
+  """
+  Meldet ein Google-Konto an und gibt Access- und Refresh-Token samt Ablaufzeitpunkten zurück.
+  """
+  signInWithGoogle(input: SignInWithGoogleInput!): AuthPayload!
 }
 
 """Die Kennzeichnung der Struktur eines eingereichten Payloads."""
@@ -44,6 +89,18 @@ type Query {
 
   """Platzhalter-Query, bis reale Resolver existieren."""
   ping: String!
+}
+
+"""Das vorgelegte Refresh-Token einer Erneuerung."""
+input RefreshAccessTokenInput {
+  """Das bei der Anmeldung erhaltene Sentenza_Refresh_Token."""
+  refreshToken: String!
+}
+
+"""Das von Google ausgestellte ID-Token einer Anmeldung."""
+input SignInWithGoogleInput {
+  """Das Google_ID_Token, wie Google es ausgestellt hat."""
+  idToken: String!
 }
 
 """Die Angabe, welcher Client einen Payload eingereicht hat."""

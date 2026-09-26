@@ -1,0 +1,26 @@
+{
+  // Type-Check über den gesamten Bestand des Pakets, einschließlich der
+  // Testdateien unter `__tests__` und der Testinfrastruktur unter `test`
+  // (Reset-Helfer, Global-Setup, Client der Testdatenbank). `tsconfig.json`
+  // kann das nicht leisten: Es emittiert nach `dist` und legt `rootDir` auf
+  // `src`, womit ein Import aus `test/**` als "not under rootDir" abgelehnt
+  // würde. Hier wird nichts emittiert, deshalb genügt `rootDir` auf dem
+  // Paketverzeichnis.
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "rootDir": ".",
+    // Ohne diese Zeile legte der Type-Check seine `.tsbuildinfo` in `dist` und
+    // damit in das Ausgabeverzeichnis der Turborepo-Aufgabe `build`; außerdem
+    // hielte er eine Konfigurationsänderung nicht immer für einen Grund zur
+    // Neuprüfung.
+    "incremental": false,
+    // Die Testinfrastruktur läuft unter Vitest als ES-Modul und verwendet
+    // `import.meta.url`, um Pfade relativ zur eigenen Datei zu bilden. Der
+    // Produktionsbuild bleibt CommonJS (`nestjs.json`); nur der Type-Check
+    // sieht die Dateien als ES-Modul, damit `import.meta` zulässig ist.
+    "module": "ES2022"
+  },
+  "include": ["src/**/*.ts", "test/**/*.ts", "prisma/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}

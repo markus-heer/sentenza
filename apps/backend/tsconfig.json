@@ -5,5 +5,12 @@
     "rootDir": "src",
     "baseUrl": "."
   },
-  "include": ["src/**/*.ts"]
+  // Der Build übersetzt ausschließlich Produktionscode nach `dist`. Das
+  // `exclude` steht hier und nicht nur in `nestjs.json`, weil relative Pfade
+  // eines `extends` gegen das Verzeichnis der erweiterten Datei aufgelöst
+  // werden — die dortigen Muster greifen also nicht in `apps/backend`.
+  // Die Testdateien prüft `tsconfig.check.json`; sie liegen teils außerhalb
+  // von `rootDir` und dürfen den Emit nicht mitbestimmen.
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist", "test", "**/__tests__/**", "**/*.test.ts"]
 }

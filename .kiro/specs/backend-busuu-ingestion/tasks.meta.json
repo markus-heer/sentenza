@@ -11,6 +11,30 @@
     "4.2 Property 40 als eigenschaftsbasierten Test umsetzen": {
       "status": "passed",
       "lastRunTimestamp": 1790354680249
+    },
+    "6.2 Property 24 als eigenschaftsbasierten Test umsetzen": {
+      "status": "passed",
+      "lastRunTimestamp": 1790360850156
+    },
+    "6.4 Property 25 als eigenschaftsbasierten Test umsetzen": {
+      "status": "passed",
+      "lastRunTimestamp": 1790361600635
+    },
+    "6.6 Property 26 als eigenschaftsbasierten Test umsetzen": {
+      "status": "passed",
+      "lastRunTimestamp": 1790363772887
+    },
+    "6.7 Property 27 als eigenschaftsbasierten Test umsetzen": {
+      "status": "passed",
+      "lastRunTimestamp": 1790363219537
+    },
+    "6.9 Property 28 als eigenschaftsbasierten Test umsetzen": {
+      "status": "passed",
+      "lastRunTimestamp": 1790364110166
+    },
+    "6.11 Property 29 als eigenschaftsbasierten Test umsetzen": {
+      "status": "passed",
+      "lastRunTimestamp": 1790367116709
     }
   },
   "executionHistory": {
@@ -611,6 +635,11 @@
         "executionId": "5f66aec2-cd34-4fef-8e5e-85d3e99435f6",
         "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
         "timestamp": 1790359876550
+      },
+      {
+        "executionId": "5f66aec2-cd34-4fef-8e5e-85d3e99435f6",
+        "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
+        "timestamp": 1790360446838
       }
     ],
     "6.2 Property 24 als eigenschaftsbasierten Test umsetzen": [
@@ -628,6 +657,16 @@
         "executionId": "c9e6b6f6-b82e-4e58-81c8-74f184c0fd18",
         "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
         "timestamp": 1790351727219
+      },
+      {
+        "executionId": "5f66aec2-cd34-4fef-8e5e-85d3e99435f6",
+        "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
+        "timestamp": 1790360450170
+      },
+      {
+        "executionId": "5f66aec2-cd34-4fef-8e5e-85d3e99435f6",
+        "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
+        "timestamp": 1790360931694
       }
     ],
     "6.3 Freigabeliste implementieren": [
@@ -645,6 +684,16 @@
         "executionId": "c9e6b6f6-b82e-4e58-81c8-74f184c0fd18",
         "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
         "timestamp": 1790351727273
+      },
+      {
+        "executionId": "5f66aec2-cd34-4fef-8e5e-85d3e99435f6",
+        "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
+        "timestamp": 1790360936102
+      },
+      {
+        "executionId": "5f66aec2-cd34-4fef-8e5e-85d3e99435f6",
+        "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
+        "timestamp": 1790361211014
       }
     ],
     "6.4 Property 25 als eigenschaftsbasierten Test umsetzen": [
@@ -662,6 +711,16 @@
         "executionId": "c9e6b6f6-b82e-4e58-81c8-74f184c0fd18",
         "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
         "timestamp": 1790351727324
+      },
+      {
+        "executionId": "5f66aec2-cd34-4fef-8e5e-85d3e99435f6",
+        "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
+        "timestamp": 1790361219183
+      },
+      {
+        "executionId": "5f66aec2-cd34-4fef-8e5e-85d3e99435f6",
+        "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
+        "timestamp": 1790361629245
       }
     ],
     "6.5 `AuthService.signInWithGoogle` mit Kontoanlage und Tokenausstellung implementieren": [
@@ -679,6 +738,16 @@
         "executionId": "c9e6b6f6-b82e-4e58-81c8-74f184c0fd18",
         "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
         "timestamp": 1790351727372
+      },
+      {
+        "executionId": "5f66aec2-cd34-4fef-8e5e-85d3e99435f6",
+        "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
+        "timestamp": 1790361634344
+      },
+      {
+        "executionId": "5f66aec2-cd34-4fef-8e5e-85d3e99435f6",
+        "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
+        "timestamp": 1790362146312
       }
     ],
     "6.6 Property 26 als eigenschaftsbasierten Test umsetzen": [
@@ -696,6 +765,16 @@
         "executionId": "c9e6b6f6-b82e-4e58-81c8-74f184c0fd18",
         "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
         "timestamp": 1790351727426
+      },
+      {
+        "executionId": "5f66aec2-cd34-4fef-8e5e-85d3e99435f6",
+        "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
+        "timestamp": 1790362150260
+      },
+      {
+        "executionId": "5f66aec2-cd34-4fef-8e5e-85d3e99435f6",
+        "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
+        "timestamp": 1790362405186
       }
     ],
     "6.7 Property 27 als eigenschaftsbasierten Test umsetzen": [
@@ -713,6 +792,16 @@
         "executionId": "c9e6b6f6-b82e-4e58-81c8-74f184c0fd18",
         "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
         "timestamp": 1790351727481
+      },
+      {
+        "executionId": "5f66aec2-cd34-4fef-8e5e-85d3e99435f6",
+        "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
+        "timestamp": 1790362412905
+      },
+      {
+        "executionId": "5f66aec2-cd34-4fef-8e5e-85d3e99435f6",
+        "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
+        "timestamp": 1790363264474
       }
     ],
     "6.8 Erneuerung und Widerruf implementieren": [
@@ -730,6 +819,16 @@
         "executionId": "c9e6b6f6-b82e-4e58-81c8-74f184c0fd18",
         "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
         "timestamp": 1790351727531
+      },
+      {
+        "executionId": "5f66aec2-cd34-4fef-8e5e-85d3e99435f6",
+        "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
+        "timestamp": 1790363278191
+      },
+      {
+        "executionId": "5f66aec2-cd34-4fef-8e5e-85d3e99435f6",
+        "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
+        "timestamp": 1790363815228
       }
     ],
     "6.9 Property 28 als eigenschaftsbasierten Test umsetzen": [
@@ -747,6 +846,16 @@
         "executionId": "c9e6b6f6-b82e-4e58-81c8-74f184c0fd18",
         "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
         "timestamp": 1790351727580
+      },
+      {
+        "executionId": "5f66aec2-cd34-4fef-8e5e-85d3e99435f6",
+        "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
+        "timestamp": 1790363819271
+      },
+      {
+        "executionId": "5f66aec2-cd34-4fef-8e5e-85d3e99435f6",
+        "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
+        "timestamp": 1790364406546
       }
     ],
     "6.10 `JwtStrategy`, globalen `GqlAuthGuard`, `@Public()` und `@CurrentUser()` implementieren": [
@@ -764,6 +873,16 @@
         "executionId": "c9e6b6f6-b82e-4e58-81c8-74f184c0fd18",
         "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
         "timestamp": 1790351727633
+      },
+      {
+        "executionId": "5f66aec2-cd34-4fef-8e5e-85d3e99435f6",
+        "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
+        "timestamp": 1790364414909
+      },
+      {
+        "executionId": "5f66aec2-cd34-4fef-8e5e-85d3e99435f6",
+        "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
+        "timestamp": 1790366027118
       }
     ],
     "6.11 Property 29 als eigenschaftsbasierten Test umsetzen": [
@@ -781,6 +900,16 @@
         "executionId": "c9e6b6f6-b82e-4e58-81c8-74f184c0fd18",
         "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
         "timestamp": 1790351727697
+      },
+      {
+        "executionId": "5f66aec2-cd34-4fef-8e5e-85d3e99435f6",
+        "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
+        "timestamp": 1790366039851
+      },
+      {
+        "executionId": "5f66aec2-cd34-4fef-8e5e-85d3e99435f6",
+        "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
+        "timestamp": 1790367164208
       }
     ],
     "6.12 `AuthResolver` und GraphQL-Modelle ergänzen": [
@@ -798,6 +927,11 @@
         "executionId": "c9e6b6f6-b82e-4e58-81c8-74f184c0fd18",
         "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
         "timestamp": 1790351727747
+      },
+      {
+        "executionId": "5f66aec2-cd34-4fef-8e5e-85d3e99435f6",
+        "chatSessionId": "sess_f5286994-4a51-4e66-933b-7525dc43f3ee",
+        "timestamp": 1790367180449
       }
     ],
     "6.13 Ablauf- und Fehlerfalltests je exportierter Funktion von Auth_Service schreiben": [

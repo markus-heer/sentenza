@@ -6,6 +6,8 @@ Dieser Plan setzt das Fundament von Sentenza um: ein Greenfield-Turborepo-Monore
 
 Die Reihenfolge folgt der Abhängigkeitsrichtung des Designs: Toolchain → geteilte Domänentypen → Datenbankschicht → Bootstrap mit Konfiguration, Fehlerbehandlung und Protokollierung → Anmeldung → Payload-Schemata → Rohaufnahme → Normalisierung (Katalog, dann Lernstand) → Round-Trip-Prüfmittel → Abfrage-API → Extension → Struktur- und Meta-Tests. Jede Aufgabe endet in integriertem, lauffähigem Code; es entsteht kein Modul, das erst später angeschlossen wird.
 
+Der Aufgabengraph ist bis Aufgabe 6 auf Aufgaben-Ebene geführt, weil dieser Teil abgeschlossen ist. Ab der offenen Restarbeit — 6.12, 6.13 und alles von Aufgabe 7 an — ist er auf Unteraufgaben-Ebene aufgelöst, damit sichtbar wird, welche Arbeit tatsächlich gleichzeitig laufen kann. Sechs der neun verbleibenden Spuren beginnen dadurch in derselben Welle.
+
 Tests gehören zur jeweiligen Aufgabe. Die 45 Korrektheitseigenschaften des Designs werden je Eigenschaft als genau ein eigenschaftsbasierter Test mit `fast-check` (`numRuns: 100`) umgesetzt und sind unmittelbar bei der Implementierung eingeplant, die sie prüft. Struktur- und Meta-Tests, die erst sinnvoll sind, wenn alle Bestandteile existieren, bilden die letzte Arbeitsaufgabe.
 
 ## Task Dependency Graph
@@ -15,64 +17,163 @@ Tests gehören zur jeweiligen Aufgabe. Die 45 Korrektheitseigenschaften des Desi
   "waves": [
     {
       "wave": 1,
+      "status": "abgeschlossen",
       "tasks": ["1"],
       "rationale": "Ohne pnpm-Workspace, Turborepo, geteilte ESLint- und TypeScript-Config, Prettier-Ignores und Vitest-Basis kann kein anderes Paket gebaut, geprüft oder getestet werden."
     },
     {
       "wave": 2,
+      "status": "abgeschlossen",
       "tasks": ["2"],
       "rationale": "@sentenza/domain ist die einzige Deklarationsstelle der Enumerationen und der Fehlercodes. Datenbankschema, Backend, Payload-Schemata und Extension hängen alle daran."
     },
     {
       "wave": 3,
-      "tasks": ["3", "7"],
-      "rationale": "Echte Parallelität: die Datenbankschicht (Prisma, Migration, Testdatenbank) und die reinen Payload-Schemata in @sentenza/busuu-contracts brauchen beide nur die Toolchain und die Domänentypen, berühren aber keine gemeinsamen Dateien. busuu-contracts ist frei von Prisma und NestJS."
+      "status": "abgeschlossen",
+      "tasks": ["3"],
+      "rationale": "Datenbankschicht: Prisma-Schema, eingecheckte Migration, PrismaService, Testdatenbank. Aufgabe 7 stand ursprünglich ebenfalls in dieser Welle; sie ist jetzt auf Unteraufgaben-Ebene in den Wellen 6 bis 8 eingeplant."
     },
     {
       "wave": 4,
+      "status": "abgeschlossen",
       "tasks": ["4"],
       "rationale": "Bootstrap, Konfiguration, Apollo, Fehlerformatierer, Protokollierung und Health setzen die Datenbankschicht voraus und sind Grundlage jedes Resolvers."
     },
     {
       "wave": 5,
-      "tasks": ["6"],
-      "rationale": "Der global registrierte Guard entsteht hier. Jede spätere Operation ist ohne ihn nicht prüfbar, weil ungeschützte Operationen gegen Requirement 2.10 verstoßen."
+      "status": "abgeschlossen",
+      "tasks": ["6.1", "6.2", "6.3", "6.4", "6.5", "6.6", "6.7", "6.8", "6.9", "6.10", "6.11"],
+      "rationale": "Google-Tokenprüfung, Freigabeliste, Tokenausstellung, Erneuerung und der global registrierte Guard. Offen bleiben aus Aufgabe 6 nur 6.12 (AuthResolver samt Modellen) und 6.13 (Ablauf- und Fehlerfalltests des Auth_Service); beide stehen in Welle 6."
     },
     {
       "wave": 6,
-      "tasks": ["8"],
-      "rationale": "Die Rohaufnahme braucht den Guard aus Welle 5, die Transaktionsschicht aus Welle 4 und die Schema-Validierung aus Welle 3. Sie legt den Ingestion-Pfad fest, in den beide Normalisierer eingehängt werden."
+      "tasks": ["6.12", "6.13", "7.1", "8.1", "10.1", "12.1", "13.1", "16.1", "17.3"],
+      "rationale": "Neun Unteraufgaben ohne jede Abhängigkeit untereinander, in sieben verschiedenen Verzeichnissen: AuthResolver (src/auth/auth.resolver.ts, models/), Auth_Service-Tests (src/auth/__tests__/), Payload-Schemata (packages/busuu-contracts/src/), RawPayload-Repository samt Größenprüfung (src/ingestion/raw-payload.repository.ts), Ableitung der Zielsprache (src/busuu/normalizer/), Vergleichsfunktion (test/support/normalized-state.ts), Katalog-Abfrage mit Sortierung (src/catalog/), Extension-Gerüst mit Manifest und Vite-Build (apps/extension/) und der Fixture-Integritätstest. Berührungspunkt: 6.12 und 13.1 registrieren je ein Modul, 6.12 in auth.module.ts, 13.1 in app.module.ts."
     },
     {
       "wave": 7,
-      "tasks": ["10", "11"],
-      "rationale": "Echte Parallelität: Katalog- und Lernstands-Normalisierer hängen beide am Ingestion-Pfad, liegen in getrennten Dateien und teilen keinen Schreibpfad. Der Lernstands-Normalisierer legt fehlende Themen selbst an und wartet damit nicht auf den Katalog."
+      "tasks": ["7.2", "7.4", "7.6", "8.2", "10.2", "12.2", "12.3", "12.4", "13.2", "13.3", "16.2", "16.3", "16.8"],
+      "rationale": "Die drei reinen Funktionen in busuu-contracts (Auflösung der Übersetzungsschlüssel, CEFR-Abbildung, unbekannte Feldpfade) liegen in getrennten Dateien und hängen nur am Barrel aus 7.1. Parallel dazu: Drei-Transaktionen-Ablauf der Ingestion, Serializer und fast-check-Generatoren (beide nur auf die Schemata aus 7.1 und das Prisma-Modell angewiesen, nicht auf die Normalisierer), Filter und DataLoader der Abfrage-API sowie Chrome-Attrappen, Mustererkennung der Endpunkte und Warteschlange der Extension."
     },
     {
       "wave": 8,
-      "tasks": ["12", "13"],
-      "rationale": "Echte Parallelität: Round-Trip-Prüfmittel (Serializer, Vergleichsfunktion, Generatoren) und Abfrage-API brauchen beide den vollständigen normalisierten Bestand, arbeiten aber in getrennten Verzeichnissen (test/support gegenüber src/catalog)."
+      "tasks": ["7.3", "7.5", "7.7", "8.3", "10.3", "11.1", "12.7", "13.4", "13.7", "13.10", "16.4", "16.5", "16.7", "16.9", "16.16"],
+      "rationale": "Erste Welle, in der beide Normalisierer beginnen können: der Katalog-Normalisierer braucht 10.1 und die drei Funktionen aus Welle 7, der Lernstands-Normalisierer nur die Schemata und den Ingestion-Pfad. Dazu die Einreichungs-Mutation, die Tests der reinen Funktionen, Lernstandsauflösung und Filtertests der Abfrage-API sowie Umhüllung von fetch/XHR, Content-Script-Brücke, Warteschlangentest und Popup der Extension."
     },
     {
       "wave": 9,
-      "tasks": ["15"],
-      "rationale": "GraphQL Code Generator braucht ein vollständiges schema.gql, also alle Mutationen und Queries aus den Wellen 5, 6 und 8."
+      "tasks": [
+        "8.4",
+        "8.7",
+        "8.8",
+        "8.10",
+        "8.11",
+        "8.12",
+        "8.13",
+        "10.4",
+        "10.5",
+        "10.6",
+        "10.9",
+        "11.2",
+        "11.7",
+        "11.8",
+        "13.5",
+        "13.6",
+        "13.8",
+        "16.6"
+      ],
+      "rationale": "Breiteste Welle des Plans: achtzehn Unteraufgaben in je eigenen Dateien. Die Rohdaten-Abfragen folgen der Mutation, weil beide denselben Resolver bearbeiten. Kennzeichnung verschwundener Entitäten und Verwerfungsregeln folgen dem jeweiligen Normalisierer, weil sie dieselbe Datei erweitern. Alle übrigen Einträge sind eigenschaftsbasierte Tests, die einander nicht berühren."
     },
     {
       "wave": 10,
-      "tasks": ["16"],
-      "rationale": "Die Extension hängt ausschließlich an der Fehlercode-Enumeration aus Welle 2 und den typisierten Operationen aus Welle 9, nicht an der Normalisierung. Sie könnte bei vorhandenem Client bereits ab Welle 9 laufen."
+      "tasks": ["8.5", "8.6", "8.9", "10.7", "10.8", "10.10", "11.3", "11.5", "12.5", "13.9", "15.1", "17.4"],
+      "rationale": "Round-Trip des Katalogs ist ab hier prüfbar, weil Normalisierer, Serializer, Generatoren und Vergleichsfunktion vollständig sind. Die Abfrage über die Kontogrenze braucht zusätzlich die Rohdaten-Abfragen aus Welle 9. GraphQL Code Generator läuft erst jetzt, weil schema.gql mit 6.12, 8.3, 8.4 und 13.2 vollständig ist."
     },
     {
       "wave": 11,
-      "tasks": ["17"],
-      "rationale": "Struktur- und Meta-Tests prüfen Aussagen über den gesamten Bestand: Testablage, Exportlisten, Manifest, Unerreichbarkeit des Serializers, Schlüsselmenge von .env.example, Fixture-Integrität."
+      "tasks": ["11.4", "11.6", "11.9", "11.10", "12.6", "15.2"],
+      "rationale": "Die Tests des Lernstands-Normalisierers, die die Anlage unbekannter Themen voraussetzen, dazu der Round-Trip der Lernstands-Payloads und der fetch-Client auf Grundlage der generierten Operationen."
+    },
+    {
+      "wave": 12,
+      "tasks": ["15.3", "16.10"],
+      "rationale": "Client-Tests und Anmeldung im Service Worker. Die Anmeldung ist die erste Unteraufgabe der Extension, die den typisierten Client tatsächlich braucht."
+    },
+    {
+      "wave": 13,
+      "tasks": ["16.11", "16.13"],
+      "rationale": "Vorab-Erneuerung und Übertragung mit Wiederholkette. Beide setzen die Anmeldung voraus; sie liegen in getrennten Dateien (background/auth.ts gegenüber background/upload.ts), teilen aber den Zustand aus 16.8."
+    },
+    {
+      "wave": 14,
+      "tasks": ["16.12", "16.14", "16.15", "16.17"],
+      "rationale": "Erneuerungsschwelle, Zeichengleichheit der Übertragung, Absicherung gegen Beendigung des Service Workers und die Kantenfalltests der Extension. Vier voneinander unabhängige Dateien."
+    },
+    {
+      "wave": 15,
+      "tasks": ["17.1", "17.2"],
+      "rationale": "Meta- und Strukturtests prüfen Aussagen über den gesamten Bestand: Testablage, Abgleich der Exportlisten, Wildcard-Berechtigungen im Manifest, Unerreichbarkeit des Serializers, keine erneute Enumerationsdeklaration unter apps/**. Sie sind erst aussagekräftig, wenn keine Datei mehr hinzukommt."
     }
   ]
 }
 ```
 
-Die Prüfpunkte 5, 9, 14 und 18 sind bewusst nicht Teil des Graphen: sie führen keinen eigenen Code hinzu, sondern sichern den Stand der jeweils abgeschlossenen Wellen ab.
+Die Prüfpunkte 5, 9, 14 und 18 sind bewusst nicht Teil des Graphen: sie führen keinen eigenen Code hinzu, sondern sichern den Stand der jeweils abgeschlossenen Wellen ab. Auf die Wellen abgebildet: Prüfpunkt 9 (Anmeldung und Rohaufnahme tragen) liegt nach Welle 10, wenn alle Eigenschaften 7 bis 13 und 35 bis 39 grün sind; Prüfpunkt 14 (Backend vollständig) nach Welle 11; Prüfpunkt 18 nach Welle 15.
+
+### Wie die Wellen zu lesen sind
+
+Ab Welle 6 ist der Graph auf Unteraufgaben-Ebene aufgelöst. Eine Welle ist eine Barriere: alles in ihr darf gleichzeitig bearbeitet werden, die nächste Welle beginnt erst, wenn die vorige vollständig ist. Jede Unteraufgabe steht in der frühesten Welle, in der ihre sachlichen Voraussetzungen erfüllt sind. Zwei Unteraufgaben stehen nur dann in derselben Welle, wenn sie weder eine Vorbedingung teilen noch dieselbe Datei bearbeiten.
+
+### Parallele Spuren
+
+Geschweifte Klammern bedeuten „gleichzeitig bearbeitbar", der Pfeil bedeutet „erst danach".
+
+- **Spur A — `busuu-contracts`.** `7.1 → {7.2, 7.4, 7.6} → {7.3, 7.5, 7.7}`. Ab Welle 6, ohne Voraussetzung.
+- **Spur B — Ingestion.** `8.1 → 8.2 → 8.3 → 8.4 → {8.5 … 8.13}`. Ab Welle 6, ohne Voraussetzung. Längste Zwangskette des Plans.
+- **Spur C — Katalog-Normalisierer.** `10.1 → 10.3 → 10.6 → {10.2, 10.4, 10.5, 10.7, 10.8, 10.9, 10.10}`. Ab Welle 6; 10.3 wartet auf A (7.2, 7.4, 7.6) und B (8.2).
+- **Spur D — Lernstands-Normalisierer.** `11.1 → 11.2 → 11.3 → {11.4 … 11.10}`. Ab Welle 8; wartet auf A (7.1) und B (8.2), ausdrücklich **nicht** auf C.
+- **Spur E — Round-Trip-Prüfmittel.** `{12.1, 12.3, 12.4} → {12.2, 12.7} → 12.5 → 12.6`. Ab Welle 6; nur 12.5 wartet auf C, nur 12.6 auf D.
+- **Spur F — Abfrage-API.** `13.1 → 13.2 → 13.3 → 13.4 → {13.5 … 13.10}`. Ab Welle 6, ohne Voraussetzung; nur 13.9 wartet auf B (8.4).
+- **Spur G — `api-client`.** `15.1 → 15.2 → 15.3`. Ab Welle 10; wartet auf ein vollständiges `schema.gql` aus 6.12, 8.3, 8.4 und 13.2.
+- **Spur H — Extension.** `16.1 → {16.2, 16.3, 16.8} → {16.4, 16.5, 16.7, 16.9, 16.16} → 16.10 → {16.11, 16.13} → {16.12, 16.14, 16.15, 16.17}`. Ab Welle 6, ohne Voraussetzung; erst ab 16.10 auf G.
+- **Spur I — Struktur- und Meta-Tests.** 17.3 vorab, 17.4 nach B und F, `{17.1, 17.2}` zuletzt. Ab Welle 6.
+
+Sechs der neun Spuren beginnen in derselben Welle. Das ist der wesentliche Unterschied zur Aufgaben-Granularität.
+
+### Was die Auflösung an Parallelität freilegt
+
+Drei Abhängigkeiten, die der Graph auf Aufgaben-Ebene behauptet hat, bestehen bei genauerem Hinsehen nicht:
+
+- **Die Extension wartete auf das gesamte Backend.** Tatsächlich hängen nur 16.10, 16.13 und die davon abhängigen Tests am typisierten Client. Gerüst, Mustererkennung, Umhüllung von `fetch` und `XMLHttpRequest`, Content-Script-Brücke, Warteschlange und Popup — zehn der siebzehn Unteraufgaben — brauchen aus dem Backend nichts als die Fehlercode-Enumeration und können ab Welle 6 laufen.
+- **Die Abfrage-API wartete auf die Normalisierung.** Sie liest ausschließlich Prisma-Modelle. Ihre Tests säen den Bestand direkt über Prisma, nicht über den Ingestion-Pfad. 13.1 bis 13.8 und 13.10 sind von den Aufgaben 8, 10 und 11 unabhängig; nur 13.9 braucht die Rohdaten-Abfragen für die dritte Kontogrenze.
+- **Die Round-Trip-Prüfmittel warteten auf den vollständigen normalisierten Bestand.** Das gilt für 12.5 und 12.6, nicht für die Bausteine: Vergleichsfunktion (Prisma-Modell), Serializer (Prisma-Modell und Schemata) und Generatoren (Schemata) sind vier bis sechs Wellen früher baubar.
+
+### Was sich nicht parallelisieren lässt
+
+Fünf Reihenfolgen sind zwingend, weil die Unteraufgaben dieselbe Datei erweitern:
+
+- 8.3 vor 8.4 — beide bearbeiten `ingestion.resolver.ts`.
+- 10.3 vor 10.6 — die Kennzeichnung verschwundener Entitäten ist ein Nachlauf innerhalb von `catalog.normalizer.ts`.
+- 11.1 vor 11.2 vor 11.3 — Kernablauf, Verwerfungsregeln und Anlage unbekannter Themen liegen alle in `progress.normalizer.ts`.
+- 13.1 vor 13.2 — die Filter erweitern Service und Modelle der Abfrage.
+- 16.10 vor 16.11 — Anmeldung und Vorab-Erneuerung liegen beide in `background/auth.ts`.
+
+Hinzu kommt die Kette aus vier Zwängen, die den kritischen Pfad bildet: `8.1 → 8.2 → 8.3 → 8.4 → 15.1 → 15.2 → 16.10 → 16.11 → 16.12`. Neun Wellen, und keine davon lässt sich durch zusätzliche Bearbeiter verkürzen.
+
+### Gemeinsam berührte Dateien innerhalb einer Welle
+
+Vier Stellen, an denen gleichzeitig bearbeitete Unteraufgaben sich begegnen. Sie sind kein Grund, die Parallelität aufzugeben, verlangen aber, dass die frühere Unteraufgabe die Stelle vorbereitet:
+
+- **Barrel von `busuu-contracts`.** 7.2, 7.4 und 7.6 exportieren gleichzeitig. 7.1 legt die Exportzeilen aller drei Module bereits an.
+- **Zuordnung Payload-Art zu Normalisierer.** 10.3 und 11.1 hängen sich in denselben Verteiler ein. 8.2 legt ihn als typisierte Abbildung mit beiden Einträgen an, die zunächst auf einen werfenden Platzhalter zeigen; jede der beiden Unteraufgaben ersetzt genau einen Eintrag.
+- **`shared/messages.ts` der Extension.** 16.5 und 16.7 senden und empfangen dieselben Nachrichtentypen. 16.3 deklariert sie mit, nicht 16.7.
+- **`app.module.ts`.** 13.1 (Welle 6) und 8.3 (Welle 8) registrieren je ein Modul, liegen aber in verschiedenen Wellen. Innerhalb einer Welle gibt es keine zwei Registrierungen.
+
+### Grenzen der Parallelität
+
+- **Parallel bearbeiten heißt nicht parallel ausführen.** Die Backend-Testprojekte laufen mit `pool: 'forks'` und `singleFork: true` gegen eine einzige Testdatenbank. Die achtzehn Unteraufgaben der Welle 9 lassen sich gleichzeitig schreiben; ihre Laufzeit addiert sich trotzdem.
+- **Jede neue Operation berührt Eigenschaft 29.** 6.12, 8.3, 8.4 und 13.1 erweitern `schema.gql` um Felder von `Query` beziehungsweise `Mutation`. Der Test aus 6.11 zählt diese Felder auf; jede dieser Unteraufgaben muss ihn erneut laufen lassen, auch wenn sie ihn nicht bearbeitet.
+- **Empfehlung zum kritischen Pfad.** Aufgabe 15.1 vermischt zwei Dinge: das Paketgerüst mit den `.graphql`-Operationsdateien und den Lauf des Code Generators. Nur der zweite Teil braucht ein vollständiges `schema.gql`. Wird 15.1 aufgeteilt, wandern 15.2, 16.10 und 16.13 je zwei Wellen nach vorn und der kritische Pfad verkürzt sich von neun auf sieben Wellen. Der Plan lässt 15.1 unverändert, weil die Aufteilung eine Abweichung von der Aufgabenliste des Designs wäre; sie ist eine bewusste Option, kein Versehen.
 
 ## Tasks
 
@@ -192,57 +293,57 @@ Die Prüfpunkte 5, 9, 14 und 18 sind bewusst nicht Teil des Graphen: sie führen
   - Ensure all tests pass, ask the user if questions arise.
 
 - [ ] 6. Anmeldung mit Google und Absicherung der Schnittstelle
-  - [-] 6.1 `GoogleTokenVerifier` implementieren
+  - [x] 6.1 `GoogleTokenVerifier` implementieren
     - `apps/backend/src/auth/google-token.verifier.ts`: Schlüsselauswahl über `kid` mit `jwks-rsa`, JWKS-Abruf mit Zeitlimit 5 Sekunden und kurzlebigem Cache, Prüfung von Signatur, `iss`, `aud`, `exp` mit `clockTolerance: 60` und `email_verified === true`; Zeitüberschreitung oder Netzfehler ergibt `UPSTREAM_UNAVAILABLE`, jeder Tokendefekt `UNAUTHENTICATED`
     - _Requirements: 2.1, 2.2, 2.3, 2.13_
 
-  - [ ] 6.2 Property 24 als eigenschaftsbasierten Test umsetzen
+  - [x] 6.2 Property 24 als eigenschaftsbasierten Test umsetzen
     - **Property 24: Ein Google-ID-Token wird genau bei vollständiger Gültigkeit angenommen** — Tokens aus einem im Test erzeugten RSA-Schlüsselpaar (`jose`), JWKS-Client als Attrappe, kein Netzaufruf
     - **Validates: Requirements 2.1, 2.2, 2.3**
     - _Requirements: 2.1, 2.2, 2.3, 10.9_
 
-  - [ ] 6.3 Freigabeliste implementieren
+  - [x] 6.3 Freigabeliste implementieren
     - Vergleich nach `trim()` und `toLowerCase()` auf beiden Seiten; Treffer ist Voraussetzung für Anmeldung und für jede Erneuerung, Verstoß ergibt `FORBIDDEN` ohne Kontoanlage und ohne Tokenausstellung
     - _Requirements: 2.4_
 
-  - [ ] 6.4 Property 25 als eigenschaftsbasierten Test umsetzen
+  - [x] 6.4 Property 25 als eigenschaftsbasierten Test umsetzen
     - **Property 25: Die Freigabeliste entscheidet über den Zugang**
     - **Validates: Requirements 2.4**
     - _Requirements: 2.4_
 
-  - [ ] 6.5 `AuthService.signInWithGoogle` mit Kontoanlage und Tokenausstellung implementieren
+  - [x] 6.5 `AuthService.signInWithGoogle` mit Kontoanlage und Tokenausstellung implementieren
     - `upsert` auf `googleSubject` mit Fortschreiben der E-Mail-Adresse; Access-Token als HS256-JWT mit `sub`, `iss: 'sentenza'`, Gültigkeit aus der Konfiguration; Refresh-Token als opakes Zufallstoken (32 Byte, base64url), in `RefreshToken` ausschließlich als SHA-256-Hash mit `expiresAt` (30 Tage) und nullbarem `revokedAt`; Rückgabe beider Token samt Ablaufzeitpunkten
     - _Requirements: 2.5, 2.6, 2.7, 2.8_
 
-  - [ ] 6.6 Property 26 als eigenschaftsbasierten Test umsetzen
+  - [x] 6.6 Property 26 als eigenschaftsbasierten Test umsetzen
     - **Property 26: Ausgestellte Tokens tragen die konfigurierten Gültigkeitsdauern**
     - **Validates: Requirements 2.5, 2.6, 2.9**
     - _Requirements: 2.5, 2.6, 2.9_
 
-  - [ ] 6.7 Property 27 als eigenschaftsbasierten Test umsetzen
+  - [x] 6.7 Property 27 als eigenschaftsbasierten Test umsetzen
     - **Property 27: Je Google-Subject-Kennung existiert genau ein Benutzerkonto**
     - **Validates: Requirements 2.7, 2.8**
     - _Requirements: 2.7, 2.8_
 
-  - [ ] 6.8 Erneuerung und Widerruf implementieren
+  - [x] 6.8 Erneuerung und Widerruf implementieren
     - `refreshAccessToken` prüft Hash-Treffer, `expiresAt`, `revokedAt` und Kontozuordnung sowie erneut die Freigabeliste; keine Rotation des Refresh-Tokens; `revokeRefreshToken` setzt `revokedAt`; jeder Defekt ergibt `UNAUTHENTICATED`
     - _Requirements: 2.9, 2.14_
 
-  - [ ] 6.9 Property 28 als eigenschaftsbasierten Test umsetzen
+  - [x] 6.9 Property 28 als eigenschaftsbasierten Test umsetzen
     - **Property 28: Ein nicht vorlagefähiges Refresh-Token führt zu keiner Erneuerung**
     - **Validates: Requirements 2.14**
     - _Requirements: 2.14_
 
-  - [ ] 6.10 `JwtStrategy`, globalen `GqlAuthGuard`, `@Public()` und `@CurrentUser()` implementieren
+  - [x] 6.10 `JwtStrategy`, globalen `GqlAuthGuard`, `@Public()` und `@CurrentUser()` implementieren
     - Guard global registriert, Header aus `GqlExecutionContext`, `clockTolerance: 60`, Laden des Kontos und Bereitstellung im GraphQL-Kontext; kein Service erhält eine Kontokennung aus einem Eingabefeld
     - _Requirements: 2.10, 2.11, 2.12_
 
-  - [ ] 6.11 Property 29 als eigenschaftsbasierten Test umsetzen
+  - [x] 6.11 Property 29 als eigenschaftsbasierten Test umsetzen
     - **Property 29: Jede Operation außer Anmeldung und Erneuerung ist geschützt** — Aufzählung der Felder von `Query` und `Mutation` aus dem erzeugten Schema gegen alle Tokendefekte
     - **Validates: Requirements 2.10, 2.11**
     - _Requirements: 2.10, 2.11_
 
-  - [ ] 6.12 `AuthResolver` und GraphQL-Modelle ergänzen
+  - [x] 6.12 `AuthResolver` und GraphQL-Modelle ergänzen
     - `signInWithGoogle` und `refreshAccessToken` mit `@Public()`, `AuthPayload`, `AccessTokenPayload`, Eingabetypen mit deklarierter Validierung
     - _Requirements: 2.5, 2.9, 9.2_
 

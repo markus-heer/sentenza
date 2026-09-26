@@ -71,7 +71,52 @@ function extractCorrelationId(value: unknown): string | undefined {
  * "Apollo-Fehlerformatierer").
  */
 export function getCorrelationId(originalError: unknown): string | undefined {
-  return extractCorrelationId(originalError);
+  return extractCorrelationId(unwrapOriginalError(originalError));
+}
+
+/** Obergrenze der Auswickeltiefe; schützt vor einer Ursachenkette ohne Ende. */
+const MAX_UNWRAP_DEPTH = 5;
+
+/**
+ * Holt die tatsächlich geworfene Ursache aus dem Fehler, den Apollo übergibt
+ * (design.md, Abschnitt "Apollo-Fehlerformatierer").
+ *
+ * Nötig, weil graphql-js jeden in einem Feld geworfenen Fehler in einen
+ * `GraphQLError` einwickelt und das Original an `originalError` hängt. Apollo
+ * ruft `formatError` mit diesem Umschlag auf, nicht mit dem Original. Ohne
+ * Auswickeln wäre `cause instanceof SentenzaError` nie wahr, und jede fachliche
+ * Ablehnung käme als `INTERNAL_SERVER_ERROR` beim Client an — etwa die eines
+ * `GqlAuthGuard`, die `UNAUTHENTICATED` tragen muss (Requirement 2.11).
+ *
+ * Geprüft wird die Form und nicht `instanceof GraphQLError`, obwohl Apollo für
+ * diesen Zweck `unwrapResolverError` veröffentlicht: `graphql` liefert sowohl
+ * eine CommonJS- als auch eine ES-Modul-Ausgabe, und werden beide im selben
+ * Prozess geladen, gibt es zwei verschiedene Klassen `GraphQLError`. Ein
+ * `instanceof` gegen die eine erkennt die andere nicht. Das Merkmal `originalError`
+ * an einem Fehler ist dagegen unabhängig davon, welche Ausgabe geladen wurde.
+ *
+ * Die Schleife deckt eine mehrfach eingewickelte Ursache ab. Ein Fehler ohne
+ * `originalError` — etwa ein Syntax- oder Validierungsfehler von graphql-js —
+ * bleibt unverändert und wird weiterhin zu `INTERNAL_SERVER_ERROR`.
+ */
+function unwrapOriginalError(originalError: unknown): unknown {
+  let current: unknown = originalError;
+
+  for (let depth = 0; depth < MAX_UNWRAP_DEPTH; depth += 1) {
+    if (!(current instanceof Error)) {
+      return current;
+    }
+
+    const wrapped = (current as { originalError?: unknown }).originalError;
+
+    if (!(wrapped instanceof Error)) {
+      return current;
+    }
+
+    current = wrapped;
+  }
+
+  return current;
 }
 
 /**
@@ -94,16 +139,18 @@ export function formatError(
   formattedError: GraphQLFormattedError,
   originalError: unknown,
 ): GraphQLFormattedError {
-  const correlationId = getCorrelationId(originalError) ?? randomUUID();
+  // Apollo übergibt den `GraphQLError`-Umschlag; gemeint ist die Ursache darin.
+  const cause = unwrapOriginalError(originalError);
+  const correlationId = getCorrelationId(cause) ?? randomUUID();
 
-  if (originalError instanceof SentenzaError) {
+  if (cause instanceof SentenzaError) {
     return {
       ...formattedError,
-      message: originalError.message,
+      message: cause.message,
       extensions: {
-        code: originalError.code,
+        code: cause.code,
         correlationId,
-        ...originalError.details,
+        ...cause.details,
       },
     };
   }
@@ -114,7 +161,7 @@ export function formatError(
   console.error({
     correlationId,
     component: COMPONENT,
-    causeChain: flattenCauses(originalError),
+    causeChain: flattenCauses(cause),
   });
 
   return {

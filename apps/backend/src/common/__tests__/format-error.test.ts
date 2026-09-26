@@ -34,6 +34,26 @@ describe('formatError', () => {
     expect((result.extensions?.correlationId as string).length).toBeGreaterThan(0);
   });
 
+  it('erhält Nachricht und Code eines SentenzaError auch im GraphQLError-Umschlag von graphql-js', () => {
+    // Die Form, in der Apollo `formatError` tatsächlich aufruft: graphql-js
+    // wickelt jeden in einem Feld geworfenen Fehler ein und hängt das Original
+    // an `originalError`. Genau so kommt die Ablehnung eines Guards an
+    // (Requirement 2.11).
+    const original = new SentenzaError(
+      SentenzaErrorCode.UNAUTHENTICATED,
+      'Für diese Operation ist eine Anmeldung erforderlich.',
+    );
+    const wrapped = new GraphQLError(original.message, {
+      path: ['submitBusuuPayload'],
+      originalError: original,
+    });
+
+    const result = formatError(BASE_FORMATTED_ERROR, wrapped);
+
+    expect(result.extensions?.code).toBe(SentenzaErrorCode.UNAUTHENTICATED);
+    expect(result.message).toBe('Für diese Operation ist eine Anmeldung erforderlich.');
+  });
+
   it('verwendet die in details.correlationId enthaltene Kennung eines SentenzaError statt eine neue zu erzeugen', () => {
     const original = new SentenzaError(SentenzaErrorCode.INTERNAL_SERVER_ERROR, 'Fehler.', {
       correlationId: 'fixed-correlation-id',
