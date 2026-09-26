@@ -19,6 +19,7 @@ import { afterAll, beforeAll, describe, expect, it } from 'vitest';
 import { resetDatabase } from '../../../test/reset-database.js';
 import { createTestDatabaseClient } from '../../../test/test-database-client.js';
 import { AppResolver } from '../../app.resolver.js';
+import { CatalogResolver } from '../../catalog/catalog.resolver.js';
 import { createLogger, type LogFields } from '../../common/logger.js';
 import type { PrismaClient } from '../../prisma/prisma.types.js';
 import { AuthResolver } from '../auth.resolver.js';
@@ -451,10 +452,16 @@ interface Property29ResolverClass {
 /**
  * Die Resolver, deren Felder im erzeugten Schema stehen. Ein neuer Resolver
  * gehört hier eingetragen; bis dahin schlägt die Deckungsprüfung gegen
- * `schema.gql` fehl und benennt das ungeprüfte Feld. Die Resolver für
- * Einreichung und Katalog kommen mit den Aufgaben 8 und 13 hinzu.
+ * `schema.gql` fehl und benennt das ungeprüfte Feld. `CatalogResolver` kam mit
+ * Aufgabe 13.1 hinzu — die Katalog-Query ist das erste Feld, das ausdrücklich
+ * geschützt sein soll und keine Ausnahme trägt. Der Resolver für die
+ * Einreichung kommt mit Aufgabe 8 hinzu.
  */
-const PROPERTY_29_RESOLVERS: readonly Property29ResolverClass[] = [AppResolver, AuthResolver];
+const PROPERTY_29_RESOLVERS: readonly Property29ResolverClass[] = [
+  AppResolver,
+  AuthResolver,
+  CatalogResolver,
+];
 
 /** Eine prüfbare Operation: ein Feld des Schemas oder eine ausgenommene Attrappe. */
 interface Property29Operation {

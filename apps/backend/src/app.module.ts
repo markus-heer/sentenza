@@ -8,6 +8,7 @@ import { GraphQLModule } from '@nestjs/graphql';
 
 import { AppResolver } from './app.resolver.js';
 import { AuthModule } from './auth/auth.module.js';
+import { CatalogModule } from './catalog/catalog.module.js';
 import { formatError } from './common/format-error.js';
 import { ConfigModule } from './config/config.module.js';
 import { HealthModule } from './health/health.module.js';
@@ -51,6 +52,11 @@ import { PrismaModule } from './prisma/prisma.module.js';
  * auch für die Platzhalterfelder von `AppResolver` — Property 29
  * (Aufgabe 6.11) zählt die Felder des erzeugten Schemas auf und duldet keine
  * Ausnahme, die nicht Anmeldung oder Erneuerung ist.
+ *
+ * Aufgabe 13.1 bindet `CatalogModule` ein: die Katalog-Query samt ihren
+ * GraphQL-Typen (Requirement 7.1, 7.2, 7.8). Sie ist das erste echte
+ * Query-Feld des Schemas und trägt kein `@Public()`, ist also durch den global
+ * registrierten `GqlAuthGuard` geschützt (Requirement 2.10).
  */
 @Module({
   imports: [
@@ -58,6 +64,7 @@ import { PrismaModule } from './prisma/prisma.module.js';
     PrismaModule,
     HealthModule,
     AuthModule,
+    CatalogModule,
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
       autoSchemaFile: join(process.cwd(), 'schema.gql'),

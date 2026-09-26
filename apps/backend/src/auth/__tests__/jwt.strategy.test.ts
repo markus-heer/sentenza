@@ -219,6 +219,18 @@ describe('Zuordnung des Access-Tokens zu einem Benutzerkonto', () => {
     expect(rejection.code).toBe(SentenzaErrorCode.UNAUTHENTICATED);
   });
 
+  it('lehnt einen Inhalt ab, der überhaupt kein Anspruchsobjekt ist', async () => {
+    // Requirement 2.11 nennt das syntaktisch unlesbare Token als eigenen Fall.
+    // `passport-jwt` gibt bei einem Token, dessen Nutzlast kein JSON-Objekt
+    // ist, die Zeichenkette weiter; ohne diesen Zweig läse die Zuordnung `sub`
+    // von einem Wert, der keine Ansprüche trägt.
+    for (const payload of ['kein-objekt', null, 42]) {
+      const rejection = await rejectionOf(strategyFor(storeWith(ACCOUNT)).validate(payload));
+
+      expect(rejection.code).toBe(SentenzaErrorCode.UNAUTHENTICATED);
+    }
+  });
+
   it('lehnt ein Token mit fremdem Aussteller auch ohne Optionsprüfung ab', async () => {
     // Die Zuordnung soll nicht davon abhängen, dass `issuer` in den Optionen
     // gesetzt ist: `validate` prüft `iss` selbst.

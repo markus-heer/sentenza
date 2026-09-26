@@ -1,0 +1,19 @@
+{
+  // Type-Check über den gesamten Bestand des Pakets: den Quelltext der
+  // Erweiterung unter `src`, die Build-Hilfen unter `build` und die
+  // Konfigurationsdateien im Paketwurzelverzeichnis. `tsconfig.json` kann das
+  // nicht leisten, weil es `rootDir` auf `src` legt und Dateien außerhalb
+  // davon als "not under rootDir" abgelehnt würden.
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "rootDir": ".",
+    "incremental": false,
+    // Die Build-Hilfen und die Konfigurationsdateien laufen unter Node und
+    // greifen auf `node:fs`, `node:path` und `import.meta.url` zu; der
+    // Quelltext der Erweiterung selbst nur auf die Chrome-Schnittstellen.
+    "types": ["chrome", "node"]
+  },
+  "include": ["src/**/*.ts", "build/**/*.ts", "*.config.ts"],
+  "exclude": ["node_modules", "dist"]
+}

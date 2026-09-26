@@ -154,3 +154,63 @@ describe('TokenIssuer.hashRefreshToken', () => {
     expect(early.hashRefreshToken('ein-token')).toBe(late.hashRefreshToken('ein-token'));
   });
 });
+
+/**
+ * Grenzfälle statt Fehlerfälle (Requirement 10.10).
+ *
+ * Keines der drei Verfahren von `TokenIssuer` hat eine in den Requirements
+ * beschriebene Fehler- oder Verwerfungsbedingung: Die Schranken der
+ * Gültigkeitsdauern prüft bereits `loadConfig` (Requirement 2.6), und die
+ * Ausstellung selbst kann nicht scheitern — sie signiert und würfelt, sie
+ * entscheidet nichts. An die Stelle des Fehlerfalltests treten deshalb zwei
+ * Grenzbedingungen: die weggelassenen optionalen Konstruktorargumente und die
+ * leere Eingabe.
+ */
+describe('TokenIssuer an den Grenzen', () => {
+  it('arbeitet ohne die optionalen Zeit- und Zufallsquellen', () => {
+    // Im Betrieb wird `TokenIssuer` genau so gebaut: allein aus der
+    // Konfiguration, mit den Vorgaben für Uhr und Zufall. Alle übrigen Tests
+    // setzen beide, damit ihre Erwartungen fest stehen — dieser prüft, dass die
+    // Vorgaben selbst tragen.
+    const issuer = new TokenIssuer(SETTINGS);
+    const before = Date.now();
+    const refresh = issuer.issueRefreshToken();
+    const access = issuer.issueAccessToken('konto-1');
+    const after = Date.now();
+
+    expect(Buffer.from(refresh.token, 'base64url')).toHaveLength(REFRESH_TOKEN_BYTES);
+    expect(refresh.tokenHash).toBe(issuer.hashRefreshToken(refresh.token));
+    // Beide Ablaufzeitpunkte liegen um die konfigurierte Dauer hinter dem
+    // Zeitpunkt des Aufrufs; die Spanne deckt die Laufzeit des Tests ab.
+    expect(refresh.expiresAt.getTime()).toBeGreaterThanOrEqual(
+      before + SETTINGS.refreshTokenTtlDays * 24 * 60 * 60 * 1_000,
+    );
+    expect(refresh.expiresAt.getTime()).toBeLessThanOrEqual(
+      after + SETTINGS.refreshTokenTtlDays * 24 * 60 * 60 * 1_000,
+    );
+    const claims = decodeJwt(access.token) as { iat: number; exp: number };
+    expect(claims.iat).toBeGreaterThanOrEqual(Math.floor(before / 1_000));
+    expect(claims.exp - claims.iat).toBe(SETTINGS.accessTokenTtlMinutes * 60);
+  });
+
+  it('stellt auch für eine leere Konto-Kennung ein Token aus, ohne einen Wert zu erfinden', () => {
+    const issued = issuerAt(NOW).issueAccessToken('');
+    const claims = decodeJwt(issued.token) as { sub: string };
+
+    // Eine leere Kennung kommt aus dem Betrieb nicht — `AuthService` übergibt
+    // stets die Kennung aus dem `upsert`. Wichtig ist, was hier *nicht*
+    // geschieht: Die Ausstellung setzt keinen Ersatzwert ein. `sub` bleibt
+    // leer, und `JwtStrategy.validate` lehnt ein solches Token später mit
+    // `UNAUTHENTICATED` ab (Requirement 2.11).
+    expect(claims.sub).toBe('');
+  });
+
+  it('bildet auch die leere Eingabe auf einen Hash ab', () => {
+    // Requirement 2.14 stützt sich darauf, dass jede Vorlage einen Hash hat:
+    // Erst dadurch ist „kein Datensatz zum Hash“ die Antwort auf ein nie
+    // ausgestelltes Token und nicht ein Fehler in der Erneuerung.
+    expect(issuerAt(NOW).hashRefreshToken('')).toBe(
+      createHash('sha256').update('', 'utf8').digest('hex'),
+    );
+  });
+});

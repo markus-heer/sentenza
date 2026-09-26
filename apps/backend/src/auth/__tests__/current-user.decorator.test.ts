@@ -1,6 +1,7 @@
 import 'reflect-metadata';
 
 import type { ExecutionContext } from '@nestjs/common';
+import { ROUTE_ARGS_METADATA } from '@nestjs/common/constants';
 import { SentenzaError, SentenzaErrorCode } from '@sentenza/domain';
 import { describe, expect, it } from 'vitest';
 
@@ -8,7 +9,7 @@ import type {
   AuthenticatedAccount,
   AuthenticatedGraphQLContext,
 } from '../authenticated-account.js';
-import { currentUserFromContext } from '../current-user.decorator.js';
+import { CurrentUser, currentUserFromContext } from '../current-user.decorator.js';
 
 /**
  * Tests für `@CurrentUser()` (Requirement 2.10, 2.12).
@@ -78,5 +79,53 @@ describe('@CurrentUser()', () => {
     expect(rejectionOf(() => currentUserFromContext(contextFor({}))).message).toBe(
       'Für diese Operation ist eine Anmeldung erforderlich.',
     );
+  });
+});
+
+/**
+ * Der Dekorator selbst (Requirement 10.3).
+ *
+ * Die Tests oben prüfen `currentUserFromContext`. Dass der von `@CurrentUser()`
+ * hinterlegte Parameter tatsächlich zu dieser Funktion führt, sagen sie nicht —
+ * ein Dekorator, der am Parameter nichts oder etwas anderes hinterlegte, käme
+ * durch. Geprüft wird deshalb die Fabrik, die Nest beim Auflösen des Parameters
+ * aufruft: Sie steht in den Metadaten des dekorierten Feldes und ist von außen
+ * aufrufbar, ohne dass ein Nest-Container laufen muss.
+ */
+describe('@CurrentUser() am Parameter eines Feldes', () => {
+  class ResolverDouble {
+    grammarTopics(@CurrentUser() account: AuthenticatedAccount): AuthenticatedAccount {
+      return account;
+    }
+  }
+
+  /** Die Fabrik, die Nest für den dekorierten Parameter aufruft. */
+  function parameterFactory(): (data: unknown, context: ExecutionContext) => unknown {
+    const metadata = Reflect.getMetadata(ROUTE_ARGS_METADATA, ResolverDouble, 'grammarTopics') as
+      | Record<string, { factory?: (data: unknown, context: ExecutionContext) => unknown }>
+      | undefined;
+    const factories = Object.values(metadata ?? {})
+      .map((entry) => entry.factory)
+      .filter((factory): factory is (data: unknown, context: ExecutionContext) => unknown => {
+        return typeof factory === 'function';
+      });
+
+    // Genau ein dekorierter Parameter, genau eine Fabrik.
+    expect(factories).toHaveLength(1);
+
+    return factories[0] as (data: unknown, context: ExecutionContext) => unknown;
+  }
+
+  it('liefert dem Feld das vom Guard bereitgestellte Konto', () => {
+    expect(parameterFactory()(undefined, contextFor({ user: ACCOUNT }))).toEqual(ACCOUNT);
+  });
+
+  it('lehnt ab, wenn kein Konto im Kontext liegt', () => {
+    // Requirement 2.12: Der dekorierte Parameter ist der einzige Weg, auf dem
+    // eine Konto-Kennung in ein Service-Verfahren gelangt. Käme er leer durch,
+    // liefe die Operation ohne Einschränkung auf ein Konto weiter.
+    const rejection = rejectionOf(() => parameterFactory()(undefined, contextFor({})));
+
+    expect(rejection.code).toBe(SentenzaErrorCode.UNAUTHENTICATED);
   });
 });

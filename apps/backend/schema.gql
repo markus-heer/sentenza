@@ -56,6 +56,105 @@ type DomainEnumProbe {
   targetLanguage: TargetLanguage!
 }
 
+"""Eine Grammatik_Kategorie des Busuu-Katalogs mit ihren Themen."""
+type GrammarCategory {
+  """Die Busuu-Kennung der Grammatik_Kategorie, unverändert."""
+  busuuId: ID!
+
+  """Die Beschreibung in der Sprache `de`."""
+  descriptionDe: String!
+
+  """Die Beschreibung in der Sprache `en`."""
+  descriptionEn: String!
+
+  """Die Zielsprache, zu der die Kategorie gehört."""
+  language: TargetLanguage!
+
+  """Die Bezeichnung in der Sprache `de`."""
+  nameDe: String!
+
+  """Die Bezeichnung in der Sprache `en`."""
+  nameEn: String!
+
+  """
+  Ob die Grammatik_Kategorie im letzten Katalog-Payload nicht mehr enthalten war.
+  """
+  removedFromCatalog: Boolean!
+
+  """
+  Die zugeordneten Grammatik_Themen, aufsteigend nach Sortierposition und bei Gleichheit nach Busuu-Kennung.
+  """
+  topics: [GrammarTopic!]!
+}
+
+"""
+Der Lernstand des angemeldeten Benutzerkontos zu einem Grammatik_Thema.
+"""
+type GrammarProgress {
+  """Zeitpunkt der Einreichung, aus der dieser Lernstand stammt."""
+  observedAt: DateTime!
+
+  """Der von Busuu gemeldete Prozentwert, unverändert übernommen."""
+  percentage: Int!
+
+  """Die von Busuu gemeldete Stärke, unverändert übernommen."""
+  strength: Int!
+}
+
+"""Ein Grammatik_Thema des Busuu-Katalogs samt Lernstand."""
+type GrammarTopic {
+  """Die von Busuu gemeldete Zugangsstufe, unverändert."""
+  accessTier: String!
+
+  """Die Busuu-Kennung des Grammatik_Thema, unverändert."""
+  busuuId: ID!
+
+  """
+  Das Niveau des Grammatik_Thema; `UNBEKANNT`, wenn es nicht abbildbar war.
+  """
+  cefrLevel: CefrLevel!
+
+  """Die ungekürzte Beschreibung in der Sprache `de`."""
+  descriptionDe: String!
+
+  """Die ungekürzte Beschreibung in der Sprache `en`."""
+  descriptionEn: String!
+
+  """
+  Ob das Grammatik_Thema nur aus einer Struktur bekannt ist und daher ohne Bezeichnung und Beschreibung vorliegt.
+  """
+  incomplete: Boolean!
+
+  """Die Bezeichnung in der Sprache `de`."""
+  nameDe: String!
+
+  """Die Bezeichnung in der Sprache `en`."""
+  nameEn: String!
+
+  """Ob Busuu das Grammatik_Thema als zahlungspflichtig führt."""
+  premium: Boolean!
+
+  """
+  Der Lernstand des angemeldeten Benutzerkontos; `null` bei einem Ungeübten_Thema.
+  """
+  progress: GrammarProgress
+
+  """
+  Ob das Grammatik_Thema im letzten Katalog-Payload nicht mehr enthalten war.
+  """
+  removedFromCatalog: Boolean!
+
+  """
+  Die Position innerhalb der Grammatik_Kategorie; `null`, wenn das Thema in keiner Struktur referenziert ist.
+  """
+  sortPosition: Int
+
+  """
+  Ungeübtes_Thema: Zum angemeldeten Benutzerkonto liegt kein Lernstand zu diesem Grammatik_Thema vor.
+  """
+  untrained: Boolean!
+}
+
 type Mutation {
   """
   Stellt ohne erneute Google-Anmeldung ein neues Access-Token aus; das Refresh-Token bleibt unverändert gültig.
@@ -86,6 +185,14 @@ type Query {
   Platzhalter-Query, hält die Domänen-Enumerationen im generierten Schema sichtbar.
   """
   domainEnumProbe: DomainEnumProbe!
+
+  """
+  Die Grammatik_Kategorien einer Zielsprache mit ihren Grammatik_Themen und dem Lernstand des angemeldeten Benutzerkontos.
+  """
+  grammarCatalog(
+    """Die Zielsprache, deren Katalog abgefragt wird."""
+    language: TargetLanguage!
+  ): [GrammarCategory!]!
 
   """Platzhalter-Query, bis reale Resolver existieren."""
   ping: String!

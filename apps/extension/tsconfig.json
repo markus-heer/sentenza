@@ -1,0 +1,23 @@
+{
+  "extends": "@sentenza/typescript-config/extension.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "baseUrl": ".",
+    // `dist` entsteht ausschließlich über Vite (siehe vite.config.ts). `tsc`
+    // prüft in diesem Paket nur Typen und darf nichts in das Ausgabe-
+    // verzeichnis der Turborepo-Aufgabe `build` schreiben.
+    "noEmit": true,
+    // Erneut gesetzt, obwohl `extension.json` denselben Wert enthält: Die
+    // Auflösung von `types` erfolgt gegen das Verzeichnis der Datei, die die
+    // Option deklariert. In `packages/typescript-config` liegt kein
+    // `node_modules/@types/chrome`, hier schon.
+    "types": ["chrome"]
+  },
+  // Relative Pfade eines `include`/`exclude` werden gegen das Verzeichnis der
+  // erweiterten Datei aufgelöst; die Muster aus `extension.json` greifen in
+  // `apps/extension` also nicht. Der Bauteil-Quelltext liegt unter `src`; die
+  // Build-Hilfen unter `build` und die Tests prüft `tsconfig.check.json`.
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist", "build", "**/__tests__/**", "**/*.test.ts"]
+}

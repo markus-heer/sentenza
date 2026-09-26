@@ -1,11 +1,14 @@
 import { SentenzaError, SentenzaErrorCode } from '@sentenza/domain';
 import * as fc from 'fast-check';
-import { exportSPKI, generateKeyPair, SignJWT } from 'jose';
-import { beforeAll, describe, expect, it } from 'vitest';
+import { exportJWK, exportSPKI, generateKeyPair, importSPKI, SignJWT } from 'jose';
+import { JwksClient } from 'jwks-rsa';
+import { afterEach, beforeAll, describe, expect, it, vi } from 'vitest';
 
 import { createLogger } from '../../common/logger.js';
 import {
+  createJwksSigningKeyProvider,
   GOOGLE_CLOCK_TOLERANCE_SECONDS,
+  GOOGLE_JWKS_CACHE_MAX_AGE_MS,
   GoogleSigningKeyProvider,
   GoogleTokenVerifier,
   GoogleVerificationSettings,
@@ -30,6 +33,18 @@ const SETTINGS: GoogleVerificationSettings = {
 
 const KEY_ID = 'google-key-1';
 const OTHER_KEY_ID = 'google-key-2';
+
+/**
+ * Die Frist, nach der Requirement 2.1 und 2.13 den Abruf der JWKS abbrechen:
+ * 5 Sekunden. `GOOGLE_JWKS_TIMEOUT_MS` in `.env.example` trägt genau diesen
+ * Wert.
+ *
+ * `SETTINGS` verwendet für alle übrigen Tests absichtlich 50 ms, damit kein
+ * Testlauf auf eine echte Frist wartet. Genau deshalb braucht die Frist einen
+ * eigenen Test: Ohne ihn wäre allein geprüft, dass *irgendeine* konfigurierte
+ * Frist wirkt, nicht die von Requirement 2.13 verlangte.
+ */
+const REQUIRED_JWKS_DEADLINE_MS = 5_000;
 
 /** Aus `jose` abgeleitet, damit der Test keinen globalen Schlüsseltyp voraussetzt. */
 type SigningPrivateKey = Awaited<ReturnType<typeof generateKeyPair>>['privateKey'];
@@ -339,6 +354,61 @@ describe('GoogleTokenVerifier', () => {
       expect(entry?.timeoutMs).toBe(SETTINGS.jwksTimeoutMs);
     });
 
+    it('bricht den Abruf nach der von Requirement 2.13 verlangten Frist von 5 Sekunden ab', async () => {
+      // Hier ist die Frist selbst der Prüfgegenstand und nicht nur, dass
+      // überhaupt abgebrochen wird: Der Verifier läuft mit den 5 Sekunden aus
+      // Requirement 2.13. Die Uhr ist gestellt, damit die Frist ausdrücklich
+      // geprüft ist, ohne den Testlauf um 5 Sekunden zu verlängern — das Token
+      // entsteht deshalb vor dem Stellen der Uhr.
+      const idToken = await signIdToken();
+      const lines: string[] = [];
+      const logger = createLogger({
+        component: 'auth',
+        level: 'debug',
+        sink: (line) => lines.push(line),
+      });
+      const { provider } = keyProviderFor(() => new Promise<never>(() => undefined));
+      const verifier = new GoogleTokenVerifier(
+        { ...SETTINGS, jwksTimeoutMs: REQUIRED_JWKS_DEADLINE_MS },
+        provider,
+        logger,
+      );
+
+      vi.useFakeTimers();
+
+      try {
+        let settled = false;
+        let rejection: unknown;
+        const verification = verifier.verify(idToken).then(
+          () => {
+            settled = true;
+          },
+          (error: unknown) => {
+            settled = true;
+            rejection = error;
+          },
+        );
+
+        // Eine Millisekunde vor der Frist steht die Ablehnung noch nicht: Der
+        // Abbruch kommt nach 5 Sekunden, nicht früher.
+        await vi.advanceTimersByTimeAsync(REQUIRED_JWKS_DEADLINE_MS - 1);
+        expect(settled).toBe(false);
+
+        await vi.advanceTimersByTimeAsync(1);
+        await verification;
+
+        expect(settled).toBe(true);
+        expect(rejection).toBeInstanceOf(SentenzaError);
+        expect((rejection as SentenzaError).code).toBe(SentenzaErrorCode.UPSTREAM_UNAVAILABLE);
+      } finally {
+        vi.useRealTimers();
+      }
+
+      const [entry] = logEntries(lines);
+      expect(entry?.reason).toBe('timeout');
+      expect(entry?.timeoutMs).toBe(REQUIRED_JWKS_DEADLINE_MS);
+    });
+
     it('wenn der Abruf der JWKS mit einem Netzfehler fehlschlägt', async () => {
       const { provider } = keyProviderFor(async () => {
         throw new Error('getaddrinfo ENOTFOUND www.googleapis.com');
@@ -354,6 +424,111 @@ describe('GoogleTokenVerifier', () => {
       expect(entry?.reason).toBe('unreachable');
       expect(entry?.cause).toContain('ENOTFOUND');
     });
+  });
+});
+
+/**
+ * Der JWKS-gestützte Schlüssellieferant des laufenden Betriebs
+ * (Requirement 2.1, 2.3, 2.13; Aufgabe 6.13 nach Requirement 10.3).
+ *
+ * Ersetzt ist allein `getKeys` von `jwks-rsa` — der einzige Schritt, der
+ * Google kontaktiert (Requirement 10.9). Alles, was diese Funktion selbst zu
+ * verantworten hat, läuft echt: die Zusammenstellung der Client-Optionen, die
+ * Auswahl des Schlüssels anhand der Schlüsselkennung, das Lesen des
+ * öffentlichen Schlüssels und die Unterscheidung der beiden Fehlerlagen —
+ * fehlender Schlüssel als Ergebnis, nicht lesbare JWKS als Fehler.
+ */
+describe('createJwksSigningKeyProvider', () => {
+  const SETTINGS_WITH_REQUIRED_DEADLINE = {
+    jwksUri: SETTINGS.jwksUri,
+    jwksTimeoutMs: REQUIRED_JWKS_DEADLINE_MS,
+  };
+
+  /** Optionen, mit denen der `JwksClient` gebaut wurde, soweit hier geprüft. */
+  interface ObservedClientOptions {
+    jwksUri?: string;
+    timeout?: number;
+    cache?: boolean;
+    cacheMaxAge?: number;
+  }
+
+  let observedOptions: ObservedClientOptions | undefined;
+
+  /**
+   * Ersetzt den Abruf der JWKS durch einen Speicherzugriff und hält fest, mit
+   * welchen Optionen der Client gebaut wurde. Der JWK ist echt — aus dem im
+   * Test erzeugten Schlüsselpaar —, damit `jwks-rsa` ihn tatsächlich einlesen
+   * und daraus einen öffentlichen Schlüssel gewinnen muss.
+   */
+  function stubJwksEndpoint(keys: () => Promise<unknown[]>): void {
+    vi.spyOn(JwksClient.prototype, 'getKeys').mockImplementation(function (this: {
+      options: ObservedClientOptions;
+    }) {
+      observedOptions = this.options;
+      return keys();
+    });
+  }
+
+  /** Der öffentliche Schlüssel des Signaturschlüsselpaars als JWK, wie Google ihn ausliefert. */
+  async function publishedJwk(keyId: string): Promise<Record<string, unknown>> {
+    const publicKey = await importSPKI(signing.publicKeyPem, 'RS256');
+
+    return { ...(await exportJWK(publicKey)), kid: keyId, alg: 'RS256', use: 'sig' };
+  }
+
+  afterEach(() => {
+    vi.restoreAllMocks();
+    observedOptions = undefined;
+  });
+
+  it('liefert den öffentlichen Schlüssel zur angefragten Schlüsselkennung', async () => {
+    stubJwksEndpoint(async () => [await publishedJwk(OTHER_KEY_ID), await publishedJwk(KEY_ID)]);
+
+    const lookup = await createJwksSigningKeyProvider(
+      SETTINGS_WITH_REQUIRED_DEADLINE,
+    ).getSigningKey(KEY_ID);
+
+    // Requirement 2.1: ausgewählt wird anhand der Schlüsselkennung, nicht der
+    // erste Schlüssel der Liste.
+    expect(lookup).toEqual({ found: true, publicKey: signing.publicKeyPem });
+    // Die Frist aus Requirement 2.13 und die Adresse aus der Konfiguration
+    // erreichen den Client; der Cache ist eingeschaltet, damit nicht jede
+    // Anmeldung einen Abruf auslöst.
+    expect(observedOptions?.jwksUri).toBe(SETTINGS.jwksUri);
+    expect(observedOptions?.timeout).toBe(REQUIRED_JWKS_DEADLINE_MS);
+    expect(observedOptions?.cache).toBe(true);
+    expect(observedOptions?.cacheMaxAge).toBe(GOOGLE_JWKS_CACHE_MAX_AGE_MS);
+  });
+
+  it('meldet eine in den JWKS nicht enthaltene Schlüsselkennung als Ergebnis, nicht als Fehler', async () => {
+    stubJwksEndpoint(async () => [await publishedJwk(OTHER_KEY_ID)]);
+
+    const lookup = await createJwksSigningKeyProvider(
+      SETTINGS_WITH_REQUIRED_DEADLINE,
+    ).getSigningKey(KEY_ID);
+
+    // Requirement 2.3: Die JWKS wurden gelesen und enthalten den Schlüssel
+    // nicht — ein Tokendefekt, der beim Aufrufer `UNAUTHENTICATED` ergibt und
+    // ausdrücklich nicht `UPSTREAM_UNAVAILABLE`.
+    expect(lookup).toEqual({ found: false });
+  });
+
+  it('gibt einen fehlgeschlagenen Abruf der JWKS als Fehler weiter', async () => {
+    const unreachable = new Error('getaddrinfo ENOTFOUND www.googleapis.com');
+    stubJwksEndpoint(() => Promise.reject(unreachable));
+
+    const failure = await createJwksSigningKeyProvider(SETTINGS_WITH_REQUIRED_DEADLINE)
+      .getSigningKey(KEY_ID)
+      .then(
+        (lookup) =>
+          expect.fail(`Erwartet war ein Fehler, beobachtet wurde: ${JSON.stringify(lookup)}`),
+        (error: unknown) => error,
+      );
+
+    // Requirement 2.13: Nicht lesbare JWKS treffen keine Aussage über das
+    // Token. Der Fehler darf deshalb nicht zu `{ found: false }` verflacht
+    // werden — erst dadurch kann der Aufrufer `UPSTREAM_UNAVAILABLE` melden.
+    expect(failure).toBe(unreachable);
   });
 });
 
